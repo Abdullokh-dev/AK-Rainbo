@@ -1,13 +1,13 @@
 <script setup>
 
+import Header from "../components/Header.vue";
+import Footer from "../components/Footer.vue";
 </script>
 
 <template>
-  <div class="row">
-    <div class="col-12 text-center">
-      <button type="button" class="btn btn-lg btn-danger">click</button>
-    </div>
-  </div>
+  <Header background="black" />
+    <router-view />
+  <Footer />
 </template>
 
 <style scoped>
