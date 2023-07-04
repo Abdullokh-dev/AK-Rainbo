@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <header class="row d-flex justify-content-center fixed-top" :style="{backgroundColor: background + '!important'}">
+  <header class="row d-flex justify-content-center" :style="{backgroundColor: background + '!important'}">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
@@ -220,6 +220,7 @@ svg {
 .dropdown__svg-group {
   gap: 20px;
 }
+
 .dropdown__svg {
   transition: opacity .3s;
 }

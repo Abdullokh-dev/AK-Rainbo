@@ -45,6 +45,7 @@ h1 {
   line-height: 73px;
   margin-top: 223px;
   max-width: 593px;
+  min-width: 593px;
 }
 
 p {
@@ -89,8 +90,7 @@ button {
 
 @media screen and (max-width: 991px) {
   h1 {
-    line-height: normal;
-    margin-top: 127px;
+    margin-top: 30px;
   }
 
   button {
@@ -103,10 +103,7 @@ button {
   }
 
   .speaker {
-    filter: drop-shadow( 1rem -1rem 2.75rem #788166);
     width: 100%;
-    max-width: 628px;
-    display: flex;
     margin: 60px auto 46px auto;
   }
 }
@@ -114,6 +111,7 @@ button {
 @media screen and (max-width: 1199px) {
   h1 {
     font-size: 24px;
+    min-width: 320px;
     font-style: normal;
     line-height: normal;
   }
@@ -126,6 +124,7 @@ button {
     background-color: #161616;
     border-radius: 0 0 375px 0;
   }
+
   .bg-right {
     width: 55%;
     height: 630px;

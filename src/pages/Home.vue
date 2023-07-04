@@ -12,7 +12,5 @@ import YandexStation from "../components/YandexStation.vue";
 </template>
 
 <style scoped>
-* {
-  background-color: black !important;
-}
+
 </style>
