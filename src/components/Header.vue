@@ -3,17 +3,21 @@ defineProps({
   background: {
     type: String,
     default: "none"
+  },
+  showLists: {
+    type: String,
+    default: "true"
   }
 })
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center" :style="{backgroundColor: background}">
+  <header class="row d-flex justify-content-center" :style="{backgroundColor: background}">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
           <!-- Logo -->
-          <div
+          <div @click="$router.push('/')"
             class="col-12 col-xl-auto d-flex justify-content-center justify-content-xl-end justify-content-xxl-start">
             <div class="d-flex">
               <svg width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -33,30 +37,26 @@ defineProps({
               </svg>
 
               <span class="text-white logo-text">
-            Shop
-          </span>
-
+               Shop
+              </span>
             </div>
           </div>
 
           <!-- Mobile menu toggle -->
           <div class="col-12 d-xl-none text-center mt-3">
-            <div class="text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-                 aria-expanded="false" aria-controls="collapseExample">
-          <span class="menu-toggle-text">
-            Меню
-          </span>
+            <div class="text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMobile" aria-expanded="false" aria-controls="collapseExample">
+              <span class="menu-toggle-text">
+                Меню
+              </span>
               <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path
-                  d="M10.3357 -2.90376e-08L11 0.646597L5.5 6L-2.82636e-08 0.646596L0.664305 -4.51788e-07L5.5 4.70635L10.3357 -2.90376e-08Z"
-                  fill="white"/>
+                <path d="M10.3357 -2.90376e-08L11 0.646597L5.5 6L-2.82636e-08 0.646596L0.664305 -4.51788e-07L5.5 4.70635L10.3357 -2.90376e-08Z" fill="white"/>
               </svg>
             </div>
           </div>
 
-          <!-- Lists -->
-          <div class="col-12 col-xl-9 col-xxl-8 text-center">
-            <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarSupportedContent">
+          <!-- Lists Desktop -->
+          <div class="col-12 col-xl-9 col-xxl-8 text-center d-xl-none">
+            <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarMobile">
               <ul class="navbar-nav mb-2 mb-xl-0">
                 <li class="nav-item mt-2 mt-xl-0">
                   <a href="#" class="list d-none d-xl-block">Стереосистема</a>
@@ -78,7 +78,30 @@ defineProps({
             </div>
           </div>
 
-          <!-- Contact Toggler -->
+          <!-- Unlisted page -->
+          <div class="col-12 col-xl-9 col-xxl-8 text-center d-none d-xl-block" v-if="showLists === 'true'">
+            <div class="collapse d-flex justify-content-center navbar-collapse">
+              <ul class="navbar-nav">
+                <li class="nav-item">
+                  <a href="#" class="list">Стереосистема</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a href="#" class="list">Sony Playstation</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="list">Яндекс.Станции</a>
+                </li>
+                <li class="nav-item px-4">
+                  <a href="#" class="list">Накладки на стики</a>
+                </li>
+                <li class="nav-item">
+                  <a href="#" class="list">Геймпады</a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <!-- Contact Toggle -->
           <div class="d-none d-xl-block col-1 col-xxl-auto">
             <div class="dropdown d-flex justify-content-end justify-content-xxl-end">
               <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -94,7 +117,7 @@ defineProps({
 
                 <div class="d-flex justify-content-center dropdown__svg-group">
                   <a href="https://google.com">
-                    <svg class="mt-3" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    <svg class="mt-3 dropdown__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_178_43)">
                         <path
@@ -113,7 +136,7 @@ defineProps({
                   </a>
 
                   <a href="https://google.com">
-                    <svg class="mt-3" width="30" height="30" viewBox="0 0 30 30" fill="none"
+                    <svg class="mt-3 dropdown__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_178_47)">
                         <path
@@ -140,7 +163,7 @@ defineProps({
         </div>
       </nav>
     </div>
-  </div>
+  </header>
 </template>
 
 <style scoped>
@@ -157,6 +180,10 @@ defineProps({
   text-decoration: none;
 }
 
+.nav-item {
+  padding: 0 9px;
+}
+
 .navbar-nav {
   margin-top: 2px;
 }
@@ -166,6 +193,9 @@ defineProps({
 }
 
 .dropdown-menu[data-bs-popper] {
+  animation-name: fade-in;
+  animation-duration: .3s;
+  width: 205px;
   left: auto;
   margin: 55px -12px 0 0;
   position: absolute;
@@ -177,10 +207,9 @@ defineProps({
 }
 
 .dropdown__item {
-  width: 205px;
-  font-family: Myriad Pro sans-serif;
-  font-size: 20px;
+  font-family: myriad, sans-serif;
   font-weight: 400;
+  font-size: 20px;
   line-height: 26px;
 }
 
@@ -191,6 +220,13 @@ svg {
 .dropdown__svg-group {
   gap: 20px;
 }
+.dropdown__svg {
+  transition: opacity .3s;
+}
+
+.dropdown__svg:hover {
+  opacity: 0.6;
+}
 
 .menu-toggle-text {
   font-size: 15px;
@@ -198,15 +234,30 @@ svg {
   cursor: pointer;
 }
 
+@keyframes fade-in {
+  from {opacity: 0;}
+  to {opacity: 1;}
+}
+
 @media screen and (min-width: 1400px) {
   .dropdown-menu[data-bs-popper] {
     margin-right: -70px;
+  }
+
+  .nav-item {
+    padding: 0;
   }
 }
 
 @media screen and (min-width: 1515px) {
   .dropdown-menu[data-bs-popper] {
-    margin-right: -105px;
+    margin-right: -85px;
+  }
+}
+
+@media screen and (min-width: 1650px) {
+  .nav-item {
+    padding: 0 12px;
   }
 }
 </style>
