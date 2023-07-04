@@ -1,15 +1,18 @@
 <script setup>
 
 import Header from "../components/Header.vue";
-import Footer from "../components/Footer.vue";
+import Main from "../components/Main.vue";
+import YandexStation from "../components/YandexStation.vue";
 </script>
 
 <template>
-  <Header background="black" show-lists="true" />
-    <router-view />
-  <Footer />
+  <Header show-lists="true" />
+  <Main />
+  <YandexStation />
 </template>
 
 <style scoped>
-
+* {
+  background-color: black !important;
+}
 </style>

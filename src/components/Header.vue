@@ -12,7 +12,7 @@ defineProps({
 </script>
 
 <template>
-  <header class="row d-flex justify-content-center" :style="{backgroundColor: background}">
+  <header class="row d-flex justify-content-center fixed-top" :style="{backgroundColor: background + '!important'}">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
@@ -109,7 +109,7 @@ defineProps({
                   <path
                     d="M0 0H30.9733V2.32155H0V0ZM0 10.447H30.9733V12.7685H0V10.447ZM0 20.8939H30.9733V23.2155H0V20.8939Z"
                     fill="white"/>
-                </svg>
+                  </svg>
               </div>
               <div class="dropdown-menu text-center">
                 <a class="text-white dropdown__item d-block" href="tel:+74951976668">+7 (495) 197-66-68</a>
