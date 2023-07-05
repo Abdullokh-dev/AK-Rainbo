@@ -169,6 +169,5 @@
   .main-section__button:hover .main-section__svg {
     right: 18px;
   }
-
 }
 </style>
