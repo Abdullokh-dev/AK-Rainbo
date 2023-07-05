@@ -21,9 +21,11 @@
           </p>
           <button class="mt-4 main-section__button">
             Узнать больше
-            <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="white"/>
-            </svg>
+            <span>
+              <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="white"/>
+              </svg>
+            </span>
           </button>
         </div>
 
@@ -42,7 +44,7 @@
 .main-section__bg {
   position: absolute;
   width: 100vw;
-  z-index: -1
+  z-index: -1;
 }
 
 .main-section__title {
@@ -61,11 +63,24 @@
 }
 
 .main-section__button {
+  position: relative;
   color: white;
   background-color: #757D62;
   font-size: 20px;
-  padding: 13px 53px;
+  padding: 13px 71px 13px 53px;
   margin-bottom: 300px;
+}
+
+
+.main-section__button:hover .main-section__svg {
+  right: 35px;
+}
+
+.main-section__svg {
+  position: absolute;
+  right: 45px;
+  top: 20px;
+  transition: right 0.3s;
 }
 
 .main-section__speaker {
@@ -99,7 +114,7 @@
     margin-top: 30px;
   }
 
-  button {
+  .main-section__button {
     margin-bottom: 43px;
   }
 
@@ -139,5 +154,21 @@
     position: absolute;
     right: 0;
   }
+
+  .main-section__button {
+    font-size: 15px;
+    padding: 10.4px 43px 10.4px 25px;
+  }
+
+  .main-section__svg {
+    right: 23px;
+    top: 15px;
+    height: 10.4px;
+  }
+
+  .main-section__button:hover .main-section__svg {
+    right: 18px;
+  }
+
 }
 </style>
