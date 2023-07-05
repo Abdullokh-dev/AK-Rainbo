@@ -19,19 +19,20 @@
           <p class="main-section__description">
             Слышать звук так, как он звучит.
           </p>
-          <button class="mt-4 main-section__button">
+
+          <button class="mt-4 main-section__button" @click="$router.link('/')">
             Узнать больше
             <span>
-              <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="white"/>
-              </svg>
-            </span>
+            <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="white"/>
+            </svg>
+          </span>
           </button>
         </div>
 
         <div class="col-12 col-lg-6 speaker_background">
           <div class="main-section__speaker">
-            <img src="../assets/images/main-player.png" alt="#" width="100%">
+            <img src="../assets/images/main-player.png" alt="#" style="width: 100%">
           </div>
         </div>
       </div>
@@ -70,7 +71,6 @@
   padding: 13px 71px 13px 53px;
   margin-bottom: 300px;
 }
-
 
 .main-section__button:hover .main-section__svg {
   right: 35px;
