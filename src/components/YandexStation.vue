@@ -7,8 +7,8 @@
   <div class="col-12 col-xxl-11 col-xxxl-10 pb-5">
     <div class="row">
       <div class="col">
-        <div class="title">
-          <h2>Кастомизированные  Яндекс.Станции и Sony Playstation</h2>
+        <div class="yandex__title-box">
+          <h2 class="yandex__title">Кастомизированные  Яндекс.Станции и Sony Playstation</h2>
         </div>
       </div>
     </div>
@@ -17,18 +17,18 @@
 </template>
 
 <style scoped>
-h2 {
+.yandex__title {
   font-size: 50px;
   font-weight: 700;
   line-height: 61px;
 }
 
-.title {
+.yandex__title-box {
   max-width: 950px;
 }
 
 @media screen and (max-width: 991px) {
-  h2 {
+  .yandex__title {
     font-size: 24px;
     font-style: normal;
     line-height: normal;

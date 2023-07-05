@@ -20,7 +20,7 @@ defineProps({
           <div @click="$router.push('/')"
             class="col-12 col-xl-auto d-flex justify-content-center justify-content-xl-end justify-content-xxl-start">
             <div class="d-flex">
-              <svg width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__svg" width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <mask id="mask0_53_475" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="112"
                       height="24">
                   <path
@@ -32,7 +32,7 @@ defineProps({
                 </g>
               </svg>
 
-              <svg class="mx-3" width="2" height="23" viewBox="0 0 2 23" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__svg mx-3" width="2" height="23" viewBox="0 0 2 23" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M1 0L1 23" stroke="white" stroke-width="1.5"/>
               </svg>
 
@@ -48,7 +48,7 @@ defineProps({
               <span class="menu-toggle-text">
                 Меню
               </span>
-              <svg width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <svg class="header__svg" width="11" height="6" viewBox="0 0 11 6" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M10.3357 -2.90376e-08L11 0.646597L5.5 6L-2.82636e-08 0.646596L0.664305 -4.51788e-07L5.5 4.70635L10.3357 -2.90376e-08Z" fill="white"/>
               </svg>
             </div>
@@ -59,20 +59,20 @@ defineProps({
             <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarMobile">
               <ul class="navbar-nav mb-2 mb-xl-0">
                 <li class="nav-item mt-2 mt-xl-0">
-                  <a href="#" class="list d-none d-xl-block">Стереосистема</a>
-                  <a href="#" class="list d-xl-none">Стереосистема RAINBO TECHNICS </a>
+                  <a href="#" class="navbar__list d-none d-xl-block">Стереосистема</a>
+                  <a href="#" class="list header__item d-xl-none">Стереосистема RAINBO TECHNICS </a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a href="#" class="list">Sony Playstation</a>
+                  <a href="#" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a href="#" class="list">Яндекс.Станции</a>
+                  <a href="#" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a href="#" class="list">Накладки на стики</a>
+                  <a href="#" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a href="#" class="list">Геймпады</a>
+                  <a href="#" class="list header__item">Геймпады</a>
                 </li>
               </ul>
             </div>
@@ -83,19 +83,19 @@ defineProps({
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#" class="list">Стереосистема</a>
+                  <a href="#" class="list header__item">Стереосистема</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#" class="list">Sony Playstation</a>
+                  <a href="#" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="list">Яндекс.Станции</a>
+                  <a href="#" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#" class="list">Накладки на стики</a>
+                  <a href="#" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="list">Геймпады</a>
+                  <a href="#" class="list header__item">Геймпады</a>
                 </li>
               </ul>
             </div>
@@ -105,7 +105,7 @@ defineProps({
           <div class="d-none d-xl-block col-1 col-xxl-auto">
             <div class="dropdown d-flex justify-content-end justify-content-xxl-end">
               <div class="dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                <svg width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <svg class="header__svg" width="31" height="24" viewBox="0 0 31 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path
                     d="M0 0H30.9733V2.32155H0V0ZM0 10.447H30.9733V12.7685H0V10.447ZM0 20.8939H30.9733V23.2155H0V20.8939Z"
                     fill="white"/>
@@ -173,7 +173,7 @@ defineProps({
   line-height: 24px;
 }
 
-.list {
+.header__item {
   font-weight: 500;
   font-size: 18px;
   color: white;
@@ -213,7 +213,7 @@ defineProps({
   line-height: 26px;
 }
 
-svg {
+.header__svg, .dropdown__svg {
   cursor: pointer;
 }
 
