@@ -15,17 +15,17 @@
     </div>
   </div>
 
-  <div class="row">
-    <div class="col-12 customize-box">
+<!--  <div class="row">-->
+<!--    <div class="col-12 customize-box">-->
 
-      <div class="row d-flex justify-content-center">
-        <div class="col-10 bg-warning">
-          <h1 class="customize-title">Яндекс.Станции Лайт</h1>
-        </div>
-      </div>
+<!--      <div class="row d-flex justify-content-center">-->
+<!--        <div class="col-10 bg-warning">-->
+<!--          <h1 class="customize-title">Яндекс.Станции Лайт</h1>-->
+<!--        </div>-->
+<!--      </div>-->
 
-    </div>
-  </div>
+<!--    </div>-->
+<!--  </div>-->
 </template>
 
 <style scoped>
