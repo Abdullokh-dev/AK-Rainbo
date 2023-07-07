@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<div class="row footer fixed-bottom">
+<div class="row footer p-5">
   <div class="col text-center">
     <h2>
       Footer
@@ -14,6 +14,6 @@
 
 <style scoped>
 .footer{
-  background-color: black;
+  background-color: gray;
 }
 </style>

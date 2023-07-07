@@ -259,7 +259,6 @@
   color: black;
 }
 
-
 @media screen and (max-width:1399px) {
   .customize-title {
     font-size: 30px;
@@ -270,6 +269,7 @@
     max-width: 400px;
   }
 }
+
 @media screen and (max-width:1199px) {
   .yandex__title {
     font-size: 35px;
@@ -309,7 +309,7 @@
     margin: auto !important;
   }
 }
-@media screen and (max-width:767px) { }
+
 @media screen and (max-width:575px) {
   .yandex__title {
     font-size: 24px;
