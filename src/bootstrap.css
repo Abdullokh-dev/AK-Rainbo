@@ -73,6 +73,7 @@
   align-items: center;
   justify-content: space-between;
 }
+
 .navbar > .container,
 .navbar > .container-fluid,
 .navbar > .container-sm,
@@ -145,8 +146,6 @@
 .fixed-top {
   position: fixed;
   top: 0;
-  right: 0;
-  left: 0;
   z-index: 1030;
 }
 
@@ -156,6 +155,14 @@
   bottom: 0;
   left: 0;
   z-index: 1030;
+}
+
+.position-relative {
+  position: relative !important;
+}
+
+.position-absolute {
+  position: absolute !important;
 }
 
 .text-white {

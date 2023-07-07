@@ -12,9 +12,9 @@ defineProps({
 </script>
 
 <template>
-  <header class="row d-flex justify-content-center" :style="{backgroundColor: background + '!important'}">
-    <div class="col-12 col-xxl-11 col-xxxl-10">
-      <nav class="navbar navbar-expand-xl row py-4">
+  <header class="row d-flex justify-content-center">
+    <div class="col-12 col-xxl-11 col-xxxl-10 fixed-top">
+      <nav class="navbar navbar-expand-xl row py-4" :style="{backgroundColor: background + '!important;'}">
         <div class="container-fluid">
           <!-- Logo -->
           <div @click="$router.push('/')"
@@ -177,7 +177,25 @@ defineProps({
   font-weight: 500;
   font-size: 18px;
   color: white;
-  text-decoration: none;
+  position: relative;
+}
+
+.header__item:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  transform: scaleX(0);
+  height: 2px;
+  bottom: -5px;
+  left: 0;
+  background-color: #757D62;
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.header__item:hover:after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
 }
 
 .nav-item {
@@ -215,17 +233,14 @@ defineProps({
 
 .header__svg, .dropdown__svg {
   cursor: pointer;
+  transition: opacity .3s;
 }
 
 .dropdown__svg-group {
   gap: 20px;
 }
 
-.dropdown__svg {
-  transition: opacity .3s;
-}
-
-.dropdown__svg:hover {
+.dropdown__svg:hover, .header__svg:hover {
   opacity: 0.6;
 }
 
@@ -238,6 +253,12 @@ defineProps({
 @keyframes fade-in {
   from {opacity: 0;}
   to {opacity: 1;}
+}
+
+@media screen and (max-width: 1199px) {
+  .navbar-expand-xl {
+    background-color: black;
+  }
 }
 
 @media screen and (min-width: 1400px) {

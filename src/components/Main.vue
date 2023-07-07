@@ -9,14 +9,14 @@
 
     <div class="main-section__content col-xxl-11 col-xxxl-10">
       <div class="col-12 col-lg-6 content-left px-3 px-xxl-0">
-        <h1 class="main-section__title">
+        <h1 class="main-section__title mt-5 mt-lg-0">
           СТЕРЕОСИСТЕМА RAINBO TECHNICS
         </h1>
-        <p class="main-section__description mt-4 mt-lg-0">
+        <p class="main-section__description mt-3 mt-lg-0">
           Слышать звук так, как он звучит.
         </p>
-        <div class="pt-4 pb-5">
-          <a href="" class="main-section__button">
+        <div class="pb-5 mt-4 pt-3">
+          <a href="#" class="main-section__button">
             Узнать больше
             <span>
             <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -192,10 +192,6 @@
 @media screen and (max-width: 574px) {
   .main-section {
     height: 580px;
-  }
-
-  .content-left {
-    height: 222px;
   }
 
   .content-right__box {
