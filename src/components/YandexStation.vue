@@ -86,6 +86,7 @@
     </div>
   </div>
 
+  <!-- Nozzles -->
   <div class="row">
     <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4">
       <div class="row playstation-card__left flex-lg-column-reverse">
@@ -109,7 +110,7 @@
           </div>
         </div>
 
-        <div class="col-12 text-start">
+        <div class="col-12">
           <img class="__image" src="../assets/images/gamePods.png" width="1606" alt="#">
         </div>
       </div>
@@ -225,10 +226,11 @@
   border-radius: 100px;
 }
 
-.playstation-card__left .__image{
+.playstation-card__left .__image {
   width: 100%;
-  max-width: 803px;
-  padding-right: 110px;
+  max-width: 900px;
+  padding-right: 80px;
+  margin-top: -10px;
 }
 
 .playstation-card__right {
@@ -286,8 +288,8 @@
     border-radius: 75px;
   }
 
-  .playstation-card__left .__image{
-    padding-right: 80px;
+  .playstation-card__left .__image {
+    padding-right: 50px;
   }
 
   .playstation-card__left .__title, .playstation-card__right .__title {
@@ -333,8 +335,8 @@
     line-height: 18px;
   }
 
-  .playstation-card__left .__image{
-    padding-right: 57px;
+  .playstation-card__left .__image {
+    padding-right: 37px;
   }
 
   .playstation-card__left .__title, .playstation-card__right .__title {
