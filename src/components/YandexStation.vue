@@ -5,7 +5,7 @@
 <template>
   <!-- Main Title -->
   <div class="row d-flex justify-content-center">
-    <div class="col-12 col-xxl-11 col-xxxl-10 pb-5">
+    <div class="col-12 col-xxl-11 col-xxxl-10 mb-3 mb-lg-5 mt-lg-3 mt-xl-5">
       <div class="row">
         <div class="col">
           <div class="yandex__title-box mt-lg-5">
@@ -19,9 +19,9 @@
   <div class="row d-flex justify-content-center customize-box">
     <div class="col-12 col-xl-11 col-xxxl-10 pt-2">
 
-      <div class="row mt-3 pb-4 px-4 px-lg-0 pb-lg-0">
+      <div class="row mt-3 pb-4 pb-lg-0">
         <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center justify-content-xxl-start">
-          <div class="my-auto ms-xl-4 ms-xxl-2">
+          <div class="my-auto px-4 px-lg-0 ms-xl-4 ms-xxl-2">
             <h3 class="customize-title">Яндекс.Станции Лайт</h3>
             <p class="customize-description mt-2 mt-lg-3">
               Яркая и компактная умная колонка, которая управляется голосом и сенсорными кнопками. Она здорово украсит любой интерьер и сможет развлечь ребенка.
@@ -43,7 +43,7 @@
           </div>
         </div>
 
-        <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-end" style="overflow: hidden;">
+        <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-end overflow-none">
           <div class="customize-img-box">
             <img src="../assets/images/colored-players.png" width="2159" alt="#">
           </div>

@@ -26,7 +26,7 @@
       </div>
 
       <div class="col-12 col-lg-4 my-3 mt-lg-auto mb-lg-0">
-        <div class="d-flex justify-content-center" style="gap: 22px;">
+        <div class="d-flex justify-content-center footer__icons">
           <a href="https://www.youtube.com/@rainbocustom3868" rel="nofollow" target="_blank" class="mt-lg-auto d-lg-flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
               <g clip-path="url(#clip0_53_581)">
@@ -129,6 +129,10 @@ footer {
 
 .header__address {
   text-align: start;
+}
+
+.footer__icons {
+  gap: 22px;
 }
 
 .header__contacts {

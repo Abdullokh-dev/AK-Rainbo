@@ -15,9 +15,9 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="row about-team__section">
-  <div class="col-12 col-xl-6 d-flex justify-content-center">
-    <div style="text-align: left; justify-content: center; max-width: 700px">
+<div class="row mt-4 mt-lg-5">
+  <div class="col-12 col-xl-6 d-flex justify-content-center mt-xl-5">
+    <div class="about-team__left">
       <h2 class="team-title">МЫ КОМАНДА RAINBO!</h2>
       <p class="team-description">
         Производим электронные гаджеты, серийно кастомизируем игровые приставки и геймпады, а также осуществляем профессиональный ремонт.
@@ -52,7 +52,6 @@ onMounted(() => {
           </a>
         </div>
 
-
         <div class="col-12 col-sm-6 d-flex ps-sm-0 justify-content-around mt-3 mt-sm-0">
           <a href="https://rainboskin.me/remont" class="about-team__logo">
             <svg class="m-auto d-flex" width="99" height="100" viewBox="0 0 99 100" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -86,8 +85,10 @@ onMounted(() => {
 </template>
 
 <style scoped>
-.about-team__section {
-  margin-top: 100px;
+.about-team__left {
+  text-align: left;
+  justify-content: center;
+  max-width: 700px
 }
 
 .team-title {
