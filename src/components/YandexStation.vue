@@ -45,7 +45,7 @@
 
         <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-end overflow-none">
           <div class="customize-img-box">
-            <img src="../assets/images/colored-players.png" width="2159" alt="#">
+            <img src="../assets/images/Home/colored-players.png" width="2159" alt="#">
           </div>
         </div>
       </div>
@@ -80,7 +80,7 @@
         </div>
 
         <div class="col-12 col-lg-6 ps-lg-0 d-flex justify-content-center justify-content-lg-start">
-            <img class="playStations-img" src="../assets/images/playStations.png" width="1398" alt="#">
+            <img class="playStations-img" src="../assets/images/Home/playStations.png" width="1398" alt="#">
         </div>
       </div>
     </div>
@@ -111,7 +111,7 @@
         </div>
 
         <div class="col-12">
-          <img class="__image" src="../assets/images/gamePods.png" width="1606" alt="#">
+          <img class="__image" src="../assets/images/Home/gamePods.png" width="1606" alt="#">
         </div>
       </div>
     </div>
@@ -139,8 +139,8 @@
         </div>
 
         <div class="col-12 d-flex justify-content-between p-0">
-          <div><img class="__image-left" src="../assets/images/nozzle.png" alt="#" width="774"></div>
-          <div><img class="__image-right" src="../assets/images/nozzle-2.png" alt="#" width="515"></div>
+          <div><img class="__image-left" src="../assets/images/Home/nozzle.png" alt="#" width="774"></div>
+          <div><img class="__image-right" src="../assets/images/Home/nozzle-2.png" alt="#" width="515"></div>
         </div>
       </div>
     </div>

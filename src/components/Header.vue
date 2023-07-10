@@ -1,9 +1,5 @@
 <script setup>
 defineProps({
-  background: {
-    type: String,
-    default: "none"
-  },
   showLists: {
     type: String,
     default: "true"
@@ -12,9 +8,9 @@ defineProps({
 </script>
 
 <template>
-  <header class="row d-flex justify-content-center">
-    <div class="col-12 col-xxl-11 col-xxxl-10 fixed-top">
-      <nav class="navbar navbar-expand-xl row py-4" :style="{backgroundColor: background}">
+  <header class="row d-flex justify-content-center fixed-top">
+    <div class="col-12 col-xxl-11 col-xxxl-10">
+      <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
           <!-- Logo -->
           <div @click="$router.push('/')"

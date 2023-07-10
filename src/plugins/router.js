@@ -12,7 +12,7 @@ const router = createRouter({
     },
     {
       path: '/detail',
-      component: import('../pages/Detail.vue')
+      component: import('../pages/HomePod.vue')
     }
   ]
 })
