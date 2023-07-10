@@ -14,7 +14,7 @@ defineProps({
 <template>
   <header class="row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10 fixed-top">
-      <nav class="navbar navbar-expand-xl row py-4" :style="{backgroundColor: background + '!important;'}">
+      <nav class="navbar navbar-expand-xl row py-4" :style="{backgroundColor: background}">
         <div class="container-fluid">
           <!-- Logo -->
           <div @click="$router.push('/')"

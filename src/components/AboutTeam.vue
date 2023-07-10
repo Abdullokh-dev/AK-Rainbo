@@ -1,4 +1,16 @@
 <script setup>
+import Plyr from 'plyr';
+import {onMounted, ref} from "vue";
+import '../assets/videos/plyr.css';
+
+const player = ref(null)
+
+onMounted(() => {
+  player.value = new Plyr('#player', {
+    controls: [],
+    // autoplay: true
+  })
+})
 
 </script>
 
@@ -65,7 +77,9 @@
 
   <div class="col-12 col-xl-6 p-0 ps-lg-3 d-flex justify-content-end">
     <div class="d-flex my-auto">
-      <img src="../assets/images/videoPlugin.png" width="1914" alt="#">
+      <video id="player" data-poster="./videoPlugin.png">
+        <source src="../assets/videos/video.mp4" type="video/mp4">
+      </video>
     </div>
   </div>
 </div>
@@ -75,6 +89,7 @@
 .about-team__section {
   margin-top: 100px;
 }
+
 .team-title {
   font-size: 40px;
   font-weight: 700;
@@ -110,9 +125,8 @@
   text-align: center;
 }
 
-/*todo vide Plugin*/
-img {
-  width: 100%;
+#player {
+  border-radius: 100px 0 0 100px;
   max-width: 957px;
 }
 
@@ -121,8 +135,9 @@ img {
     font-size: 30px;
   }
 
-  img {
+  #player {
     width: 100%;
+    border-radius: 75px 0 0 75px;
     max-width: 1200px;
   }
 }
@@ -134,6 +149,10 @@ img {
 
   .team-description {
     font-size: 15px;
+  }
+
+  #player {
+    border-radius: 50px 0 0 50px;
   }
 }
 </style>
