@@ -7,7 +7,7 @@
   <div class="col-12 col-xxl-10 pt-xxl-4">
     <div class="row">
 
-      <div class="header__address col-12 col-lg-4 mt-5 mt-lg-4 ps-lg-4">
+      <div class="header__address col-12 col-lg-4 mt-4 pt-3 pt-xxl-0 mt-lg-4 ps-lg-4">
         <div class="mt-2">
           <a href="#">
             <svg width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -25,7 +25,7 @@
         <p class="mt-2">График работы: Пн-Пт с 9:00 до 18:00</p>
       </div>
 
-      <div class="col-12 col-lg-4 my-3 mt-lg-auto mb-lg-0">
+      <div class="col-12 col-lg-4 mt-3 mb-2 mt-lg-auto mb-lg-0">
         <div class="d-flex justify-content-center footer__icons">
           <a href="https://www.youtube.com/@rainbocustom3868" rel="nofollow" target="_blank" class="mt-lg-auto d-lg-flex">
             <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
@@ -110,10 +110,10 @@
 
     <div class="row footer__bottom mt-4">
       <div class="col-12 col-lg-4 mt-3 ps-lg-4 __company">ООО "Рейнбо"</div>
-      <div class="col-12 col-lg-4 mt-3 text-center">
+      <div class="col-12 col-lg-4 mt-2 text-center">
         <a href="#" rel="nofollow" target="_blank">Политика конфиденциальности</a>
       </div>
-      <div class="col-12 col-lg-4 my-3 pe-lg-4 __crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="_wrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
+      <div class="col-12 col-lg-4 mt-2 mb-3 mb-xxl-4 pe-lg-4 __crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="_wrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
     </div>
   </div>
 </footer>
@@ -208,6 +208,10 @@ stop {
     font-size: 17px;
     border-radius: 75px 75px 0 0;
   }
+
+  .header__address svg {
+    width: 93px;
+  }
 }
 
 @media screen and (max-width:991px) {
@@ -216,6 +220,14 @@ stop {
   .header__contacts,
   .footer__bottom .__crew {
     text-align: center;
+  }
+
+  .header__address svg {
+    width: 73px;
+  }
+
+  .footer__icons svg {
+    width: 40px;
   }
 }
 

@@ -5,10 +5,21 @@ defineProps({
     default: "true"
   }
 })
+
+let prevScrollpos = window.pageYOffset;
+window.onscroll = function() {
+  let currentScrollPos = window.pageYOffset;
+  if (prevScrollpos > currentScrollPos) {
+    document.getElementById("navbar").style.top = "0";
+  } else {
+    document.getElementById("navbar").style.top = "-112px";
+  }
+  prevScrollpos = currentScrollPos;
+}
 </script>
 
 <template>
-  <header class="row d-flex justify-content-center fixed-top">
+  <header class="row d-flex justify-content-center fixed-top" id="navbar">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
@@ -163,6 +174,10 @@ defineProps({
 </template>
 
 <style scoped>
+#navbar {
+  transition: top 0.8s
+}
+
 .logo-text {
   font-size: 20px;
   font-weight: 600;
@@ -209,7 +224,7 @@ defineProps({
 .dropdown-menu[data-bs-popper] {
   animation-name: fade-in;
   animation-duration: .3s;
-  width: 205px;
+  width: 225px;
   left: auto;
   margin: 55px -12px 0 0;
   position: absolute;
