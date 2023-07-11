@@ -46,6 +46,7 @@
 .mainPodSection {
   line-height: normal;
 }
+
 .animated__pulse  {
   width: 100%;
   max-width: 1022px;
@@ -75,7 +76,6 @@
   max-width: 75%;
 }
 
-@media screen and (max-width:1366px) {}
 @media screen and (max-width:1199px) {
   .homePod__title, .homePod__title-2 {
     font-size: 40px;
@@ -90,12 +90,13 @@
     max-width: 95%;
   }
 }
+
 @media screen and (max-width:991px) {
   .homePod__info {
     margin-top: 10px;
   }
 }
-@media screen and (max-width:767px) {}
+
 @media screen and (max-width:575px) {
   .homePod__info {
     font-size: 20px;
