@@ -8,16 +8,23 @@ defineProps({
 
 let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
+  let navbar = document.getElementById("navbar")
   let currentScrollPos = window.pageYOffset;
-  if (prevScrollpos > currentScrollPos) {
-    document.getElementById("navbar").style.top = "0";
+  if(prevScrollpos > 100) {
+    navbar.style.background = 'rgba(0,0,0,0.2)';
+    navbar.style.backdropFilter = 'saturate(180%) blur(20px)';
   } else {
-    document.getElementById("navbar").style.top = "-112px";
+    navbar.style.background = "none";
+  }
+
+  if (prevScrollpos > currentScrollPos) {
+    navbar.style.top = "0";
+  } else {
+    navbar.style.top = "-112px";
   }
   prevScrollpos = currentScrollPos;
 }
 </script>
-
 <template>
   <header class="row d-flex justify-content-center fixed-top" id="navbar">
     <div class="col-12 col-xxl-11 col-xxxl-10">
