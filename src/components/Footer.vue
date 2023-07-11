@@ -28,10 +28,10 @@
       <div class="col-12 col-lg-4 mt-3 mb-2 mt-lg-auto mb-lg-0">
         <div class="d-flex justify-content-center footer__icons">
           <a href="https://www.youtube.com/@rainbocustom3868" rel="nofollow" target="_blank" class="mt-lg-auto d-lg-flex">
-            <svg xmlns="http://www.w3.org/2000/svg" width="49" height="49" viewBox="0 0 49 49" fill="none">
+            <svg class="social-youtube" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_53_581)">
-                <path d="M39.7309 48.0387C29.4054 49.1514 18.992 49.1514 8.66652 48.0387C6.6614 47.8248 4.78945 46.9231 3.36273 45.484C1.93602 44.0449 1.04076 42.1553 0.8262 40.1303C-0.2754 29.7005 -0.2754 19.1819 0.8262 8.75211C1.03794 6.72674 1.93058 4.83587 3.35529 3.39475C4.78001 1.95362 6.65071 1.04932 8.65552 0.832592C18.981 -0.280135 29.3944 -0.280135 39.7199 0.832592C41.725 1.04647 43.597 1.94813 45.0237 3.38723C46.4504 4.82634 47.3457 6.71593 47.5602 8.741C48.6618 19.1708 48.6618 29.6894 47.5602 40.1192C47.3485 42.1445 46.4558 44.0354 45.0311 45.4765C43.6064 46.9176 41.7357 47.8219 39.7309 48.0387Z" fill="#E60000"/>
-                <path d="M38.612 17.0885C38.0072 15.2086 36.0058 14.0701 34.164 13.809C27.539 13.0982 20.8582 13.0982 14.2333 13.809C12.3914 14.0701 10.3846 15.1975 9.78531 17.0885C8.8424 21.9414 8.8424 26.9333 9.78531 31.7862C10.3901 33.6634 12.3914 34.8046 14.2333 35.0657C20.8582 35.7765 27.539 35.7765 34.164 35.0657C36.0058 34.8046 38.0127 33.6772 38.612 31.7862C39.5549 26.9333 39.5549 21.9414 38.612 17.0885ZM20.5809 30.2895V18.5824L30.0156 24.436C26.835 26.4103 23.7478 28.3235 20.5809 30.2895Z" fill="white"/>
+                <path class="social-youtube__bg" d="M39.7309 48.0387C29.4054 49.1514 18.992 49.1514 8.66652 48.0387C6.6614 47.8248 4.78945 46.9231 3.36273 45.484C1.93602 44.0449 1.04076 42.1553 0.8262 40.1303C-0.2754 29.7005 -0.2754 19.1819 0.8262 8.75211C1.03794 6.72674 1.93058 4.83587 3.35529 3.39475C4.78001 1.95362 6.65071 1.04932 8.65552 0.832592C18.981 -0.280135 29.3944 -0.280135 39.7199 0.832592C41.725 1.04647 43.597 1.94813 45.0237 3.38723C46.4504 4.82634 47.3457 6.71593 47.5602 8.741C48.6618 19.1708 48.6618 29.6894 47.5602 40.1192C47.3485 42.1445 46.4558 44.0354 45.0311 45.4765C43.6064 46.9176 41.7357 47.8219 39.7309 48.0387Z" fill="white"/>
+                <path class="social-youtube__icon" d="M38.612 17.0885C38.0072 15.2086 36.0058 14.0701 34.164 13.809C27.539 13.0982 20.8582 13.0982 14.2333 13.809C12.3914 14.0701 10.3846 15.1975 9.78531 17.0885C8.8424 21.9414 8.8424 26.9333 9.78531 31.7862C10.3901 33.6634 12.3914 34.8046 14.2333 35.0657C20.8582 35.7765 27.539 35.7765 34.164 35.0657C36.0058 34.8046 38.0127 33.6772 38.612 31.7862C39.5549 26.9333 39.5549 21.9414 38.612 17.0885ZM20.5809 30.2895V18.5824L30.0156 24.436C26.835 26.4103 23.7478 28.3235 20.5809 30.2895Z" fill="#403D3D"/>
               </g>
               <defs>
                 <clipPath id="clip0_53_581">
@@ -173,9 +173,14 @@ svg, path, stop {
   fill: #0077FE;
 }
 
+.social-youtube:hover .social-youtube__bg {
+  fill: #E60000;
+}
+
 .social-vk:hover .social-vk__icon,
 .social-instagram:hover .instagram-stroke,
-.social-facebook:hover .social-facebook__icon {
+.social-facebook:hover .social-facebook__icon,
+.social-youtube:hover .social-youtube__icon {
   fill: white;
 }
 
@@ -228,6 +233,41 @@ stop {
 
   .footer__icons svg {
     width: 40px;
+  }
+
+  .social-vk .social-vk__bg {
+    fill: #0077FE;
+  }
+
+  .social-youtube .social-youtube__bg {
+    fill: #E60000;
+  }
+
+  .social-vk .social-vk__icon,
+  .social-instagram .instagram-stroke,
+  .social-facebook .social-facebook__icon,
+  .social-youtube .social-youtube__icon {
+    fill: white;
+  }
+
+  .instagram-stroke {
+    fill: #403D3D;
+  }
+
+  .social-instagram .inst__gradient-1 {
+    stop-color: #FFDD55;
+  }
+
+  .social-instagram .inst__gradient-2 {
+    stop-color: #FF543E;
+  }
+
+  .social-instagram .inst__gradient-3 {
+    stop-color: #C837AB;
+  }
+
+  .social-facebook .social-facebook__bg {
+    fill: #4267B2;
   }
 }
 

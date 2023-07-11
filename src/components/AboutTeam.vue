@@ -32,7 +32,7 @@ onMounted(() => {
         Нашу продукцию можно <b>приобрести</b> во всех самых <b>крупных магазинах</b> электронной техники России, Белоруссии и Казахстана.Мы всегда открыты для интересного взаимовыгодного партнерства
       </p>
 
-      <div class="row my-5">
+      <div class="row mt-4 mb-5 ">
         <div class="col-6 col-sm-3 d-flex justify-content-center">
           <a href="https://rainboskin.me/kastomizatsiya/" class="about-team__logo">
             <svg class="m-auto d-flex" width="99" height="100" viewBox="0 0 99 100" fill="none" xmlns="http://www.w3.org/2000/svg">

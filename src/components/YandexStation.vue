@@ -284,7 +284,7 @@
     font-size: 30px;
   }
 
-  .customize-description {
+  .customize-description, .yandex-station__button {
     font-size: 17px;
     max-width: 400px;
   }
@@ -295,10 +295,6 @@
     font-size: 35px;
     font-style: normal;
     line-height: normal;
-  }
-
-  .yandex-station__button {
-    font-size: 18px;
   }
 
   .customize-box,
@@ -351,10 +347,6 @@
     font-size: 20px;
   }
 
-  .yandex-station__button {
-    font-size: 15px;
-  }
-
   .customize-box,
   .customize-box_dark,
   .playstation-card__right,
@@ -362,7 +354,7 @@
     border-radius: 50px;
   }
 
-  .customize-description {
+  .customize-description, .yandex-station__button {
     font-size: 15px;
     line-height: 18px;
   }
