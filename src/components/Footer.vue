@@ -65,7 +65,7 @@
               </g>
               <defs>
                 <linearGradient id="paint0_linear_630_488" x1="2.99687" y1="45.9275" x2="48.3916" y2="7.33982" gradientUnits="userSpaceOnUse">
-                  <stop class="inst__gradient-1" stop-color="#FFDD55"/>
+                  <stop offset="" class="inst__gradient-1" stop-color="#FFDD55"/>
                   <stop class="inst__gradient-2" offset="0.5" stop-color="#FF543E"/>
                   <stop class="inst__gradient-3" offset="1" stop-color="#C837AB"/>
                 </linearGradient>
@@ -159,6 +159,10 @@ footer {
   border-bottom: 1px solid #7B7B7B;
 }
 
+svg, path, stop {
+  transition: all .3s;
+}
+
 ._dot {
   color: #FFCC04;
   font-size: 1.4rem;
@@ -167,14 +171,12 @@ footer {
 
 .social-vk:hover .social-vk__bg {
   fill: #0077FE;
-  transition: all .3s;
 }
 
 .social-vk:hover .social-vk__icon,
 .social-instagram:hover .instagram-stroke,
 .social-facebook:hover .social-facebook__icon {
   fill: white;
-  transition: all .3s;
 }
 
 stop {
@@ -187,22 +189,18 @@ stop {
 
 .social-instagram:hover .inst__gradient-1 {
   stop-color: #FFDD55;
-  transition: all .3s;
 }
 
 .social-instagram:hover .inst__gradient-2 {
   stop-color: #FF543E;
-  transition: all .3s;
 }
 
 .social-instagram:hover .inst__gradient-3 {
   stop-color: #C837AB;
-  transition: all .3s;
 }
 
 .social-facebook:hover .social-facebook__bg {
   fill: #4267B2;
-  transition: all .3s;
 }
 
 @media screen and (max-width:1400px) {

@@ -197,11 +197,11 @@
 
 .yandex-station__button svg {
   position: absolute;
+  transition: all 0.3s;
   margin: 7px 0 0 10px;
 }
 
 .yandex-station__button:hover svg {
-  transition: all 0.3s;
   margin-left: 15px;
 }
 
