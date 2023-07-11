@@ -138,9 +138,9 @@
           </div>
         </div>
 
-        <div class="col-12 d-flex justify-content-between p-0">
+        <div class="col-12 d-flex justify-content-between p-0 overflow-none">
           <div><img class="__image-left" src="../assets/images/Home/nozzle.png" alt="#" width="774"></div>
-          <div><img class="__image-right" src="../assets/images/Home/nozzle-2.png" alt="#" width="515"></div>
+          <div class="__image-right-box"><img class="__image-right" src="../assets/images/Home/nozzle-2.png" alt="#" width="626"></div>
         </div>
       </div>
     </div>
@@ -248,6 +248,10 @@
   max-width: 532px;
 }
 
+.playstation-card__right .__image-right-box {
+  margin-right: -8%;
+}
+
 .playstation-card__left .__title, .playstation-card__right .__title {
   font-size: 40px;
   font-weight: 700;
@@ -335,6 +339,10 @@
   .playstation-card__right .yandex-station__button
    {
     padding-left: 23px;
+  }
+
+  .playstation-card__right .__image-right-box {
+    margin: 0;
   }
 }
 
