@@ -221,7 +221,6 @@ defineProps({
 }
 
 .dropdown__item {
-  font-family: myriad, sans-serif;
   font-weight: 400;
   font-size: 20px;
   line-height: 26px;

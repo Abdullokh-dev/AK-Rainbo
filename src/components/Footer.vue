@@ -124,7 +124,6 @@ footer {
   background-color: #1D1D1F;
   border-radius: 100px 100px 0 0;
   font-size: 20px;
-  font-family: myriad, sans-serif;
 }
 
 .header__address {

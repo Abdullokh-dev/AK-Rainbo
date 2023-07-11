@@ -13,6 +13,10 @@ const router = createRouter({
     {
       path: '/detail',
       component: import('../pages/HomePod.vue')
+    },
+    {
+      path: '/nozzles',
+      component: import('../pages/Nozzles.vue')
     }
   ]
 })

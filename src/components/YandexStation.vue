@@ -16,12 +16,12 @@
     </div>
   </div>
   <!-- Yandex Customize Belt -->
-  <div class="row d-flex justify-content-center customize-box">
-    <div class="col-12 col-xl-11 col-xxxl-10 pt-2">
+  <div class="row d-flex justify-content-center customize-box position-relative mt-2">
+    <div class="col-12 pt-2 col-xl-11 col-xxxl-10">
 
-      <div class="row mt-3 pb-4 pb-lg-0">
+      <div class="row pb-lg-0">
         <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center justify-content-xxl-start">
-          <div class="my-auto px-4 px-lg-0 ms-xl-4 ms-xxl-2">
+          <div class="mt-sm-2 my-lg-auto px-3 px-sm-4 px-lg-0 ms-xl-4 ms-xxl-2">
             <h3 class="customize-title">Яндекс.Станции Лайт</h3>
             <p class="customize-description mt-2 mt-lg-3">
               Яркая и компактная умная колонка, которая управляется голосом и сенсорными кнопками. Она здорово украсит любой интерьер и сможет развлечь ребенка.
@@ -43,9 +43,9 @@
           </div>
         </div>
 
-        <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-end overflow-none">
+        <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-start justify-content-xl-end overflow-none">
           <div class="customize-img-box">
-            <img src="../assets/images/Home/colored-players.png" width="2159" alt="#">
+            <img src="../assets/images/Home/colored-players.png" width="2159" alt="#" class="__img-1">
           </div>
         </div>
       </div>
@@ -53,16 +53,16 @@
   </div>
   <!-- Yandex Console Belt -->
   <div class="row d-flex justify-content-center customize-box_dark my-4">
-    <div class="col-12 col-xxl-11 col-xxxl-10 pt-2">
+    <div class="col-12 pt-2 col-xxl-11 col-xxxl-10">
 
-      <div class="row mt-3 pb-4 pb-lg-0">
+      <div class="row pb-lg-0">
         <div class="col-12 pe-xl-3 p-xxl-0 ps-lg-4 ps-xl-0 col-lg-6 d-flex justify-content-center justify-content-xxl-start">
-          <div class="my-auto px-4 px-xxl-3">
+          <div class="mt-sm-2 my-lg-auto px-4 px-xxl-3">
             <h3 class="customize-title">Консоли Sony Playstation</h3>
             <p class="customize-description mt-2 mt-lg-3 mt-xl-4">
               Мы рады предложить Вам услугу индивидуальной кастомизации игровых консолей и геймпадов. Если у вас есть концепция подарков, корпоративного мерча, подарков для розыгрышей или другие идеи – мы будем рады их обсудить.
             </p>
-            <div class="mb-4 mt-3 mt-lg-4 pt-xl-1 mt-xxl-5">
+            <div class="mb-4 mt-4 pt-xl-1 mt-xxl-5">
               <a href="#" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -79,7 +79,7 @@
           </div>
         </div>
 
-        <div class="col-12 col-lg-6 ps-lg-0 d-flex justify-content-center justify-content-lg-start">
+        <div class="col-12 col-lg-6 mt-4 ps-lg-0 d-flex justify-content-center justify-content-lg-start">
             <img class="playStations-img" src="../assets/images/Home/playStations.png" width="1398" alt="#">
         </div>
       </div>
@@ -90,10 +90,10 @@
   <div class="row">
     <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4">
       <div class="row playstation-card__left flex-lg-column-reverse">
-        <div class="col-12">
-          <div class="text-center mt-3 mt-lg-0">
-            <h3 class="__title">Насадки на стики</h3>
-            <div class="mt-lg-3 mb-lg-5">
+        <div class="col d-lg-flex justify-content-lg-center">
+          <div class="mt-2 mt-sm-3 mt-lg-0">
+            <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Геймпад Sony Playstation</h3>
+            <div class="mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
               <a href="#" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -110,18 +110,18 @@
           </div>
         </div>
 
-        <div class="col-12">
-          <img class="__image" src="../assets/images/Home/gamePods.png" width="1606" alt="#">
+        <div class="col-12 mb-3 mb-lg-4 mb-xxl-5">
+          <img class="__image" src="../assets/images/Home/img.png" width="1606" alt="#">
         </div>
       </div>
     </div>
 
     <div class="col-12 col-lg-6 ps-lg-4">
       <div class="row playstation-card__right flex-lg-column-reverse">
-        <div class="col-12">
-          <div class="text-center mt-3 mt-lg-0">
-            <h3 class="__title">Насадки на стики</h3>
-            <div class="mt-lg-3 mb-lg-5">
+        <div class="col-12 d-lg-flex justify-content-lg-center">
+          <div class="mt-2 mt-sm-3 mt-lg-0">
+            <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Насадки на стики</h3>
+            <div class="mt-lg-3 mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
               <a href="#" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -187,7 +187,6 @@
 }
 
 .yandex-station__button {
-  font-family: myriad, sans-serif;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
@@ -217,7 +216,7 @@
 }
 
 .playStations-img {
-  width: 90%;
+  width: 95%;
   max-width: 700px;
 }
 
@@ -257,6 +256,27 @@
 
 .playstation-card__right .__title {
   color: black;
+}
+
+@media screen and (min-width:1199px) {
+  .customize-img-box {
+    height: 450px;
+  }
+
+  .customize-img-box .__img-1 {
+    position: absolute !important;
+    width: 55%;
+    max-width: 1062px;
+    right: 0;
+    top: 150px;
+  }
+}
+
+@media screen and (min-width:1400px) {
+  .customize-img-box .__img-1 {
+    top: auto;
+    bottom: 0;
+  }
 }
 
 @media screen and (max-width:1399px) {
@@ -307,6 +327,18 @@
 
   .customize-img-box {
     margin: auto !important;
+  }
+
+  .playStations-img {
+    width: 70%;
+  }
+
+  .playstation-card__left .__title,
+  .playstation-card__right .__title,
+  .playstation-card__left .yandex-station__button,
+  .playstation-card__right .yandex-station__button
+   {
+    padding-left: 23px;
   }
 }
 

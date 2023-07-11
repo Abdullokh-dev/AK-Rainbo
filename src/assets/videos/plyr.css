@@ -630,6 +630,7 @@ a.plyr__control {
     background-color: #000;
     background-color: var(--plyr-video-background, var(--plyr-video-background, #000));
     background-position: 50% 50%;
+    border-radius: 100px 0 0 100px !important;
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -640,6 +641,18 @@ a.plyr__control {
     transition: opacity .2s ease;
     width: 100%;
     z-index: 1
+}
+
+@media screen and (max-width:1199px) {
+    .plyr__poster {
+        border-radius: 75px 0 0 75px !important;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .plyr__poster {
+        border-radius: 50px 0 0 50px !important;
+    }
 }
 
 .plyr--stopped.plyr__poster-enabled .plyr__poster {

@@ -1,20 +1,20 @@
-@font-face {
-  font-family: 'myriad';
-  src: url('./assets/fonts/MyriadPro/myriadpro-bold-webfont.woff2') format('woff2'),
-  url('./assets/fonts/MyriadPro/myriadpro-bold-webfont.woff') format('woff');
-  font-weight: bold;
-  font-style: normal;
+/*@font-face {*/
+/*  font-family: 'myriad';*/
+/*  src: url('./assets/fonts/MyriadPro/myriadpro-bold-webfont.woff2') format('woff2'),*/
+/*  url('./assets/fonts/MyriadPro/myriadpro-bold-webfont.woff') format('woff');*/
+/*  font-weight: bold;*/
+/*  font-style: normal;*/
 
-}
+/*}*/
 
-@font-face {
-  font-family: 'myriad';
-  src: url('./assets/fonts/MyriadPro/myriadpro-regular-webfont.woff2') format('woff2'),
-  url('./assets/fonts/MyriadPro/myriadpro-regular-webfont.woff') format('woff');
-  font-weight: normal;
-  font-style: normal;
+/*@font-face {*/
+/*  font-family: 'myriad';*/
+/*  src: url('./assets/fonts/MyriadPro/myriadpro-regular-webfont.woff2') format('woff2'),*/
+/*  url('./assets/fonts/MyriadPro/myriadpro-regular-webfont.woff') format('woff');*/
+/*  font-weight: normal;*/
+/*  font-style: normal;*/
 
-}
+/*}*/
 
 :root {
   line-height: 1.5;
@@ -45,11 +45,13 @@ a {
 button {
   border: none;
   border-radius: 50rem;
-  font-family: myriad, sans-serif;
   font-weight: 400;
   cursor: pointer;
 }
 
+b {
+  font-weight: 600;
+}
 
 .bg-info {
   background-color: aqua;

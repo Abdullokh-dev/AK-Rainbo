@@ -12,7 +12,7 @@
         <h1 class="main-section__title mt-5 mt-lg-0">
           стереосистема rainbo technics
         </h1>
-        <p class="main-section__description mt-3 mt-lg-0">
+        <p class="main-section__description mt-3 mt-lg-3">
           Слышать звук так, как он звучит.
         </p>
         <div class="pb-5 mt-4 pt-3">
@@ -112,6 +112,7 @@
   max-width: 628px;
   display: flex;
   margin: auto;
+  filter: drop-shadow( 1rem -1rem 2.75rem #788166);
 }
 
 @media screen and (max-width: 1400px) {
@@ -205,6 +206,7 @@
 
   .main-section__title {
     font-size: 20px;
+    max-width: 220px;
   }
 
   .main-section__description {
