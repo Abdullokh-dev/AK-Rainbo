@@ -24,7 +24,6 @@
 <style scoped>
 .nozzleMain-bg {
   background: url("../assets/images/Nozzles/bg.png") center center no-repeat;
-  /*background: url("../assets/images/Nozzles/bg.png"), lightgray 0 -104.613px / 111.661% 127.418% no-repeat;*/
   background-size: cover;
 }
 
@@ -41,30 +40,39 @@
 }
 
 .nozzleMain-btn {
+  color: black;
+  background-color: #FF6891;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  padding: 13px 96px;
+  padding: 13px 90px;
   border-radius: 50rem;
-  color: black;
-  background: #FF6891;
 }
 
-@media screen and (max-width:1366px) {}
 @media screen and (max-width:1199px) {
   .nozzleMain__title {
     font-size: 35px;
-  }
-}
-@media screen and (max-width:991px) {}
-@media screen and (max-width:767px) {}
-@media screen and (max-width:575px) {
-  .nozzleMain__title {
-    font-size: 24px;
+    line-height: normal;
   }
 
   .nozzleMain-box {
     margin: 258px 0;
+  }
+}
+
+@media screen and (max-width:575px) {
+  .nozzleMain__title {
+    font-size: 24px;
+    max-width: 234px;
+  }
+
+  .nozzleMain-bg {
+    background: url("../assets/images/Nozzles/bg.png") -600px center no-repeat;
+    background-size: cover;
+  }
+
+  .nozzleMain-btn {
+    padding: 8px 58px;
   }
 }
 </style>
