@@ -17,6 +17,10 @@ const router = createRouter({
     {
       path: '/nozzles',
       component: import('../pages/Nozzles.vue')
+    },
+    {
+      path: '/yandex-station',
+      component: import('../pages/YandexStation.vue')
     }
   ]
 })

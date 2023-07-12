@@ -3,28 +3,36 @@
 </script>
 
 <template>
-<div class="row d-flex justify-content-center nozzleMain-bg">
-  <div class="col-12 col-xxl-11 col-xxxl-10">
+  <div class="row d-flex justify-content-center nozzleMain-bg">
+    <div class="col-12 col-xxl-11 col-xxxl-10">
 
-    <div class="row">
-      <div class="col">
-        <div class="nozzleMain-box">
-          <h1 class="nozzleMain__title">Насадки на стики геймпада</h1>
-          <div class="mt-5">
-            <a href="#" class="nozzleMain-btn">Купить</a>
+      <div class="row">
+        <div class="col">
+          <div class="nozzleMain-box">
+            <video class="background-video" preload="auto" autoplay="1" loop muted="1">
+              <source src="../assets/videos/Nozzles.mp4" type="video/mp4">
+            </video>
+            <h1 class="nozzleMain__title">Насадки на стики геймпада</h1>
+            <div class="mt-5">
+              <a href="#" class="nozzleMain-btn">Купить</a>
+            </div>
           </div>
         </div>
       </div>
-    </div>
 
+    </div>
   </div>
-</div>
 </template>
 
 <style scoped>
-.nozzleMain-bg {
-  background: url("../assets/images/Nozzles/bg.png") center center no-repeat;
-  background-size: cover;
+.background-video {
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: -1;
+  inset: 0;
+  pointer-events: none;
 }
 
 .nozzleMain-box {
@@ -64,11 +72,6 @@
   .nozzleMain__title {
     font-size: 24px;
     max-width: 234px;
-  }
-
-  .nozzleMain-bg {
-    background: url("../assets/images/Nozzles/bg.png") -600px center no-repeat;
-    background-size: cover;
   }
 
   .nozzleMain-btn {
