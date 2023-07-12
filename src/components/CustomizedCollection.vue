@@ -98,7 +98,6 @@
   max-width: 1420px;
 }
 
-@media screen and (max-width:1366px) {}
 @media screen and (max-width:1199px) {
   .gamePodStick__title {
     margin: 50px 0 10px 0;
@@ -115,7 +114,6 @@
     line-height: normal;
   }
 }
-@media screen and (max-width:991px) {}
 @media screen and (max-width:767px) {
   .customizedCollection-ul {
     margin: 0;

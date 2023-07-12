@@ -23,15 +23,12 @@
   line-height: 65px;
 }
 
-@media screen and (max-width:1366px) {}
 @media screen and (max-width:1199px) {
   .gamePodStick__title {
     font-size: 35px;
     line-height: normal;
   }
 }
-@media screen and (max-width:991px) {}
-@media screen and (max-width:767px) {}
 @media screen and (max-width:575px) {
   .gamePodStick__title {
     font-size: 24px;

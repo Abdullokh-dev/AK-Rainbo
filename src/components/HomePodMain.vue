@@ -37,7 +37,6 @@
   .homePod__title {
     max-width: 420px;
   }
-
 }
 
 @media screen and (max-width:991px) {
