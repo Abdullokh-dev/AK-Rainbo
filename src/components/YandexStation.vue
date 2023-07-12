@@ -33,7 +33,7 @@
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
                 </svg>
               </a>
-              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" class="yandex-station__button" target="_blank">
+              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" class="yandex-station__button ps-4 ps-sm-3 ps-lg-0" target="_blank">
                 Купить
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.28125 0.785086L1.06634 0L7.56634 6.5L1.06634 13L0.28125 12.2149L5.99561 6.5L0.28125 0.785086Z" fill="#2997FF"/>
@@ -69,7 +69,7 @@
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
                 </svg>
               </a>
-              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" class="yandex-station__button" target="_blank">
+              <a href="https://rainboskin.me/sony" class="yandex-station__button ps-3 ps-lg-0" target="_blank">
                 Купить
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.28125 0.785086L1.06634 0L7.56634 6.5L1.06634 13L0.28125 12.2149L5.99561 6.5L0.28125 0.785086Z" fill="#2997FF"/>
@@ -100,7 +100,7 @@
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
                 </svg>
               </a>
-              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" class="yandex-station__button" target="_blank">
+              <a href="https://rainboskin.me/sony" class="yandex-station__button ps-3 ps-lg-0" target="_blank">
                 Купить
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.28125 0.785086L1.06634 0L7.56634 6.5L1.06634 13L0.28125 12.2149L5.99561 6.5L0.28125 0.785086Z" fill="#2997FF"/>
@@ -128,7 +128,7 @@
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
                 </svg>
               </a>
-              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" class="yandex-station__button" target="_blank">
+              <a href="https://rainboskin.me/aksessuary/nakladki-na-stiki-geympada-ps4/" class="yandex-station__button ps-3 ps-lg-0" target="_blank">
                 Купить
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.28125 0.785086L1.06634 0L7.56634 6.5L1.06634 13L0.28125 12.2149L5.99561 6.5L0.28125 0.785086Z" fill="#2997FF"/>

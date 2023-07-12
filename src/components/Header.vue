@@ -6,23 +6,16 @@ defineProps({
   }
 })
 
-let prevScrollpos = window.pageYOffset;
 window.onscroll = function() {
   let navbar = document.getElementById("navbar")
-  let currentScrollPos = window.pageYOffset;
-  if(prevScrollpos > 100) {
+  if(window.pageYOffset > 50) {
     navbar.style.background = 'rgba(0,0,0,0.2)';
     navbar.style.backdropFilter = 'saturate(180%) blur(20px)';
+    navbar.style.transition = 'all .3s';
   } else {
     navbar.style.background = "none";
+    navbar.style.backdropFilter = 'none';
   }
-
-  if (prevScrollpos > currentScrollPos) {
-    navbar.style.top = "0";
-  } else {
-    navbar.style.top = "-112px";
-  }
-  prevScrollpos = currentScrollPos;
 }
 </script>
 <template>
@@ -97,7 +90,7 @@ window.onscroll = function() {
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#" class="list header__item">Стереосистема</a>
+                  <a href="#sterio" class="list header__item">Стереосистема</a>
                 </li>
                 <li class="nav-item px-4">
                   <a href="#" class="list header__item">Sony Playstation</a>
@@ -130,7 +123,7 @@ window.onscroll = function() {
                 <a class="text-white dropdown__item d-block mt-2" href="tel:+79639706328">+7 (963) 970-63-28</a>
 
                 <div class="d-flex justify-content-center dropdown__svg-group">
-                  <a href="https://google.com">
+                  <a href="https://t.me/Rainboskin" target="_blank">
                     <svg class="mt-3 dropdown__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_178_43)">
@@ -149,7 +142,7 @@ window.onscroll = function() {
                     </svg>
                   </a>
 
-                  <a href="https://google.com">
+                  <a href="https://wa.me/+79639706328" target="_blank">
                     <svg class="mt-3 dropdown__svg" width="30" height="30" viewBox="0 0 30 30" fill="none"
                          xmlns="http://www.w3.org/2000/svg">
                       <g clip-path="url(#clip0_178_47)">

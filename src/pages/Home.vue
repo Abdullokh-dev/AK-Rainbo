@@ -8,7 +8,7 @@ import AboutTeam from "../components/AboutTeam.vue";
 
 <template>
   <Header show-lists="true" />
-  <Main />
+  <Main id="sterio"/>
   <YandexStation />
   <AboutTeam />
 </template>
