@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center nozzleMain-bg">
+  <div class="row d-flex justify-content-center nozzleMain-bg position-relative">
     <div class="col-12 col-xxl-11 col-xxxl-10">
 
       <div class="row">

@@ -35,6 +35,10 @@ b {
   font-weight: 600;
 }
 
+.list-unstyled {
+  list-style: none;
+}
+
 .bg-info {
   background-color: aqua;
 }
