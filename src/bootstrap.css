@@ -158,6 +158,10 @@
   z-index: 1030;
 }
 
+.bg-white {
+  background: white;
+}
+
 .position-relative {
   position: relative !important;
 }

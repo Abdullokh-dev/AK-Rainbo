@@ -7,7 +7,7 @@ import AboutTeam from "../components/AboutTeam.vue";
 </script>
 
 <template>
-  <Header show-lists="true" />
+  <Header show-lists="true" theme="white"/>
   <Main id="sterio"/>
   <YandexBelt />
   <AboutTeam />

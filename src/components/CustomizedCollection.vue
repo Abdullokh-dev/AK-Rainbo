@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center bg-white">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <div class="row">
         <div class="col">
@@ -76,6 +76,7 @@
 <style scoped>
 .gamePodStick__title {
   margin: 110px 0 40px 0;
+  color: black;
   font-size: 50px;
   font-weight: 600;
   line-height: 65px;
@@ -89,9 +90,11 @@
 .customizedCollection-ul .list {
   position: relative;
   margin-bottom: 10px;
+  color: black;
 }
 
 .customizedCollection__info {
+  color: black;
   font-size: 24px;
   font-weight: 500;
   line-height: 31px;
