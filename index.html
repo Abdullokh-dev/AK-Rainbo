@@ -9,6 +9,24 @@
     <!-- Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Jost:wght@500;600;700;800&family=Montserrat:wght@400;500;600;700&display=swap" rel="stylesheet">
     <title>Rainbo</title>
+
+    <!-- Slicks -->
+    <link rel="stylesheet" type="text/css" href="src/assets/css/slick-carousel.css"/>
+    <link rel="stylesheet" type="text/css" href="src/assets/css/slick-carousel-theme.css"/>
+    <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <script type="text/javascript" src="src/slick-carousel.js"></script>
+
+    <script type="text/javascript">
+      $(document).on('ready', function() {
+        $(".regular").slick({
+          dots: true,
+          infinite: true,
+          slidesToShow: 1,
+          slidesToScroll: 1
+        });
+      });
+    </script>
   </head>
   <body>
     <div id="app"></div>

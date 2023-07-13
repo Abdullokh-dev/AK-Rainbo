@@ -1,8 +1,11 @@
-import {createRouter, createWebHistory} from 'vue-router'
+import {createRouter, createWebHashHistory} from 'vue-router'
 import Home from "../pages/Home.vue"
+import HomePod from "../pages/HomePod.vue"
+import Nozzles from "../pages/Nozzles.vue"
+import YandexStation from "../pages/YandexStation.vue"
 
 const router = createRouter({
-  history: createWebHistory(),
+  history: createWebHashHistory(),
   // mode: 'history',
   // base: import.meta.env.BASE_URL,
   routes: [
@@ -12,15 +15,15 @@ const router = createRouter({
     },
     {
       path: '/detail',
-      component: import('../pages/HomePod.vue')
+      component: HomePod
     },
     {
       path: '/nozzles',
-      component: import('../pages/Nozzles.vue')
+      component: Nozzles
     },
     {
       path: '/yandex-station',
-      component: import('../pages/YandexStation.vue')
+      component: YandexStation
     }
   ]
 })
