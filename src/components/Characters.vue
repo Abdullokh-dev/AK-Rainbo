@@ -113,12 +113,14 @@
   display: none;
   position: absolute;
   top: 0;
+  right: 0;
   left: 0;
   z-index: 99;
 }
 
 .characters__img-box:hover .img-colored {
   display: inline;
+  margin: auto !important;
 }
 
 .characters__img-box .__info {
