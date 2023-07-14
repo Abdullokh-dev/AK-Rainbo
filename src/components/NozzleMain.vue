@@ -26,7 +26,7 @@
 
 <style scoped>
 .background-video {
-  height: 100%;
+  height: 100vh;
   width: 100%;
   object-fit: cover;
   position: absolute;

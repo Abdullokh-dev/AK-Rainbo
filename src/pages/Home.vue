@@ -14,5 +14,9 @@ import AboutTeam from "../components/AboutTeam.vue";
 </template>
 
 <style scoped>
-
+@media screen and (max-width: 1199px) {
+  #sterio {
+    margin-top: 112px;
+  }
+}
 </style>

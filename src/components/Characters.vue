@@ -148,9 +148,11 @@
             </p>
           </div>
         </div>
+      </div>
 
-        <div class="col-12 text-center my-5 pt-3">
-            <a href="#" class="characters__button">Выбрать свой характер</a>
+      <div class="row">
+        <div class="col-12 text-center my-3 mt-lg-5">
+          <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="characters__button">Выбрать свой характер</a>
         </div>
       </div>
     </div>
@@ -158,31 +160,8 @@
 </template>
 
 <style scoped>
-.slick-slide {
-  margin: 0 20px;
-}
-
 .slick-slide img {
   width: 100%;
-}
-
-.slick-prev:before,
-.slick-next:before {
-  color: black;
-}
-
-
-.slick-slide {
-  transition: all ease-in-out .3s;
-  opacity: .2;
-}
-
-.slick-active {
-  opacity: .5;
-}
-
-.slick-current {
-  opacity: 1;
 }
 
 .characters-title {
@@ -224,7 +203,14 @@
   font-weight: 500;
   line-height: 31px;
   text-align: center;
+}
+
+.characters__img-box .__info {
   max-width: 80%;
+}
+
+.slider .__info {
+  max-width: 100%;
 }
 
 .characters__img-box .__info .__purple,
@@ -266,12 +252,17 @@
 
 .characters__button {
   background-color: #6337FF;
+  transition: background-color .3s;
   border-radius: 50rem;
   color: white;
   padding: 13px 29px;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.characters__button:hover {
+  background-color: rgba(99, 55, 255, 0.8);
 }
 
 @media screen and (max-width:1199px) {

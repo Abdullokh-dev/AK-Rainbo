@@ -12,7 +12,7 @@
           </h2>
 
           <div class="row">
-            <div class="col-12 col-md-6 mt-3 mt-md-0">
+            <div class="col-12 col-md-6 mt-2 mt-sm-3 mt-md-0">
               <ul class="list-unstyled customizedCollection-ul ps-4">
                   <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,13 +20,13 @@
                     </svg>
                     Четкость рисунка
                   </li>
-                  <li class="list _red">
+                  <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="5" cy="5" r="5" fill="#F4414E"/>
                     </svg>
                     Насыщенность цветов
                   </li>
-                  <li class="list _yellow">
+                  <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
                       <circle cx="5" cy="5" r="5" fill="#FBD301"/>
                     </svg>
@@ -36,21 +36,21 @@
             </div>
             <div class="col-12 col-md-6 d-flex">
               <ul class="list-unstyled customizedCollection-ul ps-4">
-                  <li class="list _pink">
+                  <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#F81478"/>
+                      <circle cx="5" cy="5" r="5" fill="#10D8D9"/>
                     </svg>
                     Износостойкое финишное покрытие
                   </li>
-                  <li class="list _brown">
+                  <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#CCA370"/>
+                      <circle cx="5" cy="5" r="5" fill="#F81478"/>
                     </svg>
                     Заводская гарантия
                   </li>
-                  <li class="list _blue">
+                  <li class="list">
                     <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#10D8D9"/>
+                      <circle cx="5" cy="5" r="5" fill="#CCA370"/>
                     </svg>
                     Доставка по России
                   </li>
@@ -60,7 +60,7 @@
 
           <div class="row">
             <div class="col mt-sm-2">
-              <p class="customizedCollection__info">
+              <p class="customizedCollection__info mt-3">
                 Высочайшее качество кастомизации не оставит равнодушным никого. Кастомизированная Яндекс.Станции Лайт
                 станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении. Незамеченной остаться не
                 получится, она будет привлекать к себе внимание всех ваших гостей.
@@ -84,10 +84,13 @@
 
 .customizedCollection-ul svg {
   left: -20px;
-  top: 6px;
+  top: 10px;
 }
 
 .customizedCollection-ul .list {
+  font-size: 24px;
+  font-weight: 500;
+  line-height: 130%;
   position: relative;
   margin-bottom: 10px;
   color: black;
@@ -97,7 +100,7 @@
   color: black;
   font-size: 24px;
   font-weight: 500;
-  line-height: 31px;
+  line-height: 130%;
   max-width: 1420px;
 }
 
@@ -108,13 +111,18 @@
     line-height: normal;
   }
 
-  .customizedCollection-ul {
-    font-size: 17px;
+  .customizedCollection-ul svg {
+    left: -20px;
+    top: 6px;
+  }
+
+  .customizedCollection-ul .list,
+  .customizedCollection__info {
+    font-size: 20px;
   }
 
   .customizedCollection__info {
     font-size: 20px;
-    line-height: normal;
   }
 }
 @media screen and (max-width:767px) {
@@ -128,12 +136,13 @@
     line-height: 31px;
   }
 
-  .customizedCollection-ul {
+  .customizedCollection-ul .list,
+  .customizedCollection__info {
     font-size: 15px;
   }
 
-  .customizedCollection__info {
-    font-size: 15px;
+  .customizedCollection-ul svg {
+    top: 4px;
   }
 }
 </style>
