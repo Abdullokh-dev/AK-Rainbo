@@ -15,7 +15,7 @@ onMounted(() => {
 </script>
 
 <template>
-<div class="row mt-4 mt-lg-5">
+<div class="row mt-4 mt-lg-5 mb-5">
   <div class="col-12 col-xl-6 d-flex justify-content-center mt-xl-5">
     <div class="about-team__left">
       <h2 class="team-title">Мы Команда Rainbo!</h2>

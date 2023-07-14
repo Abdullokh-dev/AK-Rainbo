@@ -6,6 +6,7 @@ import CustomizedCollection from "../components/CustomizedCollection.vue";
 import Characters from "../components/Characters.vue";
 import ChooseCustomStation from "../components/ChooseCustomStation.vue";
 import Specifications from "../components/Specifications.vue";
+import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import Specifications from "../components/Specifications.vue";
   <Characters />
   <ChooseCustomStation />
   <Specifications />
+  <DeliverAndGuarantee />
 </template>
 
 <style scoped>
