@@ -5,6 +5,7 @@ import YandexStationMain from "../components/YandexStationMain.vue";
 import CustomizedCollection from "../components/CustomizedCollection.vue";
 import Characters from "../components/Characters.vue";
 import ChooseCustomStation from "../components/ChooseCustomStation.vue";
+import Specifications from "../components/Specifications.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import ChooseCustomStation from "../components/ChooseCustomStation.vue";
   <CustomizedCollection />
   <Characters />
   <ChooseCustomStation />
+  <Specifications />
 </template>
 
 <style scoped>

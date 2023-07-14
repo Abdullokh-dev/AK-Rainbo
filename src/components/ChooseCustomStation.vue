@@ -73,7 +73,9 @@ const unHoverFirst = (element) => {
               <img src="../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
             </div>
           </section>
-
+          <div class="text-center mt-4 pt-2">
+            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn"> Купить </a>
+          </div>
         </div>
       </div>
 
@@ -92,7 +94,7 @@ const unHoverFirst = (element) => {
           <p class="__info">
             <b class="_bold _street" @mouseenter="hoverFirst(items.fourth)" @mouseleave="unHoverFirst(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
-          <div class="my-5 pt-3">
+          <div class="mt-5 pt-3">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn"> Купить </a>
           </div>
         </div>
@@ -120,7 +122,7 @@ const unHoverFirst = (element) => {
 
 .choose-custom-box {
   right: 0;
-  bottom: 0;
+  bottom: -60px;
 }
 
 .choose-custom-img .__img-1,
