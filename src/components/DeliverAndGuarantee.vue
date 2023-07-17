@@ -77,6 +77,10 @@ const toggleSecond = () => {
 </template>
 
 <style scoped>
+.deliver-guarantee {
+  margin-bottom: 140px;
+}
+
 .deliver-guarantee .__title {
   margin: 120px 0 95px 0;
   font-size: 50px;
@@ -123,6 +127,10 @@ const toggleSecond = () => {
 }
 
 @media screen and (max-width:1199px) {
+  .deliver-guarantee {
+    margin-bottom: 40px;
+  }
+
   .deliver-guarantee .__title {
     margin: 50px 0 30px 0;
     font-size: 35px;

@@ -39,6 +39,18 @@ b {
   list-style: none;
 }
 
+.title-md {
+  font-size: 50px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.btn-txt {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: normal;
+}
+
 .bg-info {
   background-color: aqua;
 }
@@ -46,3 +58,23 @@ b {
 .bg-warning {
   background-color: orange;
 }
+
+@media screen and (max-width:1199px) {
+  .medium-title {
+    font-size: 35px;
+  }
+
+  .btn-txt {
+    font-size: 17px;
+  }
+}
+@media screen and (max-width:575px) {
+  .medium-title {
+    font-size: 24px;
+  }
+
+  .btn-txt {
+    font-size: 15px;
+  }
+}
+

@@ -6,8 +6,8 @@ import YandexStation from "../pages/YandexStation.vue"
 
 const router = createRouter({
   history: createWebHashHistory(),
-  // mode: 'history',
-  // base: import.meta.env.BASE_URL,
+  mode: 'history',
+  base: import.meta.env.BASE_URL,
   routes: [
     {
       path: '/',
