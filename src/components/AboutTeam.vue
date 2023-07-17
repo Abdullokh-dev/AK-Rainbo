@@ -1,7 +1,6 @@
 <script setup>
 import Plyr from 'plyr';
 import {onMounted, ref} from "vue";
-import '../assets/videos/plyr.css';
 
 const player = ref(null)
 

@@ -4,20 +4,32 @@ import { useRoute } from 'vue-router';
 const route = useRoute();
 const container = ref('')
 
+const fixColor = () => {
+  console.log(route.path)
+  switch(route.path) {
+    case '/yandex-station':
+      container.value.style.background = 'white'
+      break;
+    case '/nozzles':
+      container.value.style.background = 'white'
+      break;
+    default:
+      container.value.style.background = 'black'
+      break
+  }
+}
+
 onMounted(() => {
   container.value = document.getElementById('main-container');
-
-  watch(
-    () => route.path,
-    () => {
-      if(route.path === '/yandex-station') {
-        container.value.style.background = 'white'
-      } else  {
-        container.value.style.background = 'black'
-      }
-    }
-  );
+  fixColor()
 });
+
+watch(
+  () => route.path,
+  () => {
+    fixColor()
+  }
+);
 
 import Footer from "./components/Footer.vue";
 </script>

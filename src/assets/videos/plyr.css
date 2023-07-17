@@ -627,10 +627,10 @@ a.plyr__control {
 }
 
 .plyr__poster {
-    background-color: #000;
-    background-color: var(--plyr-video-background, var(--plyr-video-background, #000));
+    /*background-color: #000;*/
+    /*background-color: var(--plyr-video-background, var(--plyr-video-background, #000));*/
     background-position: 50% 50%;
-    border-radius: 100px 0 0 100px !important;
+    /*border-radius: 100px 0 0 100px;*/
     background-repeat: no-repeat;
     background-size: cover;
     height: 100%;
@@ -644,15 +644,15 @@ a.plyr__control {
 }
 
 @media screen and (max-width:1199px) {
-    .plyr__poster {
-        border-radius: 75px 0 0 75px !important;
-    }
+    /*.plyr__poster {*/
+    /*    border-radius: 75px 0 0 75px;*/
+    /*}*/
 }
 
 @media screen and (max-width:575px) {
-    .plyr__poster {
-        border-radius: 50px 0 0 50px !important;
-    }
+    /*.plyr__poster {*/
+    /*    border-radius: 50px 0 0 50px;*/
+    /*}*/
 }
 
 .plyr--stopped.plyr__poster-enabled .plyr__poster {

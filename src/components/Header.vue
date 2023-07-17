@@ -73,10 +73,10 @@ window.onscroll = function() {
                   <a href="#" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a href="#" class="list header__item">Яндекс.Станции</a>
+                  <a href="#/yandex-station" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a href="#" class="list header__item">Накладки на стики</a>
+                  <a href="#/nozzles" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
                   <a href="#" class="list header__item">Геймпады</a>
@@ -90,16 +90,16 @@ window.onscroll = function() {
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#sterio" class="list header__item">Стереосистема</a>
+                  <a href="#" class="list header__item">Стереосистема</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#" class="list header__item">Sony Playstation</a>
+                  <a href="#/sony" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="list header__item">Яндекс.Станции</a>
+                  <a href="#/yandex-station" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#" class="list header__item">Накладки на стики</a>
+                  <a href="#/nozzles" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item">
                   <a href="#" class="list header__item">Геймпады</a>

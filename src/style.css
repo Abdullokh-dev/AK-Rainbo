@@ -47,7 +47,6 @@ b {
 
 .btn-txt {
   font-size: 20px;
-  font-weight: 600;
   line-height: normal;
 }
 
@@ -60,7 +59,7 @@ b {
 }
 
 @media screen and (max-width:1199px) {
-  .medium-title {
+  .title-md {
     font-size: 35px;
   }
 
@@ -69,7 +68,7 @@ b {
   }
 }
 @media screen and (max-width:575px) {
-  .medium-title {
+  .title-md {
     font-size: 24px;
   }
 

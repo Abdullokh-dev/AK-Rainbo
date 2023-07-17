@@ -3,18 +3,19 @@
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center nozzleMain-bg">
+  <div class="row d-flex justify-content-center nozzleMain-bg position-relative h-100">
     <div class="col-12 col-xxl-11 col-xxxl-10">
 
       <div class="row">
         <div class="col">
+          <video class="background-video" preload="auto" autoplay="1" loop muted="1">
+            <source src="../assets/videos/Nozzles.mp4" type="video/mp4">
+          </video>
+
           <div class="nozzleMain-box">
-            <video class="background-video" preload="auto" autoplay="1" loop muted="1">
-              <source src="../assets/videos/Nozzles.mp4" type="video/mp4">
-            </video>
-            <h1 class="nozzleMain__title">Насадки на стики геймпада</h1>
+            <h1 class="nozzleMain__title title-md">Насадки на стики геймпада</h1>
             <div class="mt-5">
-              <a href="#" class="nozzleMain-btn">Купить</a>
+              <a href="https://rainboskin.me/aksessuary/" class="nozzleMain-btn" target="_blank">Купить</a>
             </div>
           </div>
         </div>
@@ -30,20 +31,19 @@
   width: 100%;
   object-fit: cover;
   position: absolute;
-  z-index: -1;
+  z-index: 1;
   inset: 0;
   pointer-events: none;
 }
 
 .nozzleMain-box {
+  z-index: 1;
+  position: relative;
   margin: 385px 0;
 }
 
 .nozzleMain__title {
-  font-size: 50px;
-  font-weight: 600;
   color: black;
-  line-height: 65px;
   max-width: 448px;
 }
 
@@ -58,11 +58,6 @@
 }
 
 @media screen and (max-width:1199px) {
-  .nozzleMain__title {
-    font-size: 35px;
-    line-height: normal;
-  }
-
   .nozzleMain-box {
     margin: 258px 0;
   }
@@ -70,7 +65,6 @@
 
 @media screen and (max-width:575px) {
   .nozzleMain__title {
-    font-size: 24px;
     max-width: 234px;
   }
 

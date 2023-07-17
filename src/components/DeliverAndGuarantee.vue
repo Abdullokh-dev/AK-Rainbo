@@ -19,10 +19,10 @@ const toggleSecond = () => {
         </div>
 
         <div class="col-12 col-lg-6">
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between" @click="toggle" data-bs-toggle="collapse" data-bs-target="#deliver" aria-expanded="false" aria-controls="collapseExample">
             <h3 class="text-black deliver-title">Доставка</h3>
-            <button class="bg-white me-4" type="button" data-bs-toggle="collapse" data-bs-target="#deliver" aria-expanded="false" aria-controls="collapseExample">
-              <svg id="toggle-btn" @click="toggle" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="bg-white me-4" type="button">
+              <svg id="toggle-btn" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" fill="black"/>
               </svg>
             </button>
@@ -40,10 +40,10 @@ const toggleSecond = () => {
         </div>
 
         <div class="col-12 col-lg-6">
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between" @click="toggleSecond" data-bs-toggle="collapse" data-bs-target="#guarantee" aria-expanded="false" aria-controls="collapseExample">
             <h3 class="text-black deliver-title">Гарантия</h3>
-            <button class="bg-white me-4" type="button" data-bs-toggle="collapse" data-bs-target="#guarantee" aria-expanded="false" aria-controls="collapseExample">
-              <svg id="toggle-btn-second" @click="toggleSecond" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+            <button class="bg-white me-4" type="button">
+              <svg id="toggle-btn-second" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
                 <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" fill="black"/>
               </svg>
             </button>
@@ -62,7 +62,7 @@ const toggleSecond = () => {
                 Вам необходимо связаться по т. 7 (495) 197-66-68 или e-mail: hello@rainboskin.me
               </p>
               <div class="mt-3 mt-lg-5 py-3">
-                <a class="service-btn" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/">
+                <a class="service-btn" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/" target="_blank">
                   Сервисный центр
                 </a>
               </div>
@@ -116,9 +116,9 @@ const toggleSecond = () => {
 }
 
 #toggle-btn, #toggle-btn-second {
-  -moz-transition: all .3s linear;
-  -webkit-transition: all .3s linear;
-  transition: all .3s linear;
+  -moz-transition: all .2s linear;
+  -webkit-transition: all .2s linear;
+  transition: all .2s linear;
 }
 #toggle-btn.down, #toggle-btn-second.down {
   -moz-transform:rotate(45deg);
@@ -172,5 +172,4 @@ const toggleSecond = () => {
     padding: 11px 35px;
   }
 }
-
 </style>
