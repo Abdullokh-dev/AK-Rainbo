@@ -148,6 +148,10 @@
   .can-buy-section .text-block_second {
     margin-top: -50px;
   }
+
+  .can-buy-section__title {
+    margin-top: 50px;
+  }
 }
 @media screen and (max-width: 575px) {
   .can-buy-section .text-block {

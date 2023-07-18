@@ -62,7 +62,7 @@ onMounted(() => {
 .gamePodStick .__title {
   font-size: 24px;
   font-weight: 700;
-  line-height: 31px;
+  line-height: 130%;
 }
 
 .gamePodStick .__info {
@@ -78,8 +78,13 @@ onMounted(() => {
     margin: 100px 0 50px 0;
   }
 
+  .gamePodStick .__title {
+    font-size: 20px;
+  }
+
   .gamePodStick .__info {
     font-size: 17px;
+    margin: 7px 0 25px 0;
   }
 }
 @media screen and (max-width:575px) {
@@ -88,8 +93,13 @@ onMounted(() => {
     margin: 50px 0 25px 0;
   }
 
+  .gamePodStick .__title {
+    font-size: 22px;
+  }
+
   .gamePodStick .__info {
     font-size: 15px;
+    margin: 5px 0 15px 0;
   }
 }
 </style>
