@@ -54,7 +54,7 @@ b {
   cursor: pointer;
 }
 
-.underline {
+._underline:hover {
   text-decoration: underline !important;
 }
 

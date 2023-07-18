@@ -60,11 +60,11 @@ const toggleSecond = () => {
               <p class="__info">
                 Гарантийный срок на изделие указан в инструкции по эксплуатации. При возникновении гарантийного случая
                 Вам необходимо связаться по т.
-                <a href="tel:+74951976668" class="text-black underline">7 (495) 197-66-68</a>
+                <a href="tel:+74951976668" class="text-black _underline">7 (495) 197-66-68</a>
                 или e-mail:
-                <a class="text-black underline" href="mailto:hello@rainboskin.me">hello@rainboskin.me</a>
+                <a class="text-black _underline" href="mailto:hello@rainboskin.me">hello@rainboskin.me</a>
               </p>
-              <div class="mt-3 mt-lg-4 pt-lg-4 pb-lg-3">
+              <div class="mt-3 py-2 py-sm-3 py-md-4 mt-lg-4 pt-lg-4 pb-lg-3">
                 <a class="service-btn" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/" target="_blank">
                   Сервисный центр
                 </a>
@@ -128,6 +128,7 @@ const toggleSecond = () => {
   -webkit-transition: all .2s linear;
   transition: all .2s linear;
 }
+
 #toggle-btn.down, #toggle-btn-second.down {
   -moz-transform:rotate(45deg);
   -webkit-transform:rotate(45deg);

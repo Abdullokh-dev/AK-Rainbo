@@ -103,6 +103,7 @@
 }
 
 .can-buy-section ._bold {
+  font-size: 24px;
   font-weight: 700;
 }
 
@@ -114,12 +115,16 @@
 
 .can-buy-section .__btn {
   margin-left: 84px;
+  transition: background-color .3s;
   background-color: #CD0413;
   color: white;
   border-radius: 50rem;
   padding: 13px 28px;
 }
 
+.can-buy-section .__btn:hover {
+  background-color: rgba(205, 4, 19, 0.8);
+}
 
 @media screen and (max-width: 1199px) {
   .can-buy-section .text-block {
@@ -128,6 +133,10 @@
 
   .can-buy-section .__text {
     font-size: 17px;
+  }
+
+  .can-buy-section ._bold {
+    font-size: 22px;
   }
 
   .can-buy-section .__icon {
@@ -158,6 +167,10 @@
     margin-top: 24px;
   }
 
+  .can-buy-section ._bold {
+    font-size: 20px;
+  }
+
   .can-buy-section .__text {
     font-size: 15px;
   }
@@ -166,6 +179,5 @@
   .can-buy-section .__img-2 {
     margin-top: -70px;
   }
-
 }
 </style>
