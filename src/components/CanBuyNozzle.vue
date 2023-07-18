@@ -1,4 +1,41 @@
 <script setup>
+import {onMounted, reactive} from "vue";
+import { useWindowSize } from '@vueuse/core'
+const { width } = useWindowSize()
+
+const items = reactive({
+  first: '',
+  second: '',
+  third: '',
+  fourth: '',
+})
+
+onMounted(() => {
+  items.first = document.getElementById('football')
+  items.second = document.getElementById('texture')
+  items.third = document.getElementById('gamer')
+  items.fourth = document.getElementById('warn')
+})
+
+const hoverElement = (order) => {
+  if (order === 1 && width.value > 991) {
+    items.first.style.cssText += 'display:none;'
+    items.second.style.cssText += 'display:block;'
+  } else if(order === 2 && width.value > 991) {
+    items.third.style.cssText += 'display:none;'
+    items.fourth.style.cssText += 'display:block;'
+  }
+}
+
+const unHoverElement = (order) => {
+  if (order === 1 && width.value > 991) {
+    items.first.style.cssText += 'display:block;'
+    items.second.style.cssText += 'display:none;'
+  } else if(order === 2 && width.value > 991){
+    items.third.style.cssText += 'display:block;'
+    items.fourth.style.cssText += 'display:none;'
+  }
+}
 
 </script>
 
@@ -20,7 +57,8 @@
           <div>
             <img src="../assets/images/Nozzles/icon-1.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black __text"><b class="_bold">Коллекция футбол</b>
+          <p class="text-black __text">
+            <b class="_bold">Коллекция футбол</b>
             – Мы единственная  компания, производящая лицензионные накладки стики в дизайне клубов: Спартак, ЦСКА,
             Динамо, Зенит, Локомотив и т.д.
           </p>
@@ -29,15 +67,19 @@
 
       <div class="row mt-4 pt-lg-3">
         <div class="col-12 d-flex">
-          <div><img src="../assets/images/Nozzles/icon-2.png" alt="#" height="126" class="__icon"></div>
-          <p class="text-black __text"><b class="_bold">Коллекция текстура</b>
+          <div class="pointer" @mouseenter="hoverElement(1)" @mouseleave="unHoverElement(1)">
+            <img src="../assets/images/Nozzles/icon-2.png" alt="#" height="126" class="__icon">
+          </div>
+          <p class="text-black __text pointer" @mouseenter="hoverElement(1)" @mouseleave="unHoverElement(1)">
+            <b class="_bold">Коллекция текстура</b>
             – Одноцветные накладки с необычной формой обеспечат нужную эргономику
           </p>
         </div>
       </div>
     </div>
     <div class="col-12 col-lg-6 col-xxl-5 p-0 overflow-none d-flex justify-content-start justify-content-md-end">
-      <img src="../assets/images/Nozzles/img.png" class="__img-1" alt="#">
+      <img id="football" src="../assets/images/Nozzles/img.png" class="__img-1" alt="#">
+      <img id="texture" src="../assets/images/Nozzles/img_3.png" class="__img-1" alt="#" style="display: none">
     </div>
   </div>
 
@@ -57,8 +99,11 @@
 
       <div class="row mt-3">
         <div class="col-12 d-flex mt-2 mt-lg-4 pt-lg-3">
-          <div><img src="../assets/images/Nozzles/icon-4.png" alt="#" height="126" class="__icon"></div>
-          <p class="text-black __text"><b class="_bold">Коллекция воин</b>
+          <div class="pointer" @mouseenter="hoverElement(2)" @mouseleave="unHoverElement(2)">
+            <img src="../assets/images/Nozzles/icon-4.png" alt="#" height="126" class="__icon">
+          </div>
+          <p class="text-black __text pointer" @mouseenter="hoverElement(2)" @mouseleave="unHoverElement(2)">
+            <b class="_bold d-none d-lg-block">Коллекция воин</b>
             – Для любителей файтинга и шутеров с черепами, оружием прицелами и т.д.
           </p>
         </div>
@@ -71,7 +116,8 @@
     </div>
 
     <div class="col-12 col-lg-6 p-0 d-flex justify-content-end justify-content-sm-start">
-      <img src="../assets/images/Nozzles/img_1.png" alt="#" class="__img-2">
+      <img id="gamer" class="__img-2" src="../assets/images/Nozzles/img_1.png" alt="#">
+      <img id="warn" class="__img-2" src="../assets/images/Nozzles/img_2.png" alt="#" style="display: none">
     </div>
   </div>
 </template>
@@ -93,6 +139,7 @@
   min-width: 433px;
   max-width: 866px;
   margin-top: 75px;
+  animation: slideaway .3s;
 }
 
 .can-buy-section .__text {
@@ -151,6 +198,11 @@
   .can-buy-section .__btn {
     margin-left: 54px
   }
+}
+
+@keyframes slideaway {
+  from { opacity: 0;}
+  to { display: block; }
 }
 
 @media screen and (max-width: 991px) {
