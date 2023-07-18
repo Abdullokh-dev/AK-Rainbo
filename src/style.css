@@ -29,6 +29,7 @@ button {
   border-radius: 50rem;
   font-weight: 400;
   cursor: pointer;
+  background: none;
 }
 
 b {

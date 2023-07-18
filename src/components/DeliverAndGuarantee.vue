@@ -1,4 +1,11 @@
 <script setup>
+defineProps({
+  color: {
+    type: String,
+    default: "black"
+  }
+})
+
 const toggle = () => {
   document.getElementById('toggle-btn').classList.toggle("down")
 }
@@ -6,29 +13,28 @@ const toggle = () => {
 const toggleSecond = () => {
   document.getElementById('toggle-btn-second').classList.toggle("down")
 }
-
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center bg-white">
+  <div class="row d-flex justify-content-center" :style="{color: color}">
     <div class="col-12 col-xxl-11 col-xxxl-10 deliver-guarantee">
 
       <div class="row">
         <div class="col-12 text-center">
-          <h2 class="__title text-black">Доставка и гарантия</h2>
+          <h2 class="__title">Доставка и гарантия</h2>
         </div>
 
         <div class="col-12 col-lg-6">
           <div class="d-flex justify-content-between pointer" @click="toggle" data-bs-toggle="collapse" data-bs-target="#deliver" aria-expanded="false" aria-controls="collapseExample">
-            <h3 class="text-black deliver-title">Доставка</h3>
-            <button class="bg-white p-0 me-lg-4" type="button">
+            <h3 class="deliver-title">Доставка</h3>
+            <button class="p-0 me-lg-4" type="button">
               <svg id="toggle-btn" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" fill="black"/>
+                <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" :fill="color"/>
               </svg>
             </button>
           </div>
           <div class="collapse toggle-box" id="deliver">
-            <div class="text-black">
+            <div>
               <p class="__info">Доставка по Москве осуществляется компанией СДЭК.</p>
               <p class="__info">Самовывоз – бесплатно. Пункт выдачи заказов находится по адресу: г.Подольск, ул. Комсомольская д.1</p>
               <p class="__info">График работы Пн-Пт - с 10:00 до 17:00. Доставка по России осуществляется компанией СДЭК, либо по адресу, либо в пункт самовывоза, при полной оплате любого товара</p>
@@ -36,20 +42,20 @@ const toggleSecond = () => {
               <p class="__info pb-4">Доставка в страны СНГ осуществляется Почтой России или СДЭК при полной оплате любого товара.</p>
             </div>
           </div>
-          <div class="my_hr my-3"></div>
+          <div class="my_hr my-3" :style="{borderBottomColor: color}"></div>
         </div>
 
         <div class="col-12 col-lg-6">
           <div class="d-flex justify-content-between pointer" @click="toggleSecond" data-bs-toggle="collapse" data-bs-target="#guarantee" aria-expanded="false" aria-controls="collapseExample">
-            <h3 class="text-black deliver-title">Гарантия</h3>
-            <button class="bg-white p-0 me-lg-4" type="button">
+            <h3 class="deliver-title">Гарантия</h3>
+            <button class="p-0 me-lg-4" type="button">
               <svg id="toggle-btn-second" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" fill="black"/>
+                <path d="M18.067 18.2179L31.9863 18.2483C32.1439 18.2495 32.3003 18.2193 32.4462 18.1595C32.5921 18.0997 32.7247 18.0114 32.8363 17.8999C32.9478 17.7884 33.0361 17.6558 33.0959 17.5098C33.1557 17.3639 33.1859 17.2076 33.1847 17.0499C33.1825 16.385 32.6407 15.8432 31.9758 15.841L18.0684 15.8107L18.0771 1.7355C18.0783 1.06719 17.5366 0.52542 16.8682 0.52664C16.1991 0.528704 15.6559 1.07193 15.6546 1.74024L15.6459 15.8053L1.56993 15.7741C0.904994 15.772 0.368533 16.3084 0.371542 16.9725C0.373703 17.6375 0.915472 18.1792 1.58041 18.1814L15.6445 18.2125L15.6358 32.2317C15.6346 32.9 16.1763 33.4418 16.8447 33.4406C17.5138 33.4385 18.057 32.8953 18.0583 32.227L18.067 18.2179Z" :fill="color"/>
               </svg>
             </button>
           </div>
           <div class="collapse toggle-box" id="guarantee">
-            <div class="text-black">
+            <div>
               <p class="__info">Вся продукция Рейнбо покрывается гарантией (1 год на электронику и 3 месяца на лакокрасочное покрытие).</p>
               <p class="__info">
                 Приобретая продукцию компании RAINBO, вы приобретаете абсолютно новую продукцию с гарантией. Вся продукция
@@ -60,9 +66,9 @@ const toggleSecond = () => {
               <p class="__info">
                 Гарантийный срок на изделие указан в инструкции по эксплуатации. При возникновении гарантийного случая
                 Вам необходимо связаться по т.
-                <a href="tel:+74951976668" class="text-black _underline">7 (495) 197-66-68</a>
+                <a href="tel:+74951976668" class="_underline" :style="{color: color}">7 (495) 197-66-68</a>
                 или e-mail:
-                <a class="text-black _underline" href="mailto:hello@rainboskin.me">hello@rainboskin.me</a>
+                <a class="_underline" href="mailto:hello@rainboskin.me" :style="{color: color}">hello@rainboskin.me</a>
               </p>
               <div class="mt-3 py-2 py-sm-3 py-md-4 mt-lg-4 pt-lg-4 pb-lg-3">
                 <a class="service-btn" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/" target="_blank">
@@ -98,7 +104,7 @@ const toggleSecond = () => {
 }
 
 .my_hr {
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid;
 }
 
 .toggle-box .__info {
