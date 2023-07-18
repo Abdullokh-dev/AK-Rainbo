@@ -185,12 +185,17 @@ const unHoverFirst = (element) => {
 
 .chooseCustomStation .__btn {
   background-color: #6337FF;
+  transition: background-color 0.3s;
   color: white;
   padding: 13px 96px;
   border-radius: 50rem;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
+}
+
+.chooseCustomStation .__btn:hover {
+  background-color: rgba(99, 55, 255, 0.8);
 }
 
 .slider-custom img {

@@ -50,6 +50,14 @@ b {
   line-height: normal;
 }
 
+.pointer {
+  cursor: pointer;
+}
+
+.underline {
+  text-decoration: underline !important;
+}
+
 .bg-info {
   background-color: aqua;
 }
