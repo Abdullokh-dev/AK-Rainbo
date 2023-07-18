@@ -49,12 +49,17 @@
 
 .nozzleMain-btn {
   color: black;
+  transition: background-color .3s;
   background-color: #FF6891;
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
   padding: 13px 90px;
   border-radius: 50rem;
+}
+
+.nozzleMain-btn:hover {
+  background-color: rgba(255, 104, 145, 0.8);
 }
 
 @media screen and (max-width:1199px) {
