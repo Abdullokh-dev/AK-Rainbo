@@ -16,11 +16,11 @@ onMounted(() => {
 })
 
 const hoverElement = (element) => {
-  element.style.cssText += 'display:inline;margin:auto;'
+  element.style.cssText += 'opacity: 1;margin:auto;'
 }
 
 const unHoverElement = (element) => {
-  element.style.cssText += "display:none;"
+  element.style.cssText += "opacity: 0;"
 }
 
 </script>
@@ -130,7 +130,8 @@ const unHoverElement = (element) => {
 .choose-custom-img .__img-2,
 .choose-custom-img .__img-3,
 .choose-custom-img .__img-4 {
-  display: none;
+  opacity: 0;
+  transition: opacity .3s;
   position: absolute;
   top: 0;
   right: 0;

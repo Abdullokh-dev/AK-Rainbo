@@ -183,7 +183,8 @@
 }
 
 .characters__img-box .img-colored {
-  display: none;
+  transition: opacity .3s;
+  opacity: 0;
   position: absolute;
   top: 0;
   right: 0;
@@ -192,7 +193,7 @@
 }
 
 .characters__img-box:hover .img-colored {
-  display: inline;
+  opacity: 1;
   margin: auto !important;
 }
 
