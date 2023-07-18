@@ -7,7 +7,6 @@ const footer = ref('');
 
 // todo
 const fixColor = () => {
-  console.log(route.path)
   switch(route.path) {
     case '/yandex-station':
       container.value.style.background = 'white'

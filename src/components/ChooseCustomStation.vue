@@ -1,11 +1,12 @@
 <script setup>
+import {onMounted, reactive} from "vue";
+
 const items = reactive({
   first: '',
   second: '',
   third: '',
   fourth: '',
 })
-import {onMounted, reactive} from "vue";
 
 onMounted(() => {
   items.first = document.getElementById('kids')
@@ -14,11 +15,11 @@ onMounted(() => {
   items.fourth = document.getElementById('street')
 })
 
-const hoverFirst = (element) => {
+const hoverElement = (element) => {
   element.style.cssText += 'display:inline;margin:auto;'
 }
 
-const unHoverFirst = (element) => {
+const unHoverElement = (element) => {
   element.style.cssText += "display:none;"
 }
 
@@ -83,16 +84,16 @@ const unHoverFirst = (element) => {
       <div class="row d-none d-lg-block">
         <div class="col-6">
           <p class="__info">
-            <b class="_bold _kids" @mouseenter="hoverFirst(items.first)" @mouseleave="unHoverFirst(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
+            <b class="_bold _kids" @mouseenter="hoverElement(items.first)" @mouseleave="unHoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
           </p>
           <p class="__info">
-            <b class="_bold _romantic" @mouseenter="hoverFirst(items.second)" @mouseleave="unHoverFirst(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
+            <b class="_bold _romantic" @mouseenter="hoverElement(items.second)" @mouseleave="unHoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
           </p>
           <p class="__info">
-            <b class="_bold _sport" @mouseenter="hoverFirst(items.third)" @mouseleave="unHoverFirst(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
+            <b class="_bold _sport" @mouseenter="hoverElement(items.third)" @mouseleave="unHoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
           </p>
           <p class="__info">
-            <b class="_bold _street" @mouseenter="hoverFirst(items.fourth)" @mouseleave="unHoverFirst(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
+            <b class="_bold _street" @mouseenter="hoverElement(items.fourth)" @mouseleave="unHoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
           <div class="mt-5 pt-3">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn"> Купить </a>
@@ -105,7 +106,7 @@ const unHoverFirst = (element) => {
             <img class="__img-2" id="romantic" src="../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
             <img class="__img-3" id="sport" src="../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
             <img class="__img-4" id="street" src="../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
-            <img id="default-kids" src="../assets/images/YandexStation/choose-1.png" alt="#">
+            <img src="../assets/images/YandexStation/choose-1.png" alt="#">
           </div>
         </div>
       </div>
