@@ -3,7 +3,7 @@
 </script>
 
 <template>
-<footer class="row d-flex justify-content-center">
+<footer id="footer" class="row d-flex justify-content-center">
   <div class="col-12 col-xxl-10 pt-xxl-4">
     <div class="row">
 

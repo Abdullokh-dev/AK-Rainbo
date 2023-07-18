@@ -16,15 +16,10 @@ onMounted(() => {
 
 <template>
   <div class="row d-flex justify-content-center">
-    <div class="col-12 col-xxl-11 col-xxxl-10">
-
-      <div class="row">
-        <div class="col">
-          <h2 class="gamePodStick__title title-md text-black">
-            Насадки на стики геймпада Rainbo
-          </h2>
-        </div>
-      </div>
+    <div class="col col-12 col-xxl-11 col-xxxl-10">
+      <h2 class="gamePodStick__title title-md text-black">
+        Насадки на стики геймпада Rainbo
+      </h2>
     </div>
   </div>
 
@@ -46,7 +41,7 @@ onMounted(() => {
       </p>
     </div>
 
-    <div class="col-12 col-lg-6 col-xxl-6 bg-warning p-0 my-auto">
+    <div class="col-12 col-lg-6 col-xxl-6 flex-col p-0 my-auto">
       <video id="player-2" data-poster="./data-poster.png">
         <source src="../assets/videos/video.mp4" type="video/mp4">
       </video>
@@ -117,6 +112,11 @@ onMounted(() => {
 @media only screen and (max-width: 1514px) and (min-width: 1399px)  {
   .flex-margin-left {
     padding-left: 5.1111% !important;
+  }
+
+  .flex-col {
+    display: flex;
+    width: 58%;
   }
 }
 </style>

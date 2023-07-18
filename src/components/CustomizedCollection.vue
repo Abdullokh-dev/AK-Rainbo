@@ -14,47 +14,35 @@
           <div class="row">
             <div class="col-12 col-md-6 mt-2 mt-sm-3 mt-md-0">
               <ul class="list-unstyled customizedCollection-ul ps-4">
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#6337FF"/>
-                    </svg>
-                    Четкость рисунка
-                  </li>
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#F4414E"/>
-                    </svg>
-                    Насыщенность цветов
-                  </li>
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#FBD301"/>
-                    </svg>
-                    Нанесение технически сложных элементов
-                  </li>
-                </ul>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#6337FF"/></svg>
+                  Четкость рисунка
+                </li>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F4414E"/></svg>
+                  Насыщенность цветов
+                </li>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#FBD301"/></svg>
+                  Нанесение технически сложных элементов
+                </li>
+              </ul>
             </div>
             <div class="col-12 col-md-6 d-flex">
               <ul class="list-unstyled customizedCollection-ul ps-4">
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#10D8D9"/>
-                    </svg>
-                    Износостойкое финишное покрытие
-                  </li>
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#F81478"/>
-                    </svg>
-                    Заводская гарантия
-                  </li>
-                  <li class="list">
-                    <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-                      <circle cx="5" cy="5" r="5" fill="#CCA370"/>
-                    </svg>
-                    Доставка по России
-                  </li>
-                </ul>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#10D8D9"/></svg>
+                  Износостойкое финишное покрытие
+                </li>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F81478"/></svg>
+                  Заводская гарантия
+                </li>
+                <li class="list">
+                  <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#CCA370"/></svg>
+                  Доставка по России
+                </li>
+              </ul>
             </div>
           </div>
 
@@ -104,7 +92,7 @@
   max-width: 1420px;
 }
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width: 1199px) {
   .gamePodStick__title {
     margin: 50px 0 10px 0;
     font-size: 35px;
@@ -125,12 +113,14 @@
     font-size: 20px;
   }
 }
-@media screen and (max-width:767px) {
+
+@media screen and (max-width: 767px) {
   .customizedCollection-ul {
     margin: 0;
   }
 }
-@media screen and (max-width:575px) {
+
+@media screen and (max-width: 575px) {
   .gamePodStick__title {
     font-size: 24px;
     line-height: 31px;
