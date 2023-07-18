@@ -27,7 +27,7 @@
         </div>
       </div>
 
-      <div class="row mt-3">
+      <div class="row mt-4 pt-lg-3">
         <div class="col-12 d-flex">
           <div><img src="../assets/images/Nozzles/icon-2.png" alt="#" height="126" class="__icon"></div>
           <p class="text-black __text"><b class="_bold">Коллекция текстура</b>
@@ -56,13 +56,13 @@
       </div>
 
       <div class="row mt-3">
-        <div class="col-12 d-flex">
+        <div class="col-12 d-flex mt-2 mt-lg-4 pt-lg-3">
           <div><img src="../assets/images/Nozzles/icon-4.png" alt="#" height="126" class="__icon"></div>
           <p class="text-black __text"><b class="_bold">Коллекция воин</b>
             – Для любителей файтинга и шутеров с черепами, оружием прицелами и т.д.
           </p>
         </div>
-        <div class="mt-4 pt-2">
+        <div class="mt-4 pt-3">
           <a href="https://rainboskin.me/aksessuary/" class="__btn" target="_blank">
             Выберите свой дизайн
           </a>
