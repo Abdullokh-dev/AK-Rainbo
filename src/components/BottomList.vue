@@ -16,13 +16,13 @@ defineProps({
           <a href="#" :style="{color: color}">Стереосистема RAINBO TECHNICS</a>
         </li>
         <li class="_list">
-          <a href="#/sony" :style="{color: color}">Sony Playstation</a>
+          <a href="#/playstation" :style="{color: color}">Sony Playstation</a>
         </li>
         <li class="_list">
           <a href="#/yandex-station" :style="{color: color}">Яндекс.Станции</a>
         </li>
         <li class="_list">
-          <a href="#" :style="{color: color}">Геймпады</a>
+          <a href="#/gamepads" :style="{color: color}">Геймпады</a>
         </li>
       </ul>
     </div>

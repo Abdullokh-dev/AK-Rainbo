@@ -6,6 +6,7 @@ import Header from "../components/Header.vue";
 import Ps5DualSense from "../components/Ps5DualSense.vue";
 import BottomList from "../components/BottomList.vue";
 import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
+import DualShock4 from "../components/DualShock4.vue";
 </script>
 
 <template>
@@ -13,6 +14,7 @@ import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
   <GamePadsMain />
   <DualSense />
   <Ps5DualSense />
+  <DualShock4 />
   <DeliverAndGuarantee color="white"/>
   <BottomList color="white"/>
 </template>

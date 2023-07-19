@@ -48,12 +48,13 @@
   background: #161616;
   border-radius: 0 0 375px 0;
   height: 100%;
-  z-index: -1;
+  z-index: 0;
   margin-right: -120px;
   width: calc(50% + 120px);
 }
 
 .background-right {
+  z-index: 0;
   background: #20211D;
   height: calc(100% - 40px);
   margin-left: -120px;

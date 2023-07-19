@@ -4,6 +4,7 @@ import HomePod from "../pages/HomePod.vue"
 import Nozzles from "../pages/Nozzles.vue"
 import YandexStation from "../pages/YandexStation.vue"
 import GamePads from "../pages/GamePads.vue"
+import PlayStation from "../pages/PlayStation.vue"
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -34,6 +35,11 @@ const router = createRouter({
       path: '/gamepads',
       name: GamePads,
       component: GamePads
+    },
+    {
+      path: '/playstation',
+      name: PlayStation,
+      component: PlayStation
     },
     {
       path: '/:pathMatch(.*)*',

@@ -18,6 +18,10 @@ const fixColor = () => {
       container.value.style.background = '#1D1D1F'
       footer.value.style.background = 'black'
       break;
+    case '/playstation':
+      container.value.style.background = '#1D1D1F'
+      footer.value.style.background = 'black'
+      break;
     default:
       container.value.style.background = 'black'
       footer.value.style.background = '#1D1D1F'
