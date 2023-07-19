@@ -185,6 +185,7 @@
 .characters__img-box .img-colored {
   transition: opacity .3s;
   opacity: 0;
+  margin: auto !important;
   position: absolute;
   top: 0;
   right: 0;
@@ -194,7 +195,6 @@
 
 .characters__img-box:hover .img-colored {
   opacity: 1;
-  margin: auto !important;
 }
 
 .characters__img-box .__info,

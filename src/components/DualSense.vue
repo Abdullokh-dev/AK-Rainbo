@@ -44,7 +44,7 @@
     </div>
 
     <div class="col-12 col-lg-5 col-xxl-5 d-flex flex-col justify-content-end p-0">
-      <div>
+      <div class="my-auto">
         <img src="../assets/images/GamePads/img.png" width="1634" alt="#" class="__img">
       </div>
     </div>
