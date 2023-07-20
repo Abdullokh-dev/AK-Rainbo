@@ -7,7 +7,7 @@
   <div class="col-12 col-xxl-10 pt-xxl-4">
     <div class="row">
 
-      <div class="header__address col-12 col-lg-4 mt-4 pt-3 pt-xxl-0 mt-lg-4 ps-lg-4">
+      <div class="__address col-12 col-lg-4 mt-4 pt-3 pt-xxl-0 mt-lg-4 ps-lg-4">
         <div class="mt-2">
           <a href="#">
             <svg width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -26,7 +26,7 @@
       </div>
 
       <div class="col-12 col-lg-4 mt-3 mb-2 mt-lg-auto mb-lg-0">
-        <div class="d-flex justify-content-center footer__icons">
+        <div class="d-flex justify-content-center __icons">
           <a href="https://www.youtube.com/@rainbocustom3868" rel="nofollow" target="_blank" class="mt-lg-auto d-lg-flex">
             <svg class="social-youtube" width="49" height="49" viewBox="0 0 49 49" fill="none" xmlns="http://www.w3.org/2000/svg">
               <g clip-path="url(#clip0_53_581)">
@@ -92,7 +92,7 @@
         </div>
       </div>
 
-      <div class="header__contacts col-12 col-lg-4 mt-lg-4 pe-lg-4">
+      <div class="__contacts col-12 col-lg-4 mt-lg-4 pe-lg-4">
         <div>
           <a href="mailto:hello@rainboskin.me">hello@rainboskin.me</a>
         </div>
@@ -108,49 +108,49 @@
       </div>
     </div>
 
-    <div class="row footer__bottom mt-4">
-      <div class="col-12 col-lg-4 mt-3 ps-lg-4 __company">ООО "Рейнбо"</div>
+    <div class="row __bottom mt-4">
+      <div class="col-12 col-lg-4 mt-3 ps-lg-4 _company">ООО "Рейнбо"</div>
       <div class="col-12 col-lg-4 mt-2 text-center">
         <a href="#" rel="nofollow" target="_blank">Политика конфиденциальности</a>
       </div>
-      <div class="col-12 col-lg-4 mt-2 mb-3 mb-xxl-4 pe-lg-4 __crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="nowrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
+      <div class="col-12 col-lg-4 mt-2 mb-3 mb-xxl-4 pe-lg-4 _crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="nowrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
     </div>
   </div>
 </footer>
 </template>
 
 <style scoped>
-footer {
+#footer {
   background-color: #1D1D1F;
   border-radius: 100px 100px 0 0;
   font-size: 20px;
 }
 
-.header__address {
+#footer .__address {
   text-align: start;
 }
 
-.footer__icons {
+#footer .__icons {
   gap: 22px;
 }
 
-.header__contacts {
+#footer .__contacts {
   text-align: right;
 }
 
-.footer__bottom .__crew {
+#footer .__bottom ._crew {
   text-align: end;
 }
 
-.header__contacts a{
+#footer .__contacts a {
   color: white;
 }
 
-.footer__bottom {
+#footer .__bottom {
   color: #7B7B7B;
 }
 
-.footer__bottom a {
+#footer .__bottom a {
   color: #7B7B7B;
   border-bottom: 1px solid #7B7B7B;
 }
@@ -205,29 +205,29 @@ stop {
 }
 
 @media screen and (max-width:1400px) {
-  footer {
+  #footer {
     font-size: 17px;
     border-radius: 75px 75px 0 0;
   }
 
-  .header__address svg {
+  #footer .__address svg {
     width: 93px;
   }
 }
 
 @media screen and (max-width:991px) {
-  .header__address,
-  .footer__bottom,
-  .header__contacts,
-  .footer__bottom .__crew {
+  #footer .__address,
+  #footer .__bottom,
+  #footer .__contacts,
+  #footer .__bottom ._crew {
     text-align: center;
   }
 
-  .header__address svg {
+  #footer .__address svg {
     width: 73px;
   }
 
-  .footer__icons svg {
+  #footer .__icons svg {
     width: 40px;
   }
 
