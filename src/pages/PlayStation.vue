@@ -13,7 +13,7 @@ import Playstation4 from "../components/Playstation4.vue";
   <Header show-lists="false"/>
   <PlaystationMain />
   <CustomizePlaystation />
-  <Ps5DualSense />
+  <Ps5DualSense title="PLAYSTATION 5" />
   <Playstation4 />
   <DeliverAndGuarantee color="white"/>
   <BottomList color="white"/>

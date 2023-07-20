@@ -18,7 +18,7 @@
       </div>
       <div class="col-12 col-lg-6 content-right align-self-center align-self-xl-end">
         <div class="content-right__box ps-lg-5">
-          <img class="content-right__img" src="../assets/images/Playstation/img.png" alt="#" width="1458">
+          <img class="content-right__img" src="../assets/images/Playstation/main.png" alt="#" width="1458">
         </div>
       </div>
     </div>

@@ -9,7 +9,7 @@
 
     <div class="main-section__content col-xxl-11 col-xxxl-10">
       <div class="col-12 col-lg-6 content-left px-3 px-xxl-0">
-        <h1 class="main-section__title mt-5 mt-lg-0">
+        <h1 class="main-section__title uppercase mt-5 mt-lg-0">
           Стереосистема Rainbo Technics
         </h1>
         <p class="main-section__description mt-3 mt-lg-3">
@@ -78,7 +78,6 @@
   font-weight: 700;
   line-height: 73px;
   width: 600px;
-  text-transform: uppercase;
 }
 
 .main-section__description {

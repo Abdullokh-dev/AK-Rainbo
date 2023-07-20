@@ -46,7 +46,7 @@
 
     <div class="col-12 col-lg-7 col-xxl-7 align-self-end text-start flex-col">
       <div class="d-flex justify-content-end pe-4">
-          <img src="../assets/images/Playstation/img_3.png" width="1872" class="__img" alt="#" style="">
+          <img src="../assets/images/Playstation/both-ps.png" width="1872" class="__img" alt="#" style="">
       </div>
     </div>
   </div>

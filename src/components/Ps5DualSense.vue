@@ -1,4 +1,11 @@
 <script setup>
+defineProps({
+  title: {
+    type: String,
+    default: "геймпад DualSense PS5"
+  },
+})
+
 import "../assets/css/slick-carousel.css"
 import "../assets/css/slick-carousel-theme-md.css"
 </script>
@@ -7,7 +14,7 @@ import "../assets/css/slick-carousel-theme-md.css"
   <div class="row ps5 flex-lg-row-reverse">
     <div class="col-12 col-lg-6 d-flex">
       <div class="my-auto flex-width">
-        <h2 class="__title title-md">Кастомизированные <br> геймпад DualSense PS5</h2>
+        <h2 class="__title title-md"> Кастомизированные <br /> <span>{{title}}</span> </h2>
 
         <p class="__info mt-4 mt-lg-2 mt-xl-3 mt-xxl-5 mb-4 pe-5 pe-lg-0">
           <b class="_bold">У Вас есть возможность купить</b>
@@ -38,16 +45,19 @@ import "../assets/css/slick-carousel-theme-md.css"
           <img src="../assets/images/GamePads/slider.png" alt="#" class="mx-auto __img">
         </div>
         <div class="text-center">
-          <img src="../assets/images/GamePads/slider.png" alt="#" class="mx-auto __img">
+          <img src="../assets/images/Playstation/slide-1.png" alt="#" class="mx-auto __img">
         </div>
         <div class="text-center">
-          <img src="../assets/images/GamePads/slider.png" alt="#" class="mx-auto __img">
+          <img src="../assets/images/Playstation/slide-2.png" alt="#" class="mx-auto __img">
         </div>
         <div class="text-center">
-          <img src="../assets/images/GamePads/slider.png" alt="#" class="mx-auto __img">
+          <img src="../assets/images/Playstation/slide-3.png" alt="#" class="mx-auto __img">
         </div>
         <div class="text-center">
-          <img src="../assets/images/GamePads/slider.png" alt="#" class="mx-auto __img">
+          <img src="../assets/images/Playstation/slide-4.png" alt="#" class="mx-auto __img">
+        </div>
+        <div class="text-center">
+          <img src="../assets/images/Playstation/slide-5.png" alt="#" class="mx-auto __img">
         </div>
       </section>
     </div>

@@ -17,7 +17,7 @@ onMounted(() => {
 <div class="row mt-4 mt-lg-5 mb-5">
   <div class="col-12 col-xl-6 d-flex justify-content-center mt-xl-5">
     <div class="about-team__left">
-      <h2 class="team-title">Мы Команда Rainbo!</h2>
+      <h2 class="team-title uppercase">Мы Команда Rainbo!</h2>
       <p class="team-description">
         <b>Производим</b> электронные гаджеты, серийно кастомизируем игровые приставки и геймпады, а также осуществляем профессиональный ремонт.
       </p>
@@ -98,7 +98,6 @@ onMounted(() => {
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
-  text-transform: uppercase;
 }
 
 .team-description {

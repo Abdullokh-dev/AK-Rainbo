@@ -10,7 +10,7 @@ defineProps({
 
 <template>
   <div class="row d-flex justify-content-center mb-4">
-    <div class="col-12 col-xxl-11 col-xxxl-10 p-0 d-none d-lg-block">
+    <div class="col-12 col-xxl-11 col-xxxl-10 p-0 d-none d-xl-block">
       <ul class="list-unstyled bottom-list p-0 d-flex justify-content-around">
         <li class="_list">
           <a href="#" :style="{color: color}">Стереосистема RAINBO TECHNICS</a>
