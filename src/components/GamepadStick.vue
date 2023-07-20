@@ -16,7 +16,7 @@ onMounted(() => {
 
 <template>
   <div class="row d-flex justify-content-center">
-    <div class="col col-12 col-xxl-11 col-xxxl-10">
+    <div class="col-12 ps-3 col-xxl-11 col-xxxl-10">
       <h2 class="gamePodStick__title title-lg text-black">
         Насадки на стики геймпада Rainbo
       </h2>
