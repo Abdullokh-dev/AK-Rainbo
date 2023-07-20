@@ -4,21 +4,19 @@
 
 <template>
   <div class="row d-flex justify-content-center bg-white">
-    <div class="col-12 col-xxl-11 col-xxxl-10">
-      <div class="row">
-        <div class="col">
-          <h2 class="gamePodStick__title">
+    <div class="col-12 col-xxl-11 col-xxxl-10 customized-collection">
+          <h2 class="__title text-black title-lg">
             Кастомизированная коллекция <br> Яндекс.Станции Лайт
           </h2>
 
           <div class="row">
             <div class="col-12 col-md-6 mt-2 mt-sm-3 mt-md-0">
-              <ul class="list-unstyled customizedCollection-ul ps-4">
-                <li class="list">
+              <ul class="list-unstyled ps-4">
+                <li>
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#6337FF"/></svg>
                   Четкость рисунка
                 </li>
-                <li class="list">
+                <li>
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F4414E"/></svg>
                   Насыщенность цветов
                 </li>
@@ -29,16 +27,16 @@
               </ul>
             </div>
             <div class="col-12 col-md-6 d-flex">
-              <ul class="list-unstyled customizedCollection-ul ps-4">
-                <li class="list">
+              <ul class="list-unstyled ps-4">
+                <li>
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#10D8D9"/></svg>
                   Износостойкое финишное покрытие
                 </li>
-                <li class="list">
+                <li>
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F81478"/></svg>
                   Заводская гарантия
                 </li>
-                <li class="list">
+                <li>
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#CCA370"/></svg>
                   Доставка по России
                 </li>
@@ -48,7 +46,7 @@
 
           <div class="row">
             <div class="col mt-sm-2">
-              <p class="customizedCollection__info mt-3">
+              <p class="__info mt-3">
                 Высочайшее качество кастомизации не оставит равнодушным никого. Кастомизированная Яндекс.Станции Лайт
                 станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении. Незамеченной остаться не
                 получится, она будет привлекать к себе внимание всех ваших гостей.
@@ -57,25 +55,19 @@
           </div>
         </div>
       </div>
-    </div>
-  </div>
 </template>
 
 <style scoped>
-.gamePodStick__title {
+.customized-collection .__title {
   margin: 110px 0 40px 0;
-  color: black;
-  font-size: 50px;
-  font-weight: 600;
-  line-height: 65px;
 }
 
-.customizedCollection-ul svg {
+.customized-collection svg {
   left: -20px;
   top: 10px;
 }
 
-.customizedCollection-ul .list {
+.customized-collection li {
   font-size: 24px;
   font-weight: 500;
   line-height: 130%;
@@ -84,7 +76,7 @@
   color: black;
 }
 
-.customizedCollection__info {
+.customized-collection .__info {
   color: black;
   font-size: 24px;
   font-weight: 500;
@@ -93,45 +85,34 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .gamePodStick__title {
+  .customized-collection .__title {
     margin: 50px 0 10px 0;
-    font-size: 35px;
-    line-height: normal;
   }
 
-  .customizedCollection-ul svg {
+  .customized-collection svg {
     left: -20px;
     top: 6px;
   }
 
-  .customizedCollection-ul .list,
-  .customizedCollection__info {
-    font-size: 20px;
-  }
-
-  .customizedCollection__info {
+  .customized-collection li,
+  .customized-collection .__info {
     font-size: 20px;
   }
 }
 
 @media screen and (max-width: 767px) {
-  .customizedCollection-ul {
+  .customized-collection ul {
     margin: 0;
   }
 }
 
 @media screen and (max-width: 575px) {
-  .gamePodStick__title {
-    font-size: 24px;
-    line-height: 31px;
-  }
-
-  .customizedCollection-ul .list,
-  .customizedCollection__info {
+  .customized-collection li,
+  .customized-collection .__info {
     font-size: 15px;
   }
 
-  .customizedCollection-ul svg {
+  .customized-collection svg {
     top: 4px;
   }
 }

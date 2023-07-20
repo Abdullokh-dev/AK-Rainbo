@@ -41,7 +41,7 @@
 
         <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-start justify-content-xl-end overflow-none">
           <div class="customize-img-box">
-            <img src="../assets/images/Home/colored-players.png" width="2159" alt="#" class="__img-1">
+            <img src="../../assets/images/Home/colored-players.png" width="2159" alt="#" class="__img-1">
           </div>
         </div>
       </div>
@@ -76,7 +76,7 @@
         </div>
 
         <div class="col-12 col-lg-6 mt-4 ps-lg-0 d-flex justify-content-center justify-content-lg-start">
-            <img class="playStations-img" src="../assets/images/Home/playStations.png" width="1398" alt="#">
+            <img class="playStations-img" src="../../assets/images/Home/playStations.png" width="1398" alt="#">
         </div>
       </div>
     </div>
@@ -107,7 +107,7 @@
         </div>
 
         <div class="col-12 mb-3 mb-lg-4 mb-xxl-5">
-          <img class="__image" src="../assets/images/Home/img.png" width="1606" alt="#">
+          <img class="__image" src="../../assets/images/Home/img.png" width="1606" alt="#">
         </div>
       </div>
     </div>
@@ -135,8 +135,8 @@
         </div>
 
         <div class="col-12 d-flex justify-content-between p-0 overflow-none">
-          <div><img class="__image-left" src="../assets/images/Home/nozzle.png" alt="#" width="774"></div>
-          <div class="__image-right-box"><img class="__image-right" src="../assets/images/Home/nozzle-2.png" alt="#" width="626"></div>
+          <div><img class="__image-left" src="../../assets/images/Home/nozzle.png" alt="#" width="774"></div>
+          <div class="__image-right-box"><img class="__image-right" src="../../assets/images/Home/nozzle-2.png" alt="#" width="626"></div>
         </div>
       </div>
     </div>

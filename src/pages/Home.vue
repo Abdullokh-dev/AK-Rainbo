@@ -1,9 +1,9 @@
 <script setup>
 
 import Header from "../components/Header.vue";
-import Main from "../components/Main.vue";
-import YandexBelt from "../components/YandexBelt.vue";
-import AboutTeam from "../components/AboutTeam.vue";
+import Main from "../components/Home/Main.vue";
+import YandexBelt from "../components/Home/YandexBelt.vue";
+import AboutTeam from "../components/Home/AboutTeam.vue";
 </script>
 
 <template>

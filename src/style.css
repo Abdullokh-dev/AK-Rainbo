@@ -20,16 +20,16 @@ h1, h2, h3, p {
   margin: 0;
 }
 
-a {
-  text-decoration: none !important;
-}
-
 button {
   border: none;
   border-radius: 50rem;
   font-weight: 400;
   cursor: pointer;
   background: none;
+}
+
+a {
+  text-decoration: none !important;
 }
 
 b {
@@ -62,6 +62,12 @@ b {
   line-height: normal;
 }
 
+.text-lg {
+  font-size: 24px !important;
+  font-weight: 500;
+  line-height: 130%;
+}
+
 .text-md {
   font-size: 20px !important;
   font-weight: 400;
@@ -71,6 +77,29 @@ b {
   font-size: 18px !important;
   font-weight: 400;
   line-height: 130%;
+}
+
+.video-content video {
+  height: 100vh;
+  width: 100%;
+  object-fit: cover;
+  position: absolute;
+  z-index: 1;
+  inset: 0;
+  pointer-events: none;
+}
+
+.video-content .__box {
+  margin-top: 40vh;
+  position: relative;
+  z-index: 1;
+}
+
+.video-content .__box .__btn {
+  color: white;
+  transition: background-color .3s;
+  padding: 13px 95px;
+  border-radius: 50rem;
 }
 
 /*-----------*/
@@ -121,6 +150,10 @@ b {
     font-size: 30px !important;
   }
 
+  .text-lg {
+    font-size: 20px !important;
+  }
+
   .text-md {
     font-size: 17px !important;
   }
@@ -129,6 +162,9 @@ b {
     font-size: 16px !important;
   }
 
+  .video-content .__box {
+    margin-top: 45vh;
+  }
 
   /*-----------*/
   .btn-txt {
@@ -149,8 +185,12 @@ b {
     font-size: 20px !important;
   }
 
-  .text-md, .text-sm {
+  .text-md, .text-sm, .text-lg {
     font-size: 15px !important;
+  }
+
+  .video-content .__box .__btn {
+    padding: 8px 58px;
   }
 
 

@@ -28,7 +28,7 @@
       </div>
       <div class="col-12 col-lg-6 content-right">
         <div class="__right-box">
-          <img class="content-right__img" src="../assets/images/Home/main-player.png" alt="#" width="1256">
+          <img class="content-right__img" src="../../assets/images/Home/main-player.png" alt="#" width="1256">
         </div>
       </div>
     </div>
