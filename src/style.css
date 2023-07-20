@@ -55,6 +55,10 @@ b {
   cursor: pointer;
 }
 
+.nowrap {
+  white-space: nowrap !important;
+}
+
 ._underline:hover {
   text-decoration: underline !important;
 }

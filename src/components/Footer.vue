@@ -113,7 +113,7 @@
       <div class="col-12 col-lg-4 mt-2 text-center">
         <a href="#" rel="nofollow" target="_blank">Политика конфиденциальности</a>
       </div>
-      <div class="col-12 col-lg-4 mt-2 mb-3 mb-xxl-4 pe-lg-4 __crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="_wrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
+      <div class="col-12 col-lg-4 mt-2 mb-3 mb-xxl-4 pe-lg-4 __crew">Разработка и поддержка: <a href="https://siteoffice.ru/" rel="nofollow" target="_blank" class="nowrap">OFFICE<span class="_dot">.</span> Media Crew</a></div>
     </div>
   </div>
 </footer>
@@ -140,10 +140,6 @@ footer {
 
 .footer__bottom .__crew {
   text-align: end;
-}
-
-.footer__bottom .__crew ._wrap {
-  white-space: nowrap;
 }
 
 .header__contacts a{
