@@ -6,17 +6,13 @@
   <!-- Main Title -->
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10 mb-3 mb-lg-5 mt-lg-3 mt-xl-5">
-      <div class="row">
-        <div class="col">
-          <div class="yandex__title-box mt-lg-5">
-            <h2 class="yandex__title m-0 p-0">Кастомизированные Яндекс.Станции и Sony Playstation</h2>
-          </div>
-        </div>
+      <div class="yandex__title-box mt-lg-5">
+        <h2 class="yandex__title m-0 p-0">Кастомизированные Яндекс.Станции и Sony Playstation</h2>
       </div>
     </div>
   </div>
   <!-- Yandex Customize Belt -->
-  <div class="row d-flex justify-content-center customize-box position-relative mt-2">
+  <div class="row d-flex justify-content-center customize-box radius-border position-relative mt-2">
     <div class="col-12 pt-2 col-xl-11 col-xxxl-10">
 
       <div class="row pb-lg-0">
@@ -52,7 +48,7 @@
     </div>
   </div>
   <!-- Yandex Console Belt -->
-  <div class="row d-flex justify-content-center customize-box_dark my-4">
+  <div class="row d-flex justify-content-center radius-border customize-box_dark my-4">
     <div class="col-12 pt-2 col-xxl-11 col-xxxl-10">
 
       <div class="row pb-lg-0">
@@ -89,7 +85,7 @@
   <!-- Nozzles -->
   <div class="row">
     <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4">
-      <div class="row playstation-card__left flex-lg-column-reverse">
+      <div class="row radius-border playstation-card__left flex-lg-column-reverse">
         <div class="col d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
             <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Геймпад Sony Playstation</h3>
@@ -117,10 +113,10 @@
     </div>
 
     <div class="col-12 col-lg-6 ps-lg-4">
-      <div class="row playstation-card__right flex-lg-column-reverse">
+      <div class="row radius-border playstation-card__right flex-lg-column-reverse">
         <div class="col-12 d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
-            <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Насадки на стики</h3>
+            <h3 class="__title mb-3 mb-lg-4 mb-xl-5 text-black">Насадки на стики</h3>
             <div class="mt-lg-3 mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
               <a href="#" class="yandex-station__button">
                 Узнать больше
@@ -160,17 +156,13 @@
 }
 
 .customize-box {
-  background-color: white;
+  background-color: #EEEEEE;
   color: black;
 }
 
-.customize-box_dark {
+.customize-box_dark,
+.playstation-card__left {
   background-color: #1D1D1F;
-  color: white;
-}
-
-.customize-box, .customize-box_dark {
-  border-radius: 100px;
 }
 
 .customize-title {
@@ -182,7 +174,6 @@
 .customize-description {
   font-size: 20px;
   font-weight: 400;
-  line-height: 24px;
   max-width: 466px;
 }
 
@@ -220,11 +211,6 @@
   max-width: 700px;
 }
 
-.playstation-card__left {
-  background-color: #1D1D1F;
-  border-radius: 100px;
-}
-
 .playstation-card__left .__image {
   width: 100%;
   max-width: 900px;
@@ -252,14 +238,11 @@
   margin-right: -8%;
 }
 
-.playstation-card__left .__title, .playstation-card__right .__title {
+.playstation-card__left .__title,
+.playstation-card__right .__title {
   font-size: 40px;
   font-weight: 700;
   line-height: 49px;
-}
-
-.playstation-card__right .__title {
-  color: black;
 }
 
 @media screen and (min-width:1199px) {
@@ -299,13 +282,6 @@
     font-size: 35px;
     font-style: normal;
     line-height: normal;
-  }
-
-  .customize-box,
-  .customize-box_dark,
-  .playstation-card__right,
-  .playstation-card__left {
-    border-radius: 75px;
   }
 
   .playstation-card__left .__image {
@@ -355,8 +331,6 @@
     font-size: 20px;
   }
 
-  .customize-box,
-  .customize-box_dark,
   .playstation-card__right,
   .playstation-card__left {
     border-radius: 50px;
@@ -364,7 +338,6 @@
 
   .customize-description, .yandex-station__button {
     font-size: 15px;
-    line-height: 18px;
   }
 
   .playstation-card__left .__image {
