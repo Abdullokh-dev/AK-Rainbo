@@ -56,7 +56,7 @@ b {
   line-height: 130%;
 }
 
-.title-sm {
+.title-sm, .title-md {
   font-size: 40px !important;
   font-weight: 700;
   line-height: normal;
@@ -67,10 +67,18 @@ b {
   font-weight: 400;
 }
 
+.text-sm {
+  font-size: 18px !important;
+  font-weight: 400;
+  line-height: 130%;
+}
+
+/*-----------*/
 .btn-txt {
   font-size: 20px;
   line-height: normal;
 }
+/*-----------*/
 
 .pointer {
   cursor: pointer;
@@ -109,7 +117,7 @@ b {
     font-size: 35px;
   }
 
-  .title-sm {
+  .title-sm, .title-md {
     font-size: 30px !important;
   }
 
@@ -117,16 +125,23 @@ b {
     font-size: 17px !important;
   }
 
+  .text-sm {
+    font-size: 16px !important;
+  }
+
+
+  /*-----------*/
   .btn-txt {
     font-size: 17px;
   }
+  /*-----------*/
 }
 @media screen and (max-width:575px) {
   .radius-border {
     border-radius: 50px;
   }
 
-  .title-lg, .title-xl {
+  .title-lg, .title-xl, .title-md {
     font-size: 24px;
   }
 
@@ -134,12 +149,16 @@ b {
     font-size: 20px !important;
   }
 
-  .text-md {
+  .text-md, .text-sm {
     font-size: 15px !important;
   }
 
+
+
+  /*-----------*/
   .btn-txt {
     font-size: 15px;
   }
+  /*-----------*/
 }
 
