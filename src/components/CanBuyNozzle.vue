@@ -42,7 +42,7 @@ const unHoverElement = (order) => {
 <template>
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10">
-      <h2 class="title-md text-black can-buy-section__title">
+      <h2 class="title-lg text-black can-buy-section__title">
         Вы можете купить насадки на стики себе или в подарок: есть дизайны для всех возрастов, для мужчин и женщин.
       </h2>
     </div>

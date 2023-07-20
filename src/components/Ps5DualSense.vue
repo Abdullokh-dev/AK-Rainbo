@@ -14,7 +14,7 @@ import "../assets/css/slick-carousel-theme-md.css"
   <div class="row ps5 flex-lg-row-reverse">
     <div class="col-12 col-lg-6 d-flex">
       <div class="my-auto flex-width">
-        <h2 class="__title title-md"> Кастомизированные <br /> <span>{{title}}</span> </h2>
+        <h2 class="__title title-lg"> Кастомизированные <br /> <span>{{title}}</span> </h2>
 
         <p class="__info mt-4 mt-lg-2 mt-xl-3 mt-xxl-5 mb-4 pe-5 pe-lg-0">
           <b class="_bold">У Вас есть возможность купить</b>

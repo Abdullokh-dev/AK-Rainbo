@@ -40,10 +40,31 @@ b {
   list-style: none;
 }
 
-.title-md {
+.radius-border {
+  border-radius: 100px;
+}
+
+.title-xl {
+  font-size: 60px;
+  font-weight: 600;
+  line-height: 130%;
+}
+
+.title-lg {
   font-size: 50px;
   font-weight: 600;
   line-height: 130%;
+}
+
+.title-sm {
+  font-size: 40px !important;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.text-md {
+  font-size: 20px !important;
+  font-weight: 400;
 }
 
 .btn-txt {
@@ -76,8 +97,24 @@ b {
 }
 
 @media screen and (max-width:1199px) {
-  .title-md {
+  .radius-border {
+    border-radius: 75px;
+  }
+
+  .title-xl {
+    font-size: 40px;
+  }
+
+  .title-lg {
     font-size: 35px;
+  }
+
+  .title-sm {
+    font-size: 30px !important;
+  }
+
+  .text-md {
+    font-size: 17px !important;
   }
 
   .btn-txt {
@@ -85,8 +122,20 @@ b {
   }
 }
 @media screen and (max-width:575px) {
-  .title-md {
+  .radius-border {
+    border-radius: 50px;
+  }
+
+  .title-lg, .title-xl {
     font-size: 24px;
+  }
+
+  .title-sm {
+    font-size: 20px !important;
+  }
+
+  .text-md {
+    font-size: 15px !important;
   }
 
   .btn-txt {

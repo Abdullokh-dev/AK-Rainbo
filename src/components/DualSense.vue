@@ -5,7 +5,7 @@
 <template>
   <div class="row d-flex justify-content-center">
     <div class="col col-12 col-xxl-11 col-xxxl-10">
-      <h2 class="dualScene__title title-md">
+      <h2 class="dualScene__title title-lg">
         КАСТОМИЗИРОВАННЫЕ ГЕЙМПАДЫ DualSense
       </h2>
     </div>

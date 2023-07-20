@@ -13,7 +13,7 @@
           </video>
 
           <div class="nozzleMain-box">
-            <h1 class="nozzleMain__title title-md">Насадки на стики геймпада</h1>
+            <h1 class="nozzleMain__title title-lg">Насадки на стики геймпада</h1>
             <div class="mt-5">
               <a href="https://rainboskin.me/aksessuary/" class="nozzleMain-btn" target="_blank">Купить</a>
             </div>

@@ -13,7 +13,7 @@
           </video>
 
           <div class="nozzleMain-box">
-            <h1 class="nozzleMain__title title-md">Кастомизированные геймпады PLAYSTATION</h1>
+            <h1 class="nozzleMain__title title-lg">Кастомизированные геймпады PLAYSTATION</h1>
             <div class="mt-5">
               <a href="https://rainboskin.me/aksessuary/" class="nozzleMain-btn" target="_blank">Купить</a>
             </div>

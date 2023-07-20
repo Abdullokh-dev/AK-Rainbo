@@ -9,7 +9,7 @@
 
     <div class="main-section__content col-xxl-11 col-xxxl-10">
       <div class="col-12 col-lg-6 content-left px-3 px-xxl-0">
-        <h1 class="main-section__title title-md mt-5 mt-lg-0">
+        <h1 class="main-section__title title-lg mt-5 mt-lg-0">
           Кастомизированные <br /> коллекции PLAYSTATION
         </h1>
         <div class="pb-5 mt-4 pt-3">

@@ -6,7 +6,7 @@
   <div class="row d-flex dualSense">
     <div class="col-1 d-none d-xxxl-block"></div>
     <div class="col-12 col-lg-5 col-xxl-5 ps-3 flex-margin-left">
-      <h2 class="dualScene__title title-md">
+      <h2 class="dualScene__title title-lg">
         Кастомизированные <br /> PLAYSTATION:
       </h2>
 

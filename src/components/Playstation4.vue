@@ -8,7 +8,7 @@
 
       <div class="row">
         <div class="col-12">
-          <h2 class="title-md text-center">Кастомизированные <span class="nowrap">PLAYSTATION 4</span></h2>
+          <h2 class="title-lg text-center">Кастомизированные <span class="nowrap">PLAYSTATION 4</span></h2>
         </div>
 
         <div class="col-12 col-lg-6 d-flex justify-content-center">
@@ -51,7 +51,7 @@
 </template>
 
 <style scoped>
-.title-md {
+.title-lg {
   margin-top: 150px;
 }
 
@@ -110,7 +110,7 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .title-md {
+  .title-lg {
     margin-top: 90px;
   }
 
@@ -121,7 +121,7 @@
 }
 
 @media screen and (max-width: 575px) {
-  .title-md {
+  .title-lg {
     text-align: left !important;
   }
 

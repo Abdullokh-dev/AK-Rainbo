@@ -5,7 +5,7 @@
 <template>
   <div class="dual-shock row d-flex justify-content-center">
     <div class="col col-12 col-xxl-11 col-xxxl-10">
-      <h2 class="title-md __title">
+      <h2 class="title-lg __title">
         КАСТОМИЗИРОВАННЫЕ ГЕЙМПАДЫ DUALSHOCK 4
       </h2>
 

@@ -7,16 +7,16 @@
     <div class="col-6 background-left"></div>
     <div class="col-6 background-right"></div>
 
-    <div class="main-section__content col-xxl-11 col-xxxl-10">
+    <div class="__content col-xxl-11 col-xxxl-10">
       <div class="col-12 col-lg-6 content-left px-3 px-xxl-0">
-        <h1 class="main-section__title uppercase mt-5 mt-lg-0">
+        <h1 class="__title title-xl uppercase mt-5 mt-lg-0">
           Стереосистема Rainbo Technics
         </h1>
-        <p class="main-section__description mt-3 mt-lg-3">
+        <p class="text-md mt-3 mt-lg-3">
           Слышать звук так, как он звучит.
         </p>
         <div class="pb-5 mt-4 pt-3">
-          <a href="#" class="main-section__button">
+          <a href="#" class="__button text-md">
             Узнать больше
             <span>
             <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -27,7 +27,7 @@
         </div>
       </div>
       <div class="col-12 col-lg-6 content-right">
-        <div class="content-right__box">
+        <div class="__right-box">
           <img class="content-right__img" src="../assets/images/Home/main-player.png" alt="#" width="1256">
         </div>
       </div>
@@ -62,7 +62,7 @@
   border-radius: 0 0 0 364px;
 }
 
-.main-section__content {
+.main-section .__content {
   margin: auto;
   display: flex;
   position: absolute;
@@ -73,24 +73,16 @@
   align-items: center;
 }
 
-.main-section__title {
-  font-size: 60px;
+.main-section .__title {
   font-weight: 700;
-  line-height: 73px;
+  line-height: normal;
   width: 600px;
 }
 
-.main-section__description {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
-}
-
-.main-section__button {
+.main-section .__button {
   position: relative;
   color: white;
   background-color: #757D62;
-  font-size: 20px;
   padding: 13px 71px 13px 53px;
   border-radius: 50rem;
   text-decoration: none;
@@ -103,7 +95,7 @@
   transition: right 0.3s;
 }
 
-.main-section__button:hover .main-section__svg {
+.main-section .__button:hover .main-section__svg {
   right: 35px;
 }
 
@@ -116,7 +108,7 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .main-section__content {
+  .main-section .__content {
     width: 100%;
     padding: 0;
   }
@@ -131,19 +123,11 @@
     max-width: 450px;
   }
 
-  .main-section__title {
-    font-size: 40px;
+  .main-section .__title {
     max-width: 400px;
-    font-style: normal;
-    line-height: normal;
   }
 
-  .main-section__description {
-    font-size: 18px;
-  }
-
-  .main-section__button {
-    font-size: 15px;
+  .main-section .__button {
     padding: 10.4px 43px 10.4px 25px;
   }
 
@@ -153,7 +137,7 @@
     height: 10.4px;
   }
 
-  .main-section__button:hover .main-section__svg {
+  .main-section .__button:hover .main-section__svg {
     right: 18px;
   }
 }
@@ -163,11 +147,11 @@
     display: none;
   }
 
-  .main-section__content {
+  .main-section .__content {
     display: block;
   }
 
-  .content-right__box {
+  .main-section .__right-box {
     background-color: #20211D;
     border-radius: 0 150px 0 0;
     margin: auto;
@@ -185,7 +169,7 @@
     max-width: 550px;
   }
 
-  .main-section__title {
+  .main-section .__title {
     max-width: 100%;
     width: 100%;
   }
@@ -196,7 +180,7 @@
     height: 580px;
   }
 
-  .content-right__box {
+  .main-section .__right-box {
     max-height: 350px;
   }
 
@@ -204,13 +188,8 @@
     max-width: 320px;
   }
 
-  .main-section__title {
-    font-size: 20px;
+  .main-section .__title {
     max-width: 220px;
-  }
-
-  .main-section__description {
-    font-size: 15px;
   }
 }
 </style>
