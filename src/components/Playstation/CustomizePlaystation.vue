@@ -3,39 +3,35 @@
 </script>
 
 <template>
-  <div class="row d-flex dualSense">
+  <div class="row d-flex customize-playstation">
     <div class="col-1 d-none d-xxxl-block"></div>
     <div class="col-12 col-lg-5 col-xxl-5 ps-3 flex-margin-left">
-      <h2 class="dualScene__title title-lg">
+      <h2 class="__title title-lg">
         Кастомизированные <br /> PLAYSTATION:
       </h2>
 
-
-      <p class="__info _top pb-sm-2 pb-lg-4">
+      <p class="_top text-md pb-sm-2 pb-lg-4">
         <span class="_bold">Высочайшее качество кастомизации не оставит равнодушным никого.</span> <br>
         Кастомизированная PlayStation станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении.
         Незамеченной остаться не получится, она будет привлекать к себе внимание всех ваших гостей.
       </p>
 
-      <ul class="list-unstyled gamePads-ul">
-        <li class="list __info">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
+      <ul class="list-unstyled text-md">
+        <li class="__info">
+          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#6337FF"/>
           </svg>
           Мы кастомизируем <span class="_bold">только оригинальные геймпады</span> PlayStation (прямые поставки)
         </li>
-        <li class="list __info">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
+        <li class="__info">
+          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#F4414E"/>
           </svg>
           <span class="_bold">Наша кастомизация – это не наклейки.</span>
           Используются несколько технологий нанесения рисунков, включая покраску
         </li>
-        <li class="list __info">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none"
-               xmlns="http://www.w3.org/2000/svg">
+        <li class="__info">
+          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#FBD301"/>
           </svg>
           <span class="_bold">Все дизайны консолей и геймпадов футбольных клубов являются лицензированными</span>
@@ -46,100 +42,89 @@
 
     <div class="col-12 col-lg-7 col-xxl-7 align-self-end text-start flex-col">
       <div class="d-flex justify-content-end pe-4">
-          <img src="../assets/images/Playstation/both-ps.png" width="1872" class="__img" alt="#" style="">
+          <img src="../../assets/images/Playstation/both-ps.png" width="1872" class="__img" alt="#">
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.dualScene__title {
+.customize-playstation .__title {
   margin: 130px 0 50px 0;
 }
 
-.dualSense .__img {
+.customize-playstation .__img {
   width: 100%;
   max-width: 920px;
 }
 
-.dualSense .__info {
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 130%;
-}
-
-.dualSense ._top {
+.customize-playstation ._top {
   width: 102%;
 }
 
-.dualSense ._bold {
+.customize-playstation ._bold {
   font-weight: 700;
 }
 
-.gamePads-ul {
+.customize-playstation ul {
   max-width: 560px;
   padding-left: 20px;
 }
 
-.gamePads-ul svg {
+.customize-playstation ul svg {
   left: -20px;
   top: 10px;
 }
 
-.gamePads-ul .list {
+.customize-playstation ul li {
   position: relative;
   margin-bottom: 30px;
 }
 
 @media screen and (max-width: 1199px) {
-  .dualScene__title {
-    font-size: 35px;
+  .customize-playstation .__title {
     margin: 100px 0 50px 0;
   }
 
-  .dualSense .__info {
-    font-size: 17px;
+  .customize-playstation .__info {
     font-weight: 500;
   }
 
-  .dualSense ._bold {
+  .customize-playstation ._bold {
     font-weight: 500;
   }
 }
 
 @media screen and (max-width: 991px) {
-  .gamePads-ul svg {
+  .customize-playstation ul svg {
     left: -19px;
     top: 5px;
   }
 
-  .dualSense ._top {
+  .customize-playstation ._top {
     width: 100%;
   }
 
-  .gamePads-ul {
+  .customize-playstation ul {
     padding-left: 20px;
   }
 
-  .gamePads-ul .list {
-    position: relative;
+  .customize-playstation ul li {
     margin-bottom: 20px;
   }
 
 }
 
 @media screen and (max-width: 575px) {
-  .dualScene__title {
-    font-size: 24px;
+  .customize-playstation .__title {
     margin: 50px 0 25px 0;
   }
 
-  .dualSense .__info {
+  .customize-playstation .__info {
     font-size: 15px;
   }
 
-  .gamePads-ul .list {
-    position: relative;
+  .customize-playstation ul li {
     margin-bottom: 10px;
   }
 }

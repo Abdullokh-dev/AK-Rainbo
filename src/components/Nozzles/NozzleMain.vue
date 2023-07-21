@@ -9,7 +9,7 @@
       <div class="row video-content">
         <div class="col">
           <video preload="auto" autoplay="1" loop muted="1">
-            <source src="../assets/videos/Nozzles.mp4" type="video/mp4">
+            <source src="../../assets/videos/Nozzles.mp4" type="video/mp4">
           </video>
 
           <div class="__box">

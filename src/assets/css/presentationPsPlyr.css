@@ -1,0 +1,83 @@
+.presentation-section {
+    margin-top: 150px;
+}
+
+.presentation-section .__img {
+    width: 100%;
+}
+
+.presentation-section .__info {
+    font-weight: 500;
+}
+
+.presentation-section ._bold {
+    font-weight: 700;
+}
+
+.presentation-section .__btn a {
+    transition: background-color .3s;
+    padding: 13px 89px;
+    border-radius: 50rem;
+    color: white;
+}
+
+.presentation-section .__btn ._buy {
+    background-color: #C62229;
+    padding: 13px 95px;
+}
+
+.presentation-section .__btn ._buy:hover {
+    background-color: rgba(198, 34, 41, 0.8);
+}
+
+.presentation-section .__btn {
+    margin: 52px 0 50px 0;
+}
+
+.flex-width {
+    max-width: 633px;
+}
+
+.images-plyr {
+    max-width: 950px;
+}
+
+@media screen and (max-width:1366px) {
+    .ps5 .__btn {
+        margin: 30px 0 25px 0;
+    }
+}
+
+@media screen and (max-width:1199px) {
+    .presentation-section {
+        margin-top: 100px;
+    }
+
+    .ps5 .__btn {
+        margin: 30px 0 25px 0;
+    }
+}
+
+@media screen and (max-width:991px) {
+    .flex-width {
+        max-width: 100%;
+    }
+
+    .presentation-section .__btn {
+        margin: 44px 0 55px 0;
+    }
+
+    .presentation-section .__btn a {
+        padding: 11px 69px;
+    }
+
+    .presentation-section .__btn ._buy {
+        padding: 11px 72px;
+    }
+}
+
+@media screen and (max-width:575px) {
+    .presentation-section {
+        margin-top: 40px;
+    }
+}

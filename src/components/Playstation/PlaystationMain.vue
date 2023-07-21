@@ -3,22 +3,22 @@
 </script>
 
 <template>
-  <div class="row main-section">
+  <div class="row playstation-main">
     <div class="col-6 background-left"></div>
     <div class="col-6 background-right"></div>
 
-    <div class="main-section__content col-xxl-11 col-xxxl-10">
+    <div class="__content col-xxl-11 col-xxxl-10">
       <div class="col-12 col-lg-6 content-left px-3 px-xxl-0">
-        <h1 class="main-section__title title-lg mt-5 mt-lg-0">
+        <h1 class="title-lg mt-5 mt-lg-0">
           Кастомизированные <br /> коллекции PLAYSTATION
         </h1>
         <div class="pb-5 mt-4 pt-3">
-          <a href="https://rainboskin.me/sony/" target="_blank" class="main-section__button btn-txt">Купить</a>
+          <a href="https://rainboskin.me/sony/" target="_blank" class="__button text-md">Купить</a>
         </div>
       </div>
       <div class="col-12 col-lg-6 content-right align-self-center align-self-xl-end">
         <div class="content-right__box ps-lg-5">
-          <img class="content-right__img" src="../assets/images/Playstation/main.png" alt="#" width="1458">
+          <img class="content-right__img" src="../../assets/images/Playstation/main.png" alt="#" width="1458">
         </div>
       </div>
     </div>
@@ -26,7 +26,8 @@
 </template>
 
 <style scoped>
-.main-section {
+.playstation-main {
+  margin-top: 112px;
   height: 770px;
   display: flex;
   flex-wrap: wrap;
@@ -51,7 +52,7 @@
   border-radius: 0 0 0 364px;
 }
 
-.main-section__content {
+.playstation-main .__content {
   margin: auto;
   display: flex;
   position: absolute;
@@ -62,7 +63,7 @@
   align-items: center;
 }
 
-.main-section__button {
+.playstation-main .__button {
   color: white;
   transition: background-color .3s;
   border-radius: 50rem;
@@ -70,7 +71,7 @@
   padding: 13px 96px;
 }
 
-.main-section__button:hover {
+.playstation-main .__button:hover {
   background-color: rgba(255, 104, 145, 0.8);
 }
 
@@ -81,14 +82,14 @@
 }
 
 @media screen and (max-width: 1400px) {
-  .main-section__content {
+  .playstation-main .__content {
     width: 100%;
     padding: 0;
   }
 }
 
 @media screen and (max-width: 1199px) {
-  .main-section {
+  .playstation-main {
     height: 600px;
   }
 
@@ -102,7 +103,7 @@
     display: none;
   }
 
-  .main-section__content {
+  .playstation-main .__content {
     display: block;
   }
 
@@ -112,11 +113,11 @@
     height: 500px;
   }
 
-  .main-section {
+  .playstation-main {
     height: 720px;
   }
 
-  .main-section__button {
+  .playstation-main .__button {
     padding: 11px 72px;
   }
 
@@ -128,7 +129,7 @@
 }
 
 @media screen and (max-width: 574px) {
-  .main-section {
+  .playstation-main {
     height: 580px;
   }
 

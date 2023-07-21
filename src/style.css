@@ -62,6 +62,12 @@ b {
   line-height: normal;
 }
 
+.title-xs {
+  font-size: 24px !important;
+  line-height: 130%;
+  font-weight: 700;
+}
+
 .text-lg {
   font-size: 24px !important;
   font-weight: 500;
@@ -71,6 +77,7 @@ b {
 .text-md {
   font-size: 20px !important;
   font-weight: 400;
+  line-height: 130%;
 }
 
 .text-sm {
@@ -150,6 +157,10 @@ b {
     font-size: 30px !important;
   }
 
+  .title-xs {
+    font-size: 22px !important;
+  }
+
   .text-lg {
     font-size: 20px !important;
   }
@@ -181,7 +192,7 @@ b {
     font-size: 24px;
   }
 
-  .title-sm {
+  .title-sm, .title-xs {
     font-size: 20px !important;
   }
 

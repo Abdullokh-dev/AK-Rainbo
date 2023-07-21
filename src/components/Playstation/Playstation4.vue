@@ -8,31 +8,31 @@
 
       <div class="row">
         <div class="col-12">
-          <h2 class="title-lg text-center">Кастомизированные <span class="nowrap">PLAYSTATION 4</span></h2>
+          <h2 class="__title title-lg text-center">Кастомизированные <span class="nowrap uppercase">Playstation 4</span></h2>
         </div>
 
         <div class="col-12 col-lg-6 d-flex justify-content-center">
-          <div class="text-center __box my-auto">
-            <h3 class="__title-md mt-4 pb-1">PLAYSTATION 4 PRO</h3>
-            <p class="__info">
+          <div class="__box text-md text-center my-auto">
+            <h3 class="__title-md mt-4 pt-2 pb-1 uppercase">Playstation 4 Pro</h3>
+            <p class="__info text-md">
               Купить Sony PlayStation 4 PRO теперь можно в уникальном дизайне без лишних переплат в нашем магазине.
             </p>
             <div class="__btn">
-              <a href="https://rainboskin.me/sony/sony-playstation-pro/" target="_blank" class="btn-txt">Купить</a>
+              <a href="https://rainboskin.me/sony/sony-playstation-pro/" target="_blank">Купить</a>
             </div>
           </div>
         </div>
 
         <div class="col-12 col-lg-6">
-          <img class="__img d-flex mx-auto mx-lg-0" src="../assets/images/Playstation/ps-first.png" width="1312" alt="#">
+          <img class="__img d-flex mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-first.png" width="1312" alt="#">
         </div>
       </div>
 
       <div class="row flex-lg-row-reverse">
         <div class="col-12 col-lg-6 d-flex justify-content-center">
           <div class="text-center __box-second my-auto">
-            <h3 class="__title-md pb-1 mt-4 pt-3 mt-lg-0 pt-lg-0">PLAYSTATION 4</h3>
-            <p class="__info">
+            <h3 class="__title-md text-md pb-1 mt-4 pt-3 mt-lg-0 pt-lg-0 uppercase">Playstation 4</h3>
+            <p class="__info text-md">
               Кастомизированный вариант игровой консоли PlayStation 4 – ваш персональный центр развлечений. Вы сможете
               играть, смотреть видео, слушать музыку, а доступ в интернет позволит найти партнеров для игр.
             </p>
@@ -43,7 +43,7 @@
         </div>
 
         <div class="col-12 col-lg-6 d-flex justify-content-end">
-          <img class="__img-2 mx-auto mx-lg-0" src="../assets/images/Playstation/ps-second.png" width="1140" alt="#">
+          <img class="__img-2 mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-second.png" width="1140" alt="#">
         </div>
       </div>
     </div>
@@ -51,8 +51,8 @@
 </template>
 
 <style scoped>
-.title-lg {
-  margin-top: 150px;
+.ps4 .__title {
+  margin-top: 120px;
 }
 
 .ps4 .__box {
@@ -64,19 +64,15 @@
 }
 
 .ps4 .__title-md {
-  font-size: 20px;
   font-weight: 700;
-  line-height: 130%;
 }
 
 .ps4 .__info {
-  font-size: 20px;
   font-weight: 500;
-  line-height: 130%;
 }
 
 .ps4 .__btn {
-  margin: 47px 0 35px 0;
+  margin: 50px 0 35px 0;
 }
 
 .ps4 .__btn a {
@@ -110,24 +106,23 @@
 }
 
 @media screen and (max-width: 1199px) {
-  .title-lg {
-    margin-top: 90px;
-  }
-
-  .ps4 .__title-md,
-  .ps4 .__info {
-    font-size: 17px;
+  .ps4 .__title {
+    margin-top: 50px;
   }
 }
 
-@media screen and (max-width: 575px) {
-  .title-lg {
-    text-align: left !important;
+@media screen and (max-width: 991px) {
+  .ps4 .__btn a {
+    padding: 11px 72px;
   }
 
-  .ps4 .__title-md,
-  .ps4 .__info {
-    font-size: 15px;
+  .ps4 .__btn {
+    margin: 40px 0 35px 0;
+  }
+}
+@media screen and (max-width: 575px) {
+  .ps4 .__title {
+    text-align: left !important;
   }
 }
 </style>

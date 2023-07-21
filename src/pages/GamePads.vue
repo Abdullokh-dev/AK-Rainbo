@@ -1,19 +1,19 @@
 <script setup>
 
-import GamePadsMain from "../components/GamePadsMain.vue";
-import DualSense from "../components/DualSense.vue";
+import GamePadsMain from "../components/GamePads/GamePadsMain.vue";
+import DualSense from "../components/GamePads/DualSense.vue";
 import Header from "../components/Header.vue";
-import Ps5DualSense from "../components/Ps5DualSense.vue";
+import DualSensePs5 from "../components/GamePads/DualSensePs5.vue";
 import BottomList from "../components/BottomList.vue";
 import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
-import DualShock4 from "../components/DualShock4.vue";
+import DualShock4 from "../components/GamePads/DualShock4.vue";
 </script>
 
 <template>
   <Header show-lists="false"/>
   <GamePadsMain />
   <DualSense />
-  <Ps5DualSense />
+  <DualSensePs5 />
   <DualShock4 />
   <DeliverAndGuarantee color="white"/>
   <BottomList color="white"/>

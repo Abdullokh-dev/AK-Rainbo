@@ -31,7 +31,7 @@ const unHoverElement = (element) => {
 
       <div class="row">
         <div class="col">
-          <h2 class="__title">
+          <h2 class="__title text-black title-lg">
             Выбирай кастомизированную Яндекс.Станцию, которая больше тебе подойдет:
           </h2>
         </div>
@@ -39,15 +39,15 @@ const unHoverElement = (element) => {
 
       <!-- Mobile Show -->
       <div class="row d-lg-none">
-        <div class="col-12 p-0">
+        <div class="col-12 p-0 text-black">
           <!-- Slider -->
-          <section class="regular slider-custom mt-0">
+          <section class="regular title-xs slider-custom mt-0">
             <div>
               <p class="__info ps-3 ps-sm-0">
                 <b class="_bold _kids">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
               </p>
 
-              <img src="../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
+              <img src="../../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
             </div>
 
             <div>
@@ -55,7 +55,7 @@ const unHoverElement = (element) => {
                 <b class="_bold _romantic">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
               </p>
 
-              <img src="../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
+              <img src="../../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
             </div>
 
             <div>
@@ -63,7 +63,7 @@ const unHoverElement = (element) => {
                 <b class="_bold _sport">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
               </p>
 
-              <img src="../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
+              <img src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
             </div>
 
             <div>
@@ -71,18 +71,18 @@ const unHoverElement = (element) => {
                 <b class="_bold _street">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
               </p>
 
-              <img src="../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
+              <img src="../../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
             </div>
           </section>
           <div class="text-center mt-4 pt-2">
-            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn"> Купить </a>
+            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
           </div>
         </div>
       </div>
 
       <!-- Desktop Show -->
       <div class="row d-none d-lg-block">
-        <div class="col-6">
+        <div class="col-6 text-black title-xs">
           <p class="__info">
             <b class="_bold _kids" @mouseenter="hoverElement(items.first)" @mouseleave="unHoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
           </p>
@@ -96,17 +96,17 @@ const unHoverElement = (element) => {
             <b class="_bold _street" @mouseenter="hoverElement(items.fourth)" @mouseleave="unHoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
           <div class="mt-5 pt-3">
-            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn"> Купить </a>
+            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
           </div>
         </div>
 
         <div class="col-6 position-absolute choose-custom-box p-0">
           <div class="choose-custom-img">
-            <img class="__img-1" id="kids" src="../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
-            <img class="__img-2" id="romantic" src="../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
-            <img class="__img-3" id="sport" src="../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
-            <img class="__img-4" id="street" src="../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
-            <img src="../assets/images/YandexStation/choose-1.png" alt="#">
+            <img class="__img-1" id="kids" src="../../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
+            <img class="__img-2" id="romantic" src="../../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
+            <img class="__img-3" id="sport" src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
+            <img class="__img-4" id="street" src="../../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
+            <img src="../../assets/images/YandexStation/choose-1.png" alt="#">
           </div>
         </div>
       </div>
@@ -116,14 +116,22 @@ const unHoverElement = (element) => {
 </template>
 
 <style scoped>
+.chooseCustomStation .__title {
+  max-width: 1290px;
+  margin-top: 165px;
+}
 
-.choose-custom-img {
-  max-width: 985px;
+.chooseCustomStation img {
+  width: 100%;
 }
 
 .choose-custom-box {
   right: 0;
   bottom: -60px;
+}
+
+.choose-custom-img {
+  max-width: 985px;
 }
 
 .choose-custom-img .__img-1,
@@ -139,24 +147,8 @@ const unHoverElement = (element) => {
   z-index: 99;
 }
 
-.chooseCustomStation .__title {
-  color: black;
-  max-width: 1290px;
-  font-size: 50px;
-  margin-top: 165px;
-  font-weight: 600;
-  line-height: 130%;
-}
-
-.chooseCustomStation img {
-  width: 100%;
-}
-
 .chooseCustomStation .__info {
-  color: black;
-  font-size: 24px;
   font-weight: 500;
-  line-height: 130%;
   margin-top: 40px;
 }
 
@@ -181,7 +173,7 @@ const unHoverElement = (element) => {
 }
 
 .chooseCustomStation .__info ._bold {
-  font-weight: 600;
+  font-weight: 700;
   cursor: pointer;
 }
 
@@ -191,9 +183,6 @@ const unHoverElement = (element) => {
   color: white;
   padding: 13px 96px;
   border-radius: 50rem;
-  font-size: 20px;
-  font-weight: 400;
-  line-height: 24px;
 }
 
 .chooseCustomStation .__btn:hover {
@@ -215,7 +204,6 @@ const unHoverElement = (element) => {
 @media screen and (max-width:1199px) {
   .chooseCustomStation .__title {
     margin-top: 75px;
-    font-size: 35px;
   }
 }
 
@@ -225,21 +213,22 @@ const unHoverElement = (element) => {
     max-width: 560px;
     margin: auto;
   }
+
+  .chooseCustomStation .__info ._bold {
+    font-weight: 600;
+  }
 }
 
 @media screen and (max-width:575px) {
   .chooseCustomStation .__title {
     margin-top: 50px;
-    font-size: 24px;
   }
 
   .chooseCustomStation .__info {
-    font-size: 15px;
     margin-top: 25px;
   }
 
   .chooseCustomStation .__btn {
-    font-size: 15px;
     padding: 11px 65px;
   }
 
