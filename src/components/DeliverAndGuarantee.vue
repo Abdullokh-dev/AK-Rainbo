@@ -34,7 +34,7 @@ const toggleSecond = () => {
             </button>
           </div>
           <div class="collapse toggle-box pe-4 pe-lg-5" id="deliver">
-            <div class="text-md pe-lg-2">
+            <div class="text-md me-lg-4">
               <p class="__info">Доставка по Москве осуществляется компанией СДЭК.</p>
               <p class="__info">Самовывоз – бесплатно. Пункт выдачи заказов находится по адресу: г.Подольск, ул. Комсомольская д.1</p>
               <p class="__info">График работы Пн-Пт - с 10:00 до 17:00. Доставка по России осуществляется компанией СДЭК, либо по адресу, либо в пункт самовывоза, при полной оплате любого товара</p>
@@ -55,7 +55,7 @@ const toggleSecond = () => {
             </button>
           </div>
           <div class="collapse toggle-box pe-4 pe-lg-5" id="guarantee">
-            <div class="text-md pe-lg-2">
+            <div class="text-md me-lg-4">
               <p class="__info">Вся продукция Рейнбо покрывается гарантией (1 год на электронику и 3 месяца на лакокрасочное покрытие).</p>
               <p class="__info">
                 Приобретая продукцию компании RAINBO, вы приобретаете абсолютно новую продукцию с гарантией. Вся продукция

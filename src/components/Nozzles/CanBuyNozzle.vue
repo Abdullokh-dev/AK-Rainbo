@@ -54,10 +54,10 @@ const unHoverElement = (order) => {
 
       <div class="row">
         <div class="col-12 d-flex">
-          <div>
+          <div class="pointer">
             <img src="../../assets/images/Nozzles/icon-1.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text">
+          <p class="text-black text-md __text pointer">
             <b class="_bold title-xs">Коллекция футбол</b>
             – Мы единственная  компания, производящая лицензионные накладки стики в дизайне клубов: Спартак, ЦСКА,
             Динамо, Зенит, Локомотив и т.д.
@@ -88,10 +88,10 @@ const unHoverElement = (order) => {
 
       <div class="row">
         <div class="col-12 d-flex text-block_second mt-xxl-5">
-          <div>
+          <div class="pointer">
             <img src="../../assets/images/Nozzles/icon-3.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text"><b class="_bold title-xs">Коллекция геймер</b>
+          <p class="text-black text-md __text pointer"><b class="_bold title-xs">Коллекция геймер</b>
             – Накладки на стики с узнаваемыми символами: клеверов, подковой, звездами, пиктограммами и цветами
           </p>
         </div>
