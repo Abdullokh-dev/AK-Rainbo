@@ -1,8 +1,8 @@
 <script setup>
 
 import Header from "../components/Header.vue";
-import HomePodMain from "../components/HomePodMain.vue";
-import Acquaint from "../components/Acquaint.vue";
+import HomePodMain from "../components/HomePod/HomePodMain.vue";
+import Acquaint from "../components/HomePod/Acquaint.vue";
 </script>
 
 <template>

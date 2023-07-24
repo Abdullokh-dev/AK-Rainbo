@@ -7,7 +7,7 @@ const player = ref(null)
 onMounted(() => {
   player.value = new Plyr('#player', {
     controls: [],
-    // autoplay: true
+    autoplay: true
   })
 })
 
@@ -79,7 +79,7 @@ onMounted(() => {
 
   <div class="col-12 col-xl-6 p-0 ps-lg-3 d-flex justify-content-end">
     <div class="d-flex my-auto">
-      <video id="player" data-poster="./data-poster.png">
+      <video id="player">
         <source src="../../assets/videos/video.mp4" type="video/mp4">
       </video>
     </div>

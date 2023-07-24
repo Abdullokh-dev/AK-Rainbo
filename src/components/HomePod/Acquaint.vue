@@ -7,7 +7,7 @@
     <div class="col-12 text-center homePod__description">
       <!-- Pulse Animate -->
       <div>
-        <img src="../assets/images/HomePod/pulse.png" class="animated__pulse" alt="#" width="1280">
+        <img src="../../assets/images/HomePod/pulse.png" class="animated__pulse" alt="#" width="1280">
       </div>
 
       <div class="row d-flex justify-content-center">
@@ -34,12 +34,12 @@
       <div class="row my-3 my-lg-4">
         <div class="col-5 p-0 d-flex">
           <div class="acquaint-img d-flex">
-            <img src="../assets/images/HomePod/img.png" alt="#" width="1590" class="__img">
+            <img src="../../assets/images/HomePod/img.png" alt="#" width="1590" class="__img">
           </div>
         </div>
         <div class="col-7 p-0 d-flex">
           <div class="acquaint-img d-flex ps-2 ps-lg-3">
-            <img src="../assets/images/HomePod/img_1.png" alt="#" width="2210" class="__img-2">
+            <img src="../../assets/images/HomePod/img_1.png" alt="#" width="2210" class="__img-2">
           </div>
         </div>
       </div>
