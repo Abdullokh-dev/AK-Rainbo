@@ -4,7 +4,6 @@ import GamePadsMain from "../components/GamePads/GamePadsMain.vue";
 import DualSense from "../components/GamePads/DualSense.vue";
 import Header from "../components/Header.vue";
 import DualSensePs5 from "../components/GamePads/DualSensePs5.vue";
-import BottomList from "../components/BottomList.vue";
 import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
 import DualShock4 from "../components/GamePads/DualShock4.vue";
 </script>
@@ -16,7 +15,24 @@ import DualShock4 from "../components/GamePads/DualShock4.vue";
   <DualSensePs5 />
   <DualShock4 />
   <DeliverAndGuarantee color="white"/>
-  <BottomList color="white"/>
+  <div class="row d-flex justify-content-center mb-4">
+    <div class="col-12 col-xxl-11 col-xxxl-10 p-0 d-none d-xl-block">
+      <ul class="list-unstyled bottom-list p-0 d-flex justify-content-around">
+        <li class="_list">
+          <a href="#" class="_light">Стереосистема RAINBO TECHNICS</a>
+        </li>
+        <li class="_list">
+          <a href="#/playstation" class="_light">Sony Playstation</a>
+        </li>
+        <li class="_list">
+          <a href="#/yandex-station" class="_light">Яндекс.Станции</a>
+        </li>
+        <li class="_list">
+          <a href="#/gamepads" class="_light">Насадки</a>
+        </li>
+      </ul>
+    </div>
+  </div>
 </template>
 
 <style scoped>

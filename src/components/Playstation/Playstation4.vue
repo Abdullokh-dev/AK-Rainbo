@@ -37,7 +37,7 @@
               играть, смотреть видео, слушать музыку, а доступ в интернет позволит найти партнеров для игр.
             </p>
             <div class="__btn">
-              <a href="https://rainboskin.me/sony/sony-playstation-4/" target="_blank" class="btn-txt _pink">Купить</a>
+              <a href="https://rainboskin.me/sony/sony-playstation-4/" target="_blank" class="text-md _pink">Купить</a>
             </div>
           </div>
         </div>

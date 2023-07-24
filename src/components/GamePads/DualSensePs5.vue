@@ -23,7 +23,7 @@ defineProps({
         </p>
 
         <div class="__btn text-center">
-          <a href="https://rainboskin.me/sony/sony-playstation-5/" target="_blank" class="_buy btn-txt"> Купить </a>
+          <a href="https://rainboskin.me/sony/sony-playstation-5/" target="_blank" class="_buy text-md"> Купить </a>
         </div>
 
         <b class="_bold __info text-md">Или создать свой собственный уникальный дизайн!</b>
@@ -34,7 +34,7 @@ defineProps({
         </p>
 
         <div class="__btn text-center">
-          <a href="https://rainboskin.me/ps5_custom/" target="_blank" class="btn-txt _pink">Создать</a>
+          <a href="https://rainboskin.me/ps5_custom/" target="_blank" class="text-md _pink">Создать</a>
         </div>
       </div>
     </div>

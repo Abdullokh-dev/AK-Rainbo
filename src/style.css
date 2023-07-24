@@ -109,12 +109,27 @@ b {
   border-radius: 50rem;
 }
 
-/*-----------*/
-.btn-txt {
-  font-size: 20px;
+.bottom-list ._list ._light,
+.bottom-list ._list ._dark
+{
+  transition: color .3s;
+  font-size: 18px;
+  font-weight: 500;
   line-height: normal;
 }
-/*-----------*/
+
+.bottom-list ._list ._light {
+  color: white;
+}
+
+.bottom-list ._list ._dark {
+  color: black;
+}
+
+.bottom-list ._list > a:hover {
+  color: #2997FF;
+  cursor: pointer;
+}
 
 .pointer {
   cursor: pointer;
@@ -176,12 +191,6 @@ b {
   .video-content .__box {
     margin-top: 45vh;
   }
-
-  /*-----------*/
-  .btn-txt {
-    font-size: 17px;
-  }
-  /*-----------*/
 }
 @media screen and (max-width:575px) {
   .radius-border {
@@ -203,13 +212,5 @@ b {
   .video-content .__box .__btn {
     padding: 8px 58px;
   }
-
-
-
-  /*-----------*/
-  .btn-txt {
-    font-size: 15px;
-  }
-  /*-----------*/
 }
 
