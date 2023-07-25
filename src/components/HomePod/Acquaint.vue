@@ -3,8 +3,8 @@
 </script>
 
 <template>
-  <div class="row">
-    <div class="col-12 text-center homePod__description">
+  <div class="row position-relative">
+    <div class="col-12 experts-section">
       <!-- Pulse Animate -->
       <div>
         <img src="../../assets/images/HomePod/pulse.png" class="animated__pulse" alt="#" width="1280">
@@ -12,26 +12,24 @@
 
       <div class="row d-flex justify-content-center">
         <div class="col-12 col-xxl-11 col-xxxl-10">
-          <h2 class="homePod__title-2">
+          <h2 class="__title title-xl">
             ЗНАКОМЬТЕСЬ: RAINBO <br/> TECHNICS Bass Expert
           </h2>
 
-          <p class="__info mt-4 mb-3 mt-md-5 mb-md-4">
+          <p class="__info text-lg mt-4 mb-3 mt-md-5 mb-md-4">
             Обычно для полноценного прослушивания музыки необходимо покупать дорогостоящие большие напольные колонки,
             усилители и проигрыватель, а прослушивание музыки в студиях – удел немногих. Теперь вы можете присоединиться
-            к
-            ним и услышать ритм так, как его хотели услышать ваши любимые исполнители.
+            к ним и услышать ритм так, как его хотели услышать ваши любимые исполнители.
           </p>
-          <p class="__info">
+          <p class="__info text-lg">
             Домашняя музыкальная система RAINBO TECHNICS Bass Expert – настоящая Hi-Fi система в относительно небольшом
             корпусе. Погрузитесь в настолько насыщенный опыт прослушивания, что вы удивитесь, как вы наслаждались
-            музыкой
-            раньше.
+            музыкой раньше.
           </p>
         </div>
       </div>
 
-      <div class="row my-3 my-lg-4">
+      <div class="row my-3 my-lg-4 py-lg-2 d-flex">
         <div class="col-5 p-0 d-flex">
           <div class="acquaint-img d-flex">
             <img src="../../assets/images/HomePod/img.png" alt="#" width="1590" class="__img">
@@ -44,14 +42,14 @@
         </div>
       </div>
 
-      <div class="row d-flex justify-content-center">
+      <div class="row d-flex justify-content-center pt-2">
         <div class="col-12 col-xxl-11 col-xxxl-10">
-          <p class="__info mb-3 mb-md-4">
+          <p class="__info text-lg mb-3 mb-md-4">
             Оснащенный твитерами и мощным сабвуфером, RT Bass Expert создан для того, чтобы поражать исключительным
             качеством беспроводного звука, по-настоящему чтить музыку в том виде, в каком она была написана. Каждая
             деталь, каждая частота, каждый тон и вибрация.
           </p>
-          <p class="__info">
+          <p class="__info text-lg">
             Приготовьтесь привнести непревзойденный музыкальный опыт в свой дом по доступной цене.
           </p>
         </div>
@@ -61,47 +59,38 @@
   </div>
 </template>
 
+
 <style scoped>
 .animated__pulse {
-  width: 100%;
+  width: 40%;
+  position: absolute;
+  right: 0;
   max-width: 1022px;
 }
 
-.homePod__title-2 {
-  font-size: 60px;
-  font-weight: 600;
-  text-align: left;
+.experts-section .__title {
+  margin-top: 134px;
 }
 
-.homePod__description .__info {
-  font-size: 24px;
-  font-weight: 500;
-  text-align: left;
-  max-width: 75%;
+.experts-section .__info {
+  font-weight: 400;
+  max-width: 78%;
 }
 
 .acquaint-img .__img, .acquaint-img .__img-2 {
   width: 100%;
+  flex-shrink: 0;
 }
 
 @media screen and (max-width: 1199px) {
-  .homePod__title-2 {
-    font-size: 40px;
-  }
-
-  .homePod__description .__info {
-    font-size: 20px;
+  .experts-section .__info {
     max-width: 95%;
   }
 }
 
-@media screen and (max-width: 575px) {
-  .homePod__title-2 {
-    font-size: 24px;
-  }
-
-  .homePod__description .__info {
-    font-size: 15px;
+@media screen and (max-width: 991px) {
+  .experts-section .__title {
+    margin-top: 40px;
   }
 }
 </style>
