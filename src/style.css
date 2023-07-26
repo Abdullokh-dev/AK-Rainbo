@@ -198,7 +198,7 @@ b {
   }
 
   .title-lg, .title-xl, .title-md {
-    font-size: 24px;
+    font-size: 24px !important;
   }
 
   .title-sm, .title-xs {

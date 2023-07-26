@@ -22,6 +22,9 @@ const fixColor = () => {
       container.value.style.background = '#1D1D1F'
       footer.value.style.background = 'black'
       break;
+    case '/home-pod':
+      footer.value.style.borderRadius = 0
+      break;
     default:
       container.value.style.background = 'black'
       footer.value.style.background = '#1D1D1F'

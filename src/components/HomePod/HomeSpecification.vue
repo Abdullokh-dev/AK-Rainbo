@@ -1,3 +1,13 @@
+<script setup>
+import {ref} from "vue";
+import "../../assets/css/pagination.css";
+import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
+import Flicking from "@egjs/vue3-flicking";
+import '../../assets/css/flicking-inline.css';
+const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false })])
+// const plugins = ref([new Pagination({ type: 'bullet' })])s
+</script>
+
 <template>
   <div class="row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10">
@@ -8,8 +18,24 @@
   </div>
 
   <div class="row home-specification">
-    <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5">
-      <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#">
+    <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5" style="margin: auto">
+      <Flicking :plugins="plugins">
+        <div class="d-flex" style="width: 100%">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+        </div>
+
+        <div class="d-flex" style="width: 100%">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+        </div>
+
+        <div class="d-flex" style="width: 100%">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+        </div>
+
+        <template #viewport>
+          <div class="flicking-pagination"></div>
+        </template>
+      </Flicking>
     </div>
 
     <div class="col-12 col-lg-6 col-xxl-5 mt-2 mt-lg-0">
@@ -84,7 +110,7 @@
         </div>
       </div>
 
-      <div class="__info-block">
+      <div class="__info-block mb-5">
         <div class="d-flex justify-content-between">
           <span class="__theme text-md">Вес:</span>
           <span class="text-md">2,9 кг</span>
@@ -96,18 +122,21 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <style scoped>
 .home-specification-title {
-    margin: 100px 0 50px 0;
+  margin: 100px 0 50px 0;
+}
+
+.flicking-pagination {
+  position: absolute;
+  left: 0;
+  bottom: 0;
 }
 
 .home-specification .__img {
   width: 100%;
   max-width: 800px;
+  padding-bottom: 70px;
 }
 
 .home-specification .__info-block {
@@ -135,5 +164,4 @@
     padding-bottom: 7.5px;
   }
 }
-
 </style>
