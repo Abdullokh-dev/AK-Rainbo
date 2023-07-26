@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="where-buy row d-flex justify-content-center">
+  <div class="where-buy row d-flex">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <h2 class="__title title-xl">
         Где <br> купить?
@@ -22,9 +22,8 @@
   </div>
 </template>
 
-
 <style scoped>
-.justify-content-center {
+.where-buy {
   background: url("../../assets/images/HomePod/img_2.png") no-repeat center top;
   background-size: cover;
 }
@@ -65,6 +64,7 @@
 .where-buy .__btn a:hover svg {
   right: 75px;
 }
+
 @media screen and (max-width:1199px) {
   .where-buy .__title {
     margin-top: 75px;
@@ -107,5 +107,4 @@
     right: 45px;
   }
 }
-
 </style>
