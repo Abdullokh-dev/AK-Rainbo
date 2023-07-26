@@ -189,7 +189,7 @@
         </div>
       </div>
       <div class="row mt-lg-5">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <div class="_hr mt-5"></div>
           <h3 class="mid-title">6. Звук от профессионалов Hi-End индустрии</h3>
           <p class="__info text-md limitation">
@@ -199,7 +199,11 @@
           </p>
         </div>
 
-        <div class="col-12 col-md-6 mt-md-5">
+        <div class="col-12 p-0 mb-5 d-lg-none">
+          <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1900" alt="#">
+        </div>
+
+        <div class="col-12 col-lg-6 mt-md-5">
           <div class="_hr"></div>
           <h3 class="mid-title">7. Звуки анимации</h3>
           <p class="__info text-md limitation">
@@ -207,41 +211,47 @@
             двадцати различных саундпаков для озвучания колонки, прежде чем попасть на боевую сборку.
           </p>
         </div>
+
+        <div class="col-12 d-lg-none p-0">
+          <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1900" alt="#">
+        </div>
       </div>
     </div>
   </div>
 
-  <div class="row">
+  <div class="row d-none d-lg-flex hifi mt-4">
     <div class="col-12 col-md-6 ps-0 pe-0 pe-md-1">
-      <img class="pe-md-2" src="../../assets/images/HomePod/slide-3.png" width="1900" alt="#" style="width: 100%">
+      <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1900" alt="#">
     </div>
     <div class="col-12 col-md-6 pe-0 ps-0 ps-md-1">
-      <img class="ps-md-2" src="../../assets/images/HomePod/slide-4.png" width="1900" alt="#" style="width: 100%">
+      <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1900" alt="#">
     </div>
   </div>
 
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <div class="row">
-        <div class="col-12 col-md-6">
+        <div class="col-12 col-lg-6">
           <div class="_hr mt-5"></div>
           <h3 class="mid-title">8. Деревянный корпус</h3>
           <p class="__info text-md limitation">
             Корпус акустических систем RAINBO TECHNICS изготовлен из МДФ и фанеры. Это обеспечивает достаточную жёсткость, отсутствие лишних вибраций и прекрасные акустические свойства системы.
           </p>
-          <p class="__info text-md limitation">
+          <p class="__info text-md limitation mb-5">
             Каждая колонка проходит 12 этапов промежуточного контроля в процессе производства. На выходе каждая колонка играет безостановочно трое суток, после чего проходит ещё 4 финальных общих теста и только после этого упаковывается и отправляется в продажу.
           </p>
         </div>
 
-        <div class="col-12 col-md-6 mt-md-5">
+        <div class="col-12 col-lg-6 mt-lg-5">
           <div class="_hr"></div>
           <h3 class="mid-title">9. Наше производство</h3>
           <p class="__info text-md limitation">
             Наше производство находится в г. Москве.
-            <br /> <br />
+          </p>
+          <p class="__info text-md limitation">
             Перед запуском серийного производства кофемашин мы более 5 лет проводили лабораторные испытания всех систем, чтобы предоставить Вам многофункциональное, высокопроизводительное, надёжное, долговечное оборудование.
-            <br /><br />
+          </p>
+          <p class="__info text-md limitation">s
             Все детали изготовлены из высококачественных сертифицированных материалов.Наше производство отличается тем, что все наши кофемашины – ручной сборки. Это позволяет добиться максимального контроля качества в производственном процессе.Мы не перепродаём, мы производим!
           </p>
         </div>
@@ -314,7 +324,7 @@
   }
 
   .hifi .__info {
-    margin: 10px 0 15px 0;
+    margin: 0 0 15px 0;
   }
 
   .hifi .__box svg {
@@ -351,5 +361,4 @@
     padding-left: 5.222222% !important;
   }
 }
-
 </style>
