@@ -41,6 +41,13 @@
   font-size: 1rem;
 }
 
+.pagination-light .flicking-pagination-bullet {
+    background-color: #727272;
+    width: 15px;
+    height: 15px;
+    margin: 0 5px;
+}
+
 .flicking-pagination-scroll .flicking-pagination-bullet {
   vertical-align: middle;
   position: relative;
@@ -50,6 +57,10 @@
 
 .flicking-pagination-bullet-active {
   background-color: #757D62;
+}
+
+.pagination-light .flicking-pagination-bullet-active {
+    background-color: #FFFFFF;
 }
 
 .flicking-pagination-scroll .flicking-pagination-bullet {
@@ -88,11 +99,31 @@
         height: 15px;
         margin: 0 7px;
     }
+
+    .pagination-light .flicking-pagination-bullet {
+        width: 11px;
+        height: 11px;
+        margin: 0 4px;
+    }
+
+    .pagination-light {
+        margin-top: 15px;
+    }
 }
 @media screen and (max-width:575px) {
     .flicking-pagination-bullet {
         width: 10px;
         height: 10px;
-        margin: 0 5px;
+        margin: 0 3px;
+    }
+
+    .pagination-light .flicking-pagination-bullet {
+        width: 7px;
+        height: 7px;
+        margin: 0 2.5px;
+    }
+
+    .pagination-light {
+        margin-top: 10px;
     }
 }

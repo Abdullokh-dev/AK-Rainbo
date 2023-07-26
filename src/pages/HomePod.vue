@@ -8,6 +8,7 @@ import Comparison from "../components/HomePod/Comparison.vue";
 import SuitableInterior from "../components/HomePod/SuitableInterior.vue";
 import HomeSpecification from "../components/HomePod/HomeSpecification.vue";
 import WhereBuy from "../components/HomePod/WhereBuy.vue";
+import SliderDuality from "../components/SliderDuality.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import WhereBuy from "../components/HomePod/WhereBuy.vue";
   <HomePodMain />
   <Acquaint />
   <HIFI />
+  <SliderDuality />
   <Comparison />
   <SuitableInterior />
   <HomeSpecification />
