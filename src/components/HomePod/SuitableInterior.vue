@@ -81,28 +81,6 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
   height: 100%;
 }
 
-.dots-group button {
-  height: 25px;
-  width: 40px;
-  margin: 25px 15px;
-}
-
-.dots-group ._gray {
-  background: #404249;
-}
-
-.dots-group ._green {
-  background: #757D62;
-}
-
-.dots-group ._red {
-  background: #991823;
-}
-
-.dots-group ._white {
-  background: #E4E7EA;
-}
-
 @media screen and (max-width:1199px) {
   .suit-title {
     margin-top: 75px;

@@ -1,12 +1,12 @@
 <template>
-  <div class="row d-flex justify-content-center h-100 position-relative">
+  <div class="row d-flex justify-content-center h-100 position-relative video-content">
     <div class="col-12 col-xxl-11 col-xxxl-10">
 
       <div class="row video-content">
         <div class="col">
-          <video preload="auto" autoplay="1" loop muted="1">
-            <source src="../../assets/videos/Nozzles.mp4" type="video/mp4">
-          </video>
+<!--          <video preload="auto" autoplay="1" loop muted="1">-->
+<!--            <source src="../../assets/videos/Nozzles.mp4" type="video/mp4">-->
+<!--          </video>-->
 
           <div class="homepod">
             <div class="row mainPodSection">
@@ -33,6 +33,10 @@
 </script>
 
 <style scoped>
+.video-content {
+  background: url("../../assets/images/HomePod/img.png") no-repeat center center fixed;
+  background-size: cover;
+}
 .homepod {
   margin-top: 233px;
   position: relative;

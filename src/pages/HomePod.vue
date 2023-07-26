@@ -6,6 +6,7 @@ import Acquaint from "../components/HomePod/Acquaint.vue";
 import HIFI from "../components/HomePod/HIFI.vue";
 import Comparison from "../components/HomePod/Comparison.vue";
 import SuitableInterior from "../components/HomePod/SuitableInterior.vue";
+import HomeSpecification from "../components/HomePod/HomeSpecification.vue";
 </script>
 
 <template>
@@ -15,6 +16,7 @@ import SuitableInterior from "../components/HomePod/SuitableInterior.vue";
   <HIFI />
   <Comparison />
   <SuitableInterior />
+  <HomeSpecification />
 </template>
 
 <style scoped>
