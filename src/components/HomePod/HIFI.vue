@@ -1,5 +1,29 @@
 <script setup>
+import {onMounted} from "vue";
+gsap.registerPlugin(ScrollTrigger);
 
+onMounted(() => {
+  gsap.to("#img_1", {
+    opacity: 0,
+    scrollTrigger: {
+      trigger: '#img_1',
+      start: 'top 70%',
+      end: 'top 20%',
+      toggleActions: "restart none none none",
+      scrub: true,
+    },
+  })
+  gsap.to("#img_2", {
+    opacity: 1,
+    scrollTrigger: {
+      trigger: '#img_2',
+      start: 'top 70%',
+      end: 'top 20%',
+      toggleActions: "restart none none none",
+      scrub: true,
+    },
+  })
+})
 </script>
 
 <template>
@@ -32,8 +56,9 @@
       </p>
     </div>
 
-    <div class="col-12 col-lg-6 d-flex p-0 pe-lg-4 pe-xxl-5 mt-3 mt-lg-0">
-      <img class="__img d-flex my-auto" src="../../assets/images/HomePod/player.png" alt="#" width="1800">
+    <div class="col-12 col-lg-6 d-flex p-0 pe-lg-4 pe-xxl-5 mt-3 mt-lg-0 d-flex position-relative">
+      <img id="img_1" class="__img my-auto" src="../../assets/images/HomePod/player.png" alt="#" width="1800">
+      <img id="img_2" class="__img my-auto pe-lg-4 pe-xxl-5" src="../../assets/images/HomePod/img_3.png" alt="#" width="1800" style="opacity: 0">
     </div>
   </div>
 
@@ -261,6 +286,14 @@
 </template>
 
 <style scoped>
+#img_2 {
+  position: absolute;
+  vertical-align: center;
+  align-self: center;
+  top: 0;
+  bottom: 0;
+}
+
 .hifi .__title {
   margin: 150px 0 60px 0;
   max-width: 1100px;
