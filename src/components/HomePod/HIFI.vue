@@ -6,8 +6,7 @@
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <h2 class="__title title-xl">
-        9 ФАКТОВ о Домашней Hi-Fi стереосистеме
-        RAINBO TECHNICS Bass Expert
+        9 ФАКТОВ о Домашней Hi-Fi стереосистеме RAINBO TECHNICS Bass Expert
       </h2>
     </div>
   </div>

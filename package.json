@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@egjs/flicking-plugins": "^4.7.0",
+    "@egjs/vue3-flicking": "^4.10.7",
     "@vueuse/core": "^10.2.1",
     "bootstrap": "^5.3.0",
     "plyr": "^3.7.8",
