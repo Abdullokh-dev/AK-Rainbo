@@ -19,7 +19,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 
   <div class="row">
     <div class="col-12 p-0">
-      <Flicking :plugins="plugins">
+      <Flicking :plugins="plugins" :options="{moveType: 'strict'}">
         <!-- First Slide -->
         <div class="interior d-flex">
           <div class="col-8 p-0 bg-warning">

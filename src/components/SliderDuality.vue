@@ -10,7 +10,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 <template>
 <div class="row mt-2 mt-lg-4">
   <div class="col-12 p-0">
-    <Flicking :plugins="plugins">
+    <Flicking :plugins="plugins" :options="{moveType: 'strict'}">
       <div class="d-flex duality-slider">
         <div class="col-6 pe-1 pe-lg-2">
           <img class="__img" src="../assets/images/img.png" width="1900" alt="#" draggable="false">
