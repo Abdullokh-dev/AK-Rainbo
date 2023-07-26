@@ -1,10 +1,11 @@
 <script setup>
 import {ref} from "vue";
-import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
+import { Pagination,Arrow, AutoPlay } from "@egjs/flicking-plugins";
 import Flicking from "@egjs/vue3-flicking";
 import '../assets/css/flicking-inline.css';
+import "../assets/css/arrow.css";
 import "../assets/css/pagination.css";
-const plugins = ref([new Pagination({ type: 'bullet' })])
+const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow()])
 </script>
 
 <template>
@@ -67,6 +68,9 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 
       <template #viewport>
         <div class="flicking-pagination pagination-light"></div>
+
+        <span class="flicking-arrow-prev"></span>
+        <span class="flicking-arrow-next"></span>
       </template>
     </Flicking>
   </div>
