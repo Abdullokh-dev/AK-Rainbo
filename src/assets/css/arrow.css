@@ -11,11 +11,6 @@
   z-index: 2;
 }
 
-.flicking-arrow-prev:hover,
-.flicking-arrow-next:hover {
-  background-color: rgba(0, 0, 0, 0.70);
-}
-
 .flicking-arrow-prev {
   left: 0;
 }
@@ -88,4 +83,10 @@
 .flicking-arrow-prev.is-thin::after,
 .flicking-arrow-next.is-thin::after{
   top: calc(50% - 2px);
+}
+@media screen and (max-width:991px) {
+  .flicking-arrow-prev,
+  .flicking-arrow-next {
+    display: none !important;
+  }
 }
