@@ -1,5 +1,10 @@
 <script setup>
-import '../../assets/css/slick-carousel-theme.css'
+import {ref} from "vue";
+import { Pagination, Fade } from "@egjs/flicking-plugins";
+import Flicking from "@egjs/vue3-flicking";
+import '../../assets/css/flicking-inline.css';
+import "../../assets/css/pagination.css";
+const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 </script>
 
 <template>
@@ -10,67 +15,78 @@ import '../../assets/css/slick-carousel-theme.css'
       </h2>
       <!-- Slider Mobile -->
       <div class="row d-lg-none">
-        <div class="col-12 text-lg text-black">
-          <!-- Slider -->
-          <section class="regular slider mt-0">
-            <div class="text-center">
-              <img src="../../assets/images/YandexStation/colored-1.png" alt="#" class="mx-auto">
-
-              <p class="__info mx-auto mb-4">
-                <span class="__purple">Танцы, звуки и ритмы</span> — в вашей комнате ночь напролет
-              </p>
+        <div class="col-12 text-lg text-black px-0">
+          <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-1.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
+                  <span class="__purple">Танцы, звуки и ритмы</span> — в вашей комнате ночь напролет
+                </p>
+              </div>
             </div>
 
-            <div>
-              <div class="text-center">
-                <img src="../../assets/images/YandexStation/colored-2.png" alt="#" class="mx-auto">
-
-                <p class="__info mx-auto">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-2.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
                   <span class="__red"> Отлично вписывается</span> в ваш интерьер и образ жизни
                 </p>
               </div>
             </div>
 
-            <div>
-              <div class="text-center">
-                <img src="../../assets/images/YandexStation/colored-3.png" alt="#" class="mx-auto">
-
-                <p class="__info mx-auto">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-3.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
                   <span class="__yellow">Поддержит</span> самые смелые идеи и ответит на неожиданные вопросы
                 </p>
               </div>
             </div>
 
-            <div>
-              <div class="text-center">
-                <img src="../../assets/images/YandexStation/colored-4.png" alt="#" class="mx-auto">
-
-                <p class="__info mx-auto">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-4.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
                   <span class="__blue">Свечи, ужин</span>, романтичная музыка и самое нежное признание
                 </p>
               </div>
             </div>
 
-            <div>
-              <div class="text-center">
-                <img src="../../assets/images/YandexStation/colored-5.png" alt="#" class="mx-auto">
-
-                <p class="__info mx-auto">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-5.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
                   <span class="__pink">Самыми интересными</span> тропами проведет вас в сказочный мир
                 </p>
               </div>
             </div>
 
-            <div>
-              <div class="text-center">
-                <img src="../../assets/images/YandexStation/colored-6.png" alt="#" class="mx-auto">
-
-                <p class="__info mx-auto">
+            <div class="d-flex slider justify-content-center">
+              <div>
+                <div class="text-center">
+                  <img src="../../assets/images/YandexStation/colored-6.png" alt="#" class="mx-auto" draggable="false">
+                </div>
+                <p class="__info text-center">
                   <span class="__brown">Мягкая музыка</span>, светлые тона — неторопливый, но приятный путь к себе
                 </p>
               </div>
             </div>
-        </section>
+
+            <template #viewport>
+              <div class="flicking-pagination default-dots"></div>
+            </template>
+          </Flicking>
         </div>
       </div>
 
@@ -165,6 +181,9 @@ import '../../assets/css/slick-carousel-theme.css'
   position: relative;
   text-align: center;
 }
+.slider {
+  width: 100%;
+}
 
 .characters .__img-box img,
 .slider img {
@@ -193,6 +212,7 @@ import '../../assets/css/slick-carousel-theme.css'
 
 .slider .__info {
   max-width: 100%;
+  margin: auto 0;
 }
 
 .characters .__purple
@@ -251,6 +271,11 @@ import '../../assets/css/slick-carousel-theme.css'
 
   .characters .__button {
     padding: 11px 24px;
+  }
+
+  .slider .__info {
+    max-width: 95%;
+    margin: auto;
   }
 }
 </style>

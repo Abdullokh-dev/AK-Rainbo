@@ -1,5 +1,10 @@
 <script setup>
-import {onMounted, reactive} from "vue";
+import {onMounted, reactive, ref} from "vue";
+import { Pagination, Fade } from "@egjs/flicking-plugins";
+import Flicking from "@egjs/vue3-flicking";
+import '../../assets/css/flicking-inline.css';
+import "../../assets/css/pagination.css";
+const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 
 const items = reactive({
   first: '',
@@ -22,7 +27,6 @@ const hoverElement = (element) => {
 const unHoverElement = (element) => {
   element.style.cssText += "opacity: 0;"
 }
-
 </script>
 
 <template>
@@ -38,43 +42,54 @@ const unHoverElement = (element) => {
       </div>
 
       <!-- Mobile Show -->
-      <div class="row d-lg-none">
-        <div class="col-12 p-0 text-black">
-          <!-- Slider -->
-          <section class="regular title-xs slider-custom mt-0">
-            <div>
-              <p class="__info ps-3 ps-sm-0">
-                <b class="_bold _kids">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
-              </p>
+      <div class="row mt-2 d-lg-none">
+        <div class="col-12 px-0 title-xs slider-custom text-black">
+          <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
+            <div class="d-flex slider justify-content-center" style="width: 100%">
+              <div>
+                <p class="__info ps-3 ps-sm-0">
+                  <b class="_bold _kids">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
+                </p>
 
-              <img src="../../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
+                <img src="../../assets/images/YandexStation/choose-1.png" alt="#" width="2040" draggable="false">
+              </div>
             </div>
 
-            <div>
-              <p class="__info ps-3 ps-sm-0">
-                <b class="_bold _romantic">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
-              </p>
+            <div class="d-flex slider justify-content-center" style="width: 100%">
+              <div>
+                <p class="__info ps-3 ps-sm-0">
+                  <b class="_bold _romantic">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
+                </p>
 
-              <img src="../../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
+                <img src="../../assets/images/YandexStation/choose-2.png" alt="#" width="2041" draggable="false">
+              </div>
             </div>
 
-            <div>
-              <p class="__info ps-3 ps-sm-0">
-                <b class="_bold _sport">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
-              </p>
+            <div class="d-flex slider justify-content-center" style="width: 100%">
+              <div>
+                <p class="__info ps-3 ps-sm-0">
+                  <b class="_bold _sport">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
+                </p>
 
-              <img src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
+                <img src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040" draggable="false">
+              </div>
             </div>
 
-            <div>
-              <p class="__info ps-3 ps-sm-0">
-                <b class="_bold _street">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
-              </p>
+            <div class="d-flex slider justify-content-center" style="width: 100%">
+              <div>
+                <p class="__info ps-3 ps-sm-0">
+                  <b class="_bold _street">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
+                </p>
 
-              <img src="../../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
+                <img src="../../assets/images/YandexStation/choose-4.png" alt="#" width="2040" draggable="false">
+              </div>
             </div>
-          </section>
-          <div class="text-center mt-4 pt-2">
+
+            <template #viewport>
+              <div class="flicking-pagination default-dots"></div>
+            </template>
+          </Flicking>
+          <div class="text-center mt-2 pt-2">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
           </div>
         </div>

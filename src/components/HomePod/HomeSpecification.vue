@@ -1,11 +1,10 @@
 <script setup>
 import {ref} from "vue";
-import "../../assets/css/pagination.css";
-import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
+import { Pagination, Fade } from "@egjs/flicking-plugins";
 import Flicking from "@egjs/vue3-flicking";
 import '../../assets/css/flicking-inline.css';
-const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false })])
-// const plugins = ref([new Pagination({ type: 'bullet' })])s
+import "../../assets/css/pagination.css";
+const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 </script>
 
 <template>
@@ -19,7 +18,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration
 
   <div class="row home-specification">
     <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5" style="margin: auto">
-      <Flicking :plugins="plugins" :options="{moveType: 'strict'}">
+      <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
         <div class="d-flex" style="width: 100%">
           <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
         </div>

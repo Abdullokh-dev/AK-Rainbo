@@ -1,11 +1,10 @@
 <script setup>
 import {ref} from "vue";
-import { Pagination, AutoPlay } from "@egjs/flicking-plugins";
+import { Pagination, Fade } from "@egjs/flicking-plugins";
 import Flicking from "@egjs/vue3-flicking";
 import '../../assets/css/flicking-inline.css';
 import "../../assets/css/pagination.css";
-// const plugins = ref([new Pagination({ type: 'bullet' }), new AutoPlay({ duration: 5000, direction: "NEXT", stopOnHover: false })])
-const plugins = ref([new Pagination({ type: 'bullet' })])
+const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 </script>
 
 <template>
@@ -19,7 +18,7 @@ const plugins = ref([new Pagination({ type: 'bullet' })])
 
   <div class="row">
     <div class="col-12 p-0">
-      <Flicking :plugins="plugins" :options="{moveType: 'strict'}">
+      <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
         <!-- First Slide -->
         <div class="interior d-flex">
           <div class="col-8 p-0 bg-warning">

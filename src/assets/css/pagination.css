@@ -6,6 +6,38 @@
   z-index: 2;
 }
 
+.default-dots {
+    position: relative;
+    margin-top: 10px;
+}
+
+.default-dots .flicking-pagination-bullet {
+    background-color: #D8D8D8;
+    width: 7px;
+    height: 7px;
+    margin: 0 2px;
+}
+
+.default-dots .flicking-pagination-bullet-active {
+    background-color: #730EA6;
+}
+
+._blue-dots {
+    position: relative;
+    margin-top: 20px;
+}
+
+._blue-dots .flicking-pagination-bullet {
+    background-color: #F0F0F0;
+    width: 12px;
+    height: 12px;
+    margin: 0 5px;
+}
+
+._blue-dots .flicking-pagination-bullet-active {
+    background-color: #3E3AFF;
+}
+
 .flicking-pagination-bullets,
 .flicking-pagination-scroll {
   font-size: 0;
@@ -108,6 +140,17 @@
 
     .pagination-light {
         margin-top: 15px;
+    }
+
+    ._blue-dots {
+        position: relative;
+        margin-top: 10px;
+    }
+
+    ._blue-dots .flicking-pagination-bullet {
+        width: 10px;
+        height: 10px;
+        margin: 0 3px;
     }
 }
 @media screen and (max-width:575px) {
