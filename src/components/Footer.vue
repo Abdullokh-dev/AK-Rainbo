@@ -4,7 +4,7 @@
 
 <template>
 <footer id="footer" class="row d-flex justify-content-center">
-  <div class="col-12 col-xxl-10 pt-xxl-4">
+  <div class="col-12 col-xxl-10 p-0 pt-xxl-4">
     <div class="row">
 
       <div class="__address col-12 col-lg-4 mt-4 pt-3 pt-xxl-0 mt-lg-4 ps-lg-4">

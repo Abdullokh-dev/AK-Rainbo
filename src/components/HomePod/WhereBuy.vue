@@ -2,7 +2,7 @@
 </script>
 
 <template>
-  <div class="where-buy row d-flex">
+  <div class="where-buy row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <h2 class="__title title-xl">
         Где <br> купить?
