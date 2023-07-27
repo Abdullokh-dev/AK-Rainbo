@@ -45,7 +45,7 @@ const unHoverElement = (element) => {
       <div class="row mt-2 d-lg-none">
         <div class="col-12 px-0 title-xs slider-custom text-black">
           <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
-            <div class="d-flex slider justify-content-center" style="width: 100%">
+            <div class="d-flex slider justify-content-center w-100">
               <div>
                 <p class="__info ps-3 ps-sm-0">
                   <b class="_bold _kids">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
@@ -55,7 +55,7 @@ const unHoverElement = (element) => {
               </div>
             </div>
 
-            <div class="d-flex slider justify-content-center" style="width: 100%">
+            <div class="d-flex slider justify-content-center w-100">
               <div>
                 <p class="__info ps-3 ps-sm-0">
                   <b class="_bold _romantic">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
@@ -65,7 +65,7 @@ const unHoverElement = (element) => {
               </div>
             </div>
 
-            <div class="d-flex slider justify-content-center" style="width: 100%">
+            <div class="d-flex slider justify-content-center w-100">
               <div>
                 <p class="__info ps-3 ps-sm-0">
                   <b class="_bold _sport">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
@@ -75,7 +75,7 @@ const unHoverElement = (element) => {
               </div>
             </div>
 
-            <div class="d-flex slider justify-content-center" style="width: 100%">
+            <div class="d-flex slider justify-content-center w-100">
               <div>
                 <p class="__info ps-3 ps-sm-0">
                   <b class="_bold _street">Street Art Collection</b> – дизайны от уличных художников-граффитистов.

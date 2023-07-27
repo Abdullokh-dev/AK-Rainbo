@@ -17,17 +17,17 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
   </div>
 
   <div class="row home-specification">
-    <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5" style="margin: auto">
+    <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5 m-auto">
       <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
-        <div class="d-flex" style="width: 100%">
+        <div class="d-flex w-100">
           <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
         </div>
 
-        <div class="d-flex" style="width: 100%">
+        <div class="d-flex w-100">
           <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
         </div>
 
-        <div class="d-flex" style="width: 100%">
+        <div class="d-flex w-100">
           <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
         </div>
 
