@@ -5,7 +5,7 @@
   <div class="where-buy row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <h2 class="__title title-xl">
-        Где <br> купить?
+        Где купить?
       </h2>
       <h3 class="title-md __title-md uppercase">
         Cтереосистема <br> Раинбо Technics
@@ -33,17 +33,16 @@
 }
 
 .where-buy .__title-md {
-  margin: 31px 0 30px;
+  margin: 109px 0 30px;
 }
 
 .where-buy .__info {
   font-weight: 500;
   line-height: normal;
-  max-width: 342px;
 }
 
 .where-buy .__btn  {
-  margin: 44px 0 89px 0;
+  margin: 65px 0 89px 0;
 }
 
 .where-buy .__btn a {
@@ -81,6 +80,16 @@
 
   .where-buy .__btn a:hover svg {
     right: 45px;
+  }
+}
+
+@media screen and (max-width:991px) {
+  .where-buy .__title-md {
+    margin: 70px 0 20px;
+  }
+
+  .where-buy .__btn  {
+    margin: 45px 0 89px 0;
   }
 }
 

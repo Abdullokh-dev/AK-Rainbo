@@ -30,7 +30,7 @@ onMounted(() => {
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <h2 class="__title title-xl">
-        9 ФАКТОВ о Домашней Hi-Fi стереосистеме RAINBO TECHNICS Bass Expert
+        9 ФАКТОВ о Домашней Hi-Fi стереосистеме <br> RAINBO TECHNICS Bass Expert
       </h2>
     </div>
   </div>
@@ -91,7 +91,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 d-flex p-0 ps-lg-4 mt-3 mt-lg-5 ps-xxl-5">
-      <img class="__img d-flex my-auto" src="../../assets/images/HomePod/player-btn.png" alt="#" width="1800">
+      <img class="__img d-flex mb-auto" src="../../assets/images/HomePod/player-btn.png" alt="#" width="810">
     </div>
   </div>
 
@@ -113,7 +113,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 d-flex p-0 pe-lg-4 pe-xxl-5 mt-3 mt-lg-5">
-      <img class="__img d-flex my-auto" src="../../assets/images/HomePod/player-3.png" alt="#" width="1900">
+      <img class="__img d-flex mb-auto" src="../../assets/images/HomePod/img_3.png" alt="#" width="802">
     </div>
   </div>
 
@@ -140,7 +140,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 d-flex p-0 ps-lg-4 ps-xxl-5 mt-3 mt-lg-5">
-      <img class="__img d-flex my-auto" src="../../assets/images/HomePod/player-4.png" alt="#" width="1800">
+      <img class="__img d-flex mb-auto" src="../../assets/images/HomePod/player-4.png" alt="#" width="802">
     </div>
   </div>
 
@@ -153,7 +153,7 @@ onMounted(() => {
 
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
-      <div class="row">
+      <div class="row mt-lg-3">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="__box">
             <svg width="130" height="130" viewBox="0 0 130 130" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -224,7 +224,7 @@ onMounted(() => {
         </div>
 
         <div class="col-12 p-0 mb-5 d-lg-none">
-          <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1900" alt="#">
+          <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1188" alt="#">
         </div>
 
         <div class="col-12 col-lg-6 mt-md-5">
@@ -237,7 +237,7 @@ onMounted(() => {
         </div>
 
         <div class="col-12 d-lg-none p-0">
-          <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1900" alt="#">
+          <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1188" alt="#">
         </div>
       </div>
     </div>
@@ -245,10 +245,10 @@ onMounted(() => {
 
   <div class="row d-none d-lg-flex hifi mt-4">
     <div class="col-12 col-md-6 ps-0 pe-0 pe-md-1">
-      <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1900" alt="#">
+      <img class="pe-md-2 __img" src="../../assets/images/HomePod/slide-3.png" width="1188" alt="#">
     </div>
     <div class="col-12 col-md-6 pe-0 ps-0 ps-md-1">
-      <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1900" alt="#">
+      <img class="ps-md-2 __img" src="../../assets/images/HomePod/slide-4.png" width="1188" alt="#">
     </div>
   </div>
 
