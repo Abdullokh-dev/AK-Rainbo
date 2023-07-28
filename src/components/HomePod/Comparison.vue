@@ -14,10 +14,10 @@
           <div class="row">
             <!-- Images -->
             <div class="col-6 px-4">
-              <img src="../../assets/images/HomePod/compare-1.png" width="636" alt="#" class="__img">
+              <img src="../../assets/images/HomePod/compare-1.png" width="658" alt="#" class="__img">
             </div>
             <div class="col-6 px-4">
-              <img src="../../assets/images/HomePod/compare-2.png" width="672" alt="#" class="__img">
+              <img src="../../assets/images/HomePod/compare-2.png" width="658" alt="#" class="__img">
             </div>
             <!-- Names -->
             <div class="col-6 text-center">
@@ -161,10 +161,10 @@
           <div class="row">
             <!-- Images -->
             <div class="col-6 px-4">
-              <img src="../../assets/images/HomePod/compare-1.png" width="636" alt="#" class="__img">
+              <img src="../../assets/images/HomePod/compare-3.png" alt="#" width="658" class="__img">
             </div>
             <div class="col-6 px-4">
-              <img src="../../assets/images/HomePod/compare-2.png" width="672" alt="#" class="__img">
+              <img src="../../assets/images/HomePod/compare-4.png" alt="#" width="658" class="__img">
             </div>
             <!-- Names -->
             <div class="col-6 text-center">

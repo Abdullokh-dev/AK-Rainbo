@@ -21,11 +21,35 @@ onMounted(() => {
 })
 
 const hoverElement = (element) => {
-  element.style.cssText += 'opacity: 1;margin:auto;'
-}
-
-const unHoverElement = (element) => {
-  element.style.cssText += "opacity: 0;"
+  switch(element) {
+    case items.first:
+      items.second.style.cssText += "opacity: 0;"
+      items.third.style.cssText += "opacity: 0;"
+      items.fourth.style.cssText += "opacity: 0;"
+      items.first.style.cssText += 'opacity: 1;margin:auto;'
+      break;
+    case items.second:
+      items.first.style.cssText += "opacity: 0;"
+      items.third.style.cssText += "opacity: 0;"
+      items.fourth.style.cssText += "opacity: 0;"
+      items.second.style.cssText += 'opacity: 1;margin:auto;'
+      break;
+    case items.third:
+      items.first.style.cssText += "opacity: 0;"
+      items.second.style.cssText += "opacity: 0;"
+      items.fourth.style.cssText += "opacity: 0;"
+      items.third.style.cssText += 'opacity: 1;margin:auto;'
+      break;
+    case items.fourth:
+      items.first.style.cssText += "opacity: 0;"
+      items.second.style.cssText += "opacity: 0;"
+      items.third.style.cssText += "opacity: 0;"
+      items.fourth.style.cssText += 'opacity: 1;margin:auto;'
+      break;
+    default:
+      console.log('item not found')
+      break
+  }
 }
 </script>
 
@@ -99,16 +123,16 @@ const unHoverElement = (element) => {
       <div class="row d-none d-lg-block">
         <div class="col-6 text-black title-xs">
           <p class="__info">
-            <b class="_bold _kids" @mouseenter="hoverElement(items.first)" @mouseleave="unHoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
+            <b class="_bold _kids" @mouseenter="hoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
           </p>
           <p class="__info">
-            <b class="_bold _romantic" @mouseenter="hoverElement(items.second)" @mouseleave="unHoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
+            <b class="_bold _romantic" @mouseenter="hoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
           </p>
           <p class="__info">
-            <b class="_bold _sport" @mouseenter="hoverElement(items.third)" @mouseleave="unHoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
+            <b class="_bold _sport" @mouseenter="hoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
           </p>
           <p class="__info">
-            <b class="_bold _street" @mouseenter="hoverElement(items.fourth)" @mouseleave="unHoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
+            <b class="_bold _street" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
           <div class="mt-5 pt-3">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
