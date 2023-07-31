@@ -18,7 +18,7 @@
       <div class="row pb-lg-0">
         <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center justify-content-xxl-start">
           <div class="mt-sm-2 my-lg-auto px-3 px-sm-4 px-lg-0 ms-xl-4 ms-xxl-2">
-            <h3 class="customize-title">Яндекс.Станции Лайт</h3>
+            <h3 class="customize-title" id="yandex-station">Яндекс.Станции Лайт</h3>
             <p class="customize-description mt-2 mt-lg-3">
               Яркая и компактная умная колонка, которая управляется голосом и сенсорными кнопками. Она здорово украсит любой интерьер и сможет развлечь ребенка.
             </p>
@@ -48,7 +48,7 @@
     </div>
   </div>
   <!-- Yandex Console Belt -->
-  <div class="row d-flex justify-content-center radius-border customize-box_dark my-4">
+  <div class="row d-flex justify-content-center radius-border customize-box_dark my-4" id="sony-playstation">
     <div class="col-12 pt-2 col-xxl-11 col-xxxl-10">
 
       <div class="row pb-lg-0">
@@ -59,7 +59,7 @@
               Мы рады предложить Вам услугу индивидуальной кастомизации игровых консолей и геймпадов. Если у вас есть концепция подарков, корпоративного мерча, подарков для розыгрышей или другие идеи – мы будем рады их обсудить.
             </p>
             <div class="mb-4 mt-4 pt-xl-1 mt-xxl-5">
-              <a href="#" class="yandex-station__button">
+              <a href="#/home-pod" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
@@ -84,13 +84,13 @@
 
   <!-- Nozzles -->
   <div class="row">
-    <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4" id="gamepad">
       <div class="row radius-border playstation-card__left flex-lg-column-reverse">
         <div class="col d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
             <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Геймпад Sony Playstation</h3>
             <div class="mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
-              <a href="#" class="yandex-station__button">
+              <a href="#/home-pod" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
@@ -112,13 +112,13 @@
       </div>
     </div>
 
-    <div class="col-12 col-lg-6 ps-lg-4">
+    <div class="col-12 col-lg-6 ps-lg-4" id="nozzles">
       <div class="row radius-border playstation-card__right flex-lg-column-reverse">
         <div class="col-12 d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
             <h3 class="__title mb-3 mb-lg-4 mb-xl-5 text-black">Насадки на стики</h3>
             <div class="mt-lg-3 mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
-              <a href="#" class="yandex-station__button">
+              <a href="#/home-pod" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>

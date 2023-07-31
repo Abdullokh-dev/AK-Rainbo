@@ -8,14 +8,14 @@ import AboutTeam from "../components/Home/AboutTeam.vue";
 
 <template>
   <Header show-lists="true" theme="white"/>
-  <Main id="sterio"/>
+  <Main class="sterio"/>
   <YandexBelt />
   <AboutTeam />
 </template>
 
 <style scoped>
 @media screen and (max-width: 1199px) {
-  #sterio {
+  .sterio {
     margin-top: 112px;
   }
 }

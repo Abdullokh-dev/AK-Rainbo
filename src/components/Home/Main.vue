@@ -16,7 +16,7 @@
           Слышать звук так, как он звучит.
         </p>
         <div class="pb-5 mt-4 pt-3">
-          <a href="#" class="__button text-md">
+          <a href="#/home-pod" class="__button text-md">
             Узнать больше
             <span>
             <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">

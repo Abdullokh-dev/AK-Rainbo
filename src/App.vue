@@ -49,7 +49,7 @@ import Footer from "./components/Footer.vue";
 </script>
 
 <template>
-  <div class="container-fluid" id="main-container">
+  <div class="container-fluid overflow-none" id="main-container">
     <RouterView />
     <Footer />
   </div>

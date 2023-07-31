@@ -17,6 +17,10 @@ window.onscroll = function() {
     navbar.style.backdropFilter = 'none';
   }
 }
+
+const scrollElement = (id) => {
+  document.getElementById(id).scrollIntoView({behavior: "smooth",'block':'center','inline':'center'})
+}
 </script>
 <template>
   <header class="row d-flex justify-content-center fixed-top" id="navbar">
@@ -66,20 +70,20 @@ window.onscroll = function() {
             <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarMobile">
               <ul class="navbar-nav mb-2 mb-xl-0">
                 <li class="nav-item mt-2 mt-xl-0">
-                  <a href="#" class="navbar__list d-none d-xl-block">Стереосистема</a>
-                  <a href="#" class="list header__item d-xl-none">Стереосистема RAINBO TECHNICS </a>
+                  <a href="#/home-pod" class="navbar__list d-none d-xl-block">Стереосистема</a>
+                  <a href="#/home-pod" class="list header__item d-xl-none">Стереосистема RAINBO TECHNICS </a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a href="#" class="list header__item">Sony Playstation</a>
+                  <a @click="scrollElement('yandex-station')" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a href="#/yandex-station" class="list header__item">Яндекс.Станции</a>
+                  <a @click="scrollElement('sony-playstation')" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a href="#/nozzles" class="list header__item">Накладки на стики</a>
+                  <a @click="scrollElement('nozzles')" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a href="#" class="list header__item">Геймпады</a>
+                  <a @click="scrollElement('gamepad')" class="list header__item">Геймпады</a>
                 </li>
               </ul>
             </div>
@@ -90,19 +94,19 @@ window.onscroll = function() {
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#" class="list header__item">Стереосистема</a>
+                  <a href="#/home-pod" class="list header__item">Стереосистема</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#/sony" class="list header__item">Sony Playstation</a>
+                  <a @click="scrollElement('yandex-station')" class="list header__item">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#/yandex-station" class="list header__item">Яндекс.Станции</a>
+                  <a @click="scrollElement('sony-playstation')" class="list header__item">Sony Playstation</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a href="#/nozzles" class="list header__item">Накладки на стики</a>
+                  <a @click="scrollElement('nozzles')" class="list header__item">Накладки на стики</a>
                 </li>
                 <li class="nav-item">
-                  <a href="#" class="list header__item">Геймпады</a>
+                  <a @click="scrollElement('gamepad')" class="list header__item">Геймпады</a>
                 </li>
               </ul>
             </div>
