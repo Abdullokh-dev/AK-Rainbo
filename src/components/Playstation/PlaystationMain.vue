@@ -27,7 +27,6 @@
 
 <style scoped>
 .playstation-main {
-  margin-top: 112px;
   height: 770px;
   display: flex;
   flex-wrap: wrap;
@@ -102,7 +101,9 @@
   .background-left, .background-right {
     display: none;
   }
-
+  .playstation-main {
+    margin-top: 112px;
+  }
   .playstation-main .__content {
     display: block;
   }

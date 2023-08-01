@@ -1,5 +1,20 @@
 <script setup>
+import first from "../../assets/images/Playstation/both-ps.png"
+import second from "../../assets/images/HomePod/slide-3.png"
+import third from "../../assets/images/HomePod/slide-2.png"
+import {onMounted, ref} from "vue";
+const images = [
+  first, second, third
+]
+const currentIndex = ref(0)
+const currentImageSrc = ref(images[currentIndex.value])
 
+onMounted(() => {
+  setInterval(() => {
+    currentIndex.value = (currentIndex.value + 1) % images.length;
+    currentImageSrc.value = images[currentIndex.value]
+  },5000)
+})
 </script>
 
 <template>
@@ -42,7 +57,9 @@
 
     <div class="col-12 col-lg-7 col-xxl-7 align-self-end text-start flex-col">
       <div class="d-flex justify-content-end pe-lg-4">
-          <img src="../../assets/images/Playstation/both-ps.png" width="1872" class="__img" alt="#">
+        <transition name="fade">
+          <img :key="currentImageSrc" :src=currentImageSrc class="__img" alt="#">
+        </transition>
       </div>
     </div>
   </div>
@@ -79,6 +96,13 @@
 .customize-playstation ul li {
   position: relative;
   margin-bottom: 30px;
+}
+
+.fade-enter-active {
+  transition: opacity 1s ease;
+}
+.fade-enter-from {
+  opacity: 0;
 }
 
 @media screen and (max-width: 1199px) {

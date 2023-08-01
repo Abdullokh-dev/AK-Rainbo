@@ -70,20 +70,20 @@ const scrollElement = (id) => {
             <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarMobile">
               <ul class="navbar-nav mb-2 mb-xl-0">
                 <li class="nav-item mt-2 mt-xl-0">
-                  <a href="#/home-pod" class="navbar__list d-none d-xl-block">Стереосистема</a>
-                  <a href="#/home-pod" class="list header__item d-xl-none">Стереосистема RAINBO TECHNICS </a>
+                  <a href="#/home-pod" class="navbar__list pointer d-none d-xl-block">Стереосистема</a>
+                  <a href="#/home-pod" class="list header__item pointer d-xl-none">Стереосистема RAINBO TECHNICS </a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a @click="scrollElement('yandex-station')" class="list header__item">Яндекс.Станции</a>
+                  <a @click="scrollElement('yandex-station')" class="list header__item pointer">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a @click="scrollElement('sony-playstation')" class="list header__item">Sony Playstation</a>
+                  <a @click="scrollElement('sony-playstation')" class="list header__item pointer">Sony Playstation</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a @click="scrollElement('nozzles')" class="list header__item">Накладки на стики</a>
+                  <a @click="scrollElement('gamepad')" class="list header__item pointer">Геймпады</a>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a @click="scrollElement('gamepad')" class="list header__item">Геймпады</a>
+                  <a @click="scrollElement('nozzles')" class="list header__item pointer">Накладки на стики</a>
                 </li>
               </ul>
             </div>
@@ -94,19 +94,19 @@ const scrollElement = (id) => {
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#/home-pod" class="list header__item">Стереосистема</a>
+                  <a href="#/home-pod" class="list header__item pointer">Стереосистема</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a @click="scrollElement('yandex-station')" class="list header__item">Яндекс.Станции</a>
+                  <a @click="scrollElement('yandex-station')" class="list header__item pointer">Яндекс.Станции</a>
                 </li>
                 <li class="nav-item">
-                  <a @click="scrollElement('sony-playstation')" class="list header__item">Sony Playstation</a>
+                  <a @click="scrollElement('sony-playstation')" class="list header__item pointer">Sony Playstation</a>
                 </li>
                 <li class="nav-item px-4">
-                  <a @click="scrollElement('nozzles')" class="list header__item">Накладки на стики</a>
+                  <a @click="scrollElement('gamepad')" class="list header__item pointer">Геймпады</a>
                 </li>
                 <li class="nav-item">
-                  <a @click="scrollElement('gamepad')" class="list header__item">Геймпады</a>
+                  <a @click="scrollElement('nozzles')" class="list header__item pointer">Накладки на стики</a>
                 </li>
               </ul>
             </div>

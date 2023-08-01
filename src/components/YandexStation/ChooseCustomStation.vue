@@ -122,19 +122,19 @@ const hoverElement = (element) => {
       <!-- Desktop Show -->
       <div class="row d-none d-lg-block">
         <div class="col-6 text-black title-xs">
-          <p class="__info">
+          <p class="__info" data-aos="fade-down" data-aos-offset="0">
             <b class="_bold _kids" @mouseenter="hoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
           </p>
-          <p class="__info">
+          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="50">
             <b class="_bold _romantic" @mouseenter="hoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
           </p>
-          <p class="__info">
+          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="100">
             <b class="_bold _sport" @mouseenter="hoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
           </p>
-          <p class="__info">
+          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="150">
             <b class="_bold _street" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
-          <div class="mt-5 pt-3">
+          <div class="mt-5 pt-3" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-offset="10">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
           </div>
         </div>

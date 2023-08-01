@@ -28,10 +28,6 @@
   </div>
 </template>
 
-<script setup>
-
-</script>
-
 <style scoped>
 .video-content {
   background: url("../../assets/images/HomePod/img.png") no-repeat center center fixed;

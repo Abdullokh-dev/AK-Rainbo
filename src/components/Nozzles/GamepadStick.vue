@@ -42,8 +42,8 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 col-xxl-6 flex-col p-0 my-auto">
-      <video id="player-2" data-poster="./data-poster.png">
-        <source src="../../assets/videos/video.mp4" type="video/mp4">
+      <video id="player-2" muted>
+        <source src="../../assets/videos/nozzles-info.mp4" type="video/mp4">
       </video>
     </div>
   </div>

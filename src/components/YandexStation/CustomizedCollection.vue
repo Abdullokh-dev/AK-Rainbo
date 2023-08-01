@@ -12,15 +12,15 @@
           <div class="row">
             <div class="col-12 col-md-6 mt-2 mt-sm-3 mt-md-0">
               <ul class="list-unstyled ps-4">
-                <li>
+                <li data-aos="fade-up" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#6337FF"/></svg>
                   Четкость рисунка
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="50" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F4414E"/></svg>
                   Насыщенность цветов
                 </li>
-                <li class="list">
+                <li class="list" data-aos="fade-up" data-aos-delay="100" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#FBD301"/></svg>
                   Нанесение технически сложных элементов
                 </li>
@@ -28,15 +28,15 @@
             </div>
             <div class="col-12 col-md-6 d-flex">
               <ul class="list-unstyled ps-4">
-                <li>
+                <li data-aos="fade-up" data-aos-delay="150" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#10D8D9"/></svg>
                   Износостойкое финишное покрытие
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="200" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#F81478"/></svg>
                   Заводская гарантия
                 </li>
-                <li>
+                <li data-aos="fade-up" data-aos-delay="250" data-aos-offset="30">
                   <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="5" cy="5" r="5" fill="#CCA370"/></svg>
                   Доставка по России
                 </li>

@@ -17,23 +17,27 @@ onMounted(() => {
   items.fourth = document.getElementById('warn')
 })
 
-const hoverElement = (order) => {
-  if (order === 1 && width.value > 991) {
-    items.first.style.cssText += 'display:none;'
-    items.second.style.cssText += 'display:block;'
-  } else if(order === 2 && width.value > 991) {
-    items.third.style.cssText += 'display:none;'
-    items.fourth.style.cssText += 'display:block;'
-  }
-}
-
-const unHoverElement = (order) => {
-  if (order === 1 && width.value > 991) {
-    items.first.style.cssText += 'display:block;'
-    items.second.style.cssText += 'display:none;'
-  } else if(order === 2 && width.value > 991){
-    items.third.style.cssText += 'display:block;'
-    items.fourth.style.cssText += 'display:none;'
+const hoverElement = (item) => {
+  switch(item) {
+    case items.first:
+      items.second.style.cssText += "display: none;"
+      items.first.style.cssText += "display: block;"
+      break;
+    case items.second:
+      items.first.style.cssText += "display: none;"
+      items.second.style.cssText += "display: block;"
+      break;
+    case items.third:
+      items.fourth.style.cssText += "display: none;"
+      items.third.style.cssText += "display: block;"
+      break;
+    case items.fourth:
+      items.third.style.cssText += "display: none;"
+      items.fourth.style.cssText += "display: block;"
+      break;
+    default:
+      console.log('item not found')
+      break
   }
 }
 
@@ -54,10 +58,10 @@ const unHoverElement = (order) => {
 
       <div class="row">
         <div class="col-12 d-flex">
-          <div class="pointer">
+          <div class="pointer" @mouseenter="hoverElement(items.first)">
             <img src="../../assets/images/Nozzles/icon-1.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text pointer">
+          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.first)">
             <b class="_bold title-xs">Коллекция футбол</b>
             – Мы единственная  компания, производящая лицензионные накладки стики в дизайне клубов: Спартак, ЦСКА,
             Динамо, Зенит, Локомотив и т.д.
@@ -67,10 +71,10 @@ const unHoverElement = (order) => {
 
       <div class="row mt-4 pt-lg-3">
         <div class="col-12 d-flex">
-          <div class="pointer" @mouseenter="hoverElement(1)" @mouseleave="unHoverElement(1)">
+          <div class="pointer" @mouseenter="hoverElement(items.second)">
             <img src="../../assets/images/Nozzles/icon-2.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(1)" @mouseleave="unHoverElement(1)">
+          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.second)">
             <b class="_bold title-xs">Коллекция текстура</b>
             – Одноцветные накладки с необычной формой обеспечат нужную эргономику
           </p>
@@ -88,10 +92,10 @@ const unHoverElement = (order) => {
 
       <div class="row">
         <div class="col-12 d-flex text-block_second mt-xxl-5">
-          <div class="pointer">
+          <div class="pointer" @mouseenter="hoverElement(items.third)">
             <img src="../../assets/images/Nozzles/icon-3.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text pointer"><b class="_bold title-xs">Коллекция геймер</b>
+          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.third)"><b class="_bold title-xs">Коллекция геймер</b>
             – Накладки на стики с узнаваемыми символами: клеверов, подковой, звездами, пиктограммами и цветами
           </p>
         </div>
@@ -99,10 +103,10 @@ const unHoverElement = (order) => {
 
       <div class="row mt-3">
         <div class="col-12 d-flex mt-2 mt-lg-4 pt-lg-3">
-          <div class="pointer" @mouseenter="hoverElement(2)" @mouseleave="unHoverElement(2)">
+          <div class="pointer" @mouseenter="hoverElement(items.fourth)">
             <img src="../../assets/images/Nozzles/icon-4.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(2)" @mouseleave="unHoverElement(2)">
+          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.fourth)">
             <b class="_bold title-xs d-none d-lg-block">Коллекция воин</b>
             – Для любителей файтинга и шутеров с черепами, оружием прицелами и т.д.
           </p>
