@@ -1,25 +1,18 @@
 <template>
-  <div class="row d-flex justify-content-center h-100 position-relative video-content">
+  <div class="row d-flex justify-content-center position-relative">
+    <div class="h-100 video-content"></div>
     <div class="col-12 col-xxl-11 col-xxxl-10">
 
-      <div class="row video-content">
-        <div class="col">
-<!--          <video preload="auto" autoplay="1" loop muted="1">-->
-<!--            <source src="../../assets/videos/Nozzles.mp4" type="video/mp4">-->
-<!--          </video>-->
+      <div class="homepod position-absolute">
+        <div class="row mainPodSection">
+          <div class="col-12 text-center">
+            <p class="homePod__info title-xs"><span class="uppercase">Rainbo Technics</span> Bass Expert</p>
+          </div>
 
-          <div class="homepod">
-            <div class="row mainPodSection">
-              <div class="col-12 text-center">
-                <p class="homePod__info title-xs"><span class="uppercase">Rainbo Technics</span> Bass Expert</p>
-              </div>
-
-              <div class="col-12 text-center">
-                <h1 class="homePod__title mx-auto mt-3 pt-1">
-                  Услышать звук так, как задумал артист
-                </h1>
-              </div>
-            </div>
+          <div class="col-12 text-center">
+            <h1 class="homePod__title mx-auto mt-3 pt-1">
+              Услышать звук так, как задумал артист
+            </h1>
           </div>
         </div>
       </div>
@@ -31,13 +24,35 @@
 <style scoped>
 .video-content {
   background: url("../../assets/images/HomePod/img.png") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
   background-size: cover;
+  -webkit-animation: zoomin 1s linear;
+  animation: zoomin 1s linear;
+  animation-fill-mode: forwards;
 }
+
+@-webkit-keyframes zoomin {
+  0% {
+    -webkit-transform: scale(1.1);
+    transform: scale(1.1);
+  }
+  100% {
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+}
+
 .homepod {
   margin-top: 233px;
-  position: relative;
+  padding: 0 20px;
+  top: 0;
+  left: 0;
+  right: 0;
   z-index: 1;
 }
+
 .mainPodSection {
   line-height: normal;
 }
@@ -53,13 +68,13 @@
 }
 
 
-@media screen and (max-width:1199px) {
+@media screen and (max-width: 1199px) {
   .homePod__title {
     max-width: 620px;
   }
 }
 
-@media screen and (max-width:991px) {
+@media screen and (max-width: 991px) {
   .homePod__info {
     margin-top: 10px;
   }
@@ -69,7 +84,7 @@
   }
 }
 
-@media screen and (max-width:575px) {
+@media screen and (max-width: 575px) {
   .homePod__info {
     font-size: 20px;
   }

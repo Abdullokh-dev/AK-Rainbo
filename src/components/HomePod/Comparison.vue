@@ -325,7 +325,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
   </Flicking>
 
   <div class="d-none d-lg-inline-block row d-flex justify-content-center comparison">
-    <div class="col-12 col-xxl-11 col-xxxl-10">
+    <div class="col-12 col-xxl-11 col-xxxl-10 mx-auto">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="row">
@@ -703,5 +703,4 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
     font-size: 19px;
   }
 }
-
 </style>
