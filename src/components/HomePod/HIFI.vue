@@ -1,8 +1,83 @@
 <script setup>
-import {onMounted} from "vue";
+import {onMounted, onUnmounted} from "vue";
+
 gsap.registerPlugin(ScrollTrigger);
 
+const rightToLeft = (item) => {
+  const top =  document.querySelector('#' + item).getBoundingClientRect().y;
+  if (top + 100 <= window.innerHeight && top + 100 >= 0) {
+    document.getElementById(item).classList.add('grow');
+    switch (item) {
+      case 'hr':
+        window.removeEventListener('scroll', hrOnViewport);
+        break;
+      case 'hr2':
+        window.removeEventListener('scroll', hr2OnViewport);
+        break;
+      case 'hr3':
+        window.removeEventListener('scroll', hr3OnViewport);
+        break;
+      case 'hr4':
+        window.removeEventListener('scroll', hr4OnViewport);
+        break;
+      case 'hr5':
+        window.removeEventListener('scroll', hr5OnViewport);
+        break;
+      case 'hr6':
+        window.removeEventListener('scroll', hr6OnViewport);
+        break;
+      case 'hr7':
+        window.removeEventListener('scroll', hr7OnViewport);
+        break;
+      case 'hr8':
+        window.removeEventListener('scroll', hr8OnViewport);
+        break;
+      case 'hr9':
+        window.removeEventListener('scroll', hr9OnViewport);
+        break;
+    }
+  }
+}
+
+function hrOnViewport() {
+  rightToLeft('hr');
+}
+function hr2OnViewport() {
+  rightToLeft('hr2');
+}
+function hr3OnViewport() {
+  rightToLeft('hr3');
+}
+function hr4OnViewport() {
+  rightToLeft('hr4');
+}
+function hr5OnViewport() {
+  rightToLeft('hr5');
+}
+function hr6OnViewport() {
+  rightToLeft('hr6');
+}
+function hr7OnViewport() {
+  rightToLeft('hr7');
+}
+function hr8OnViewport() {
+  rightToLeft('hr8');
+}
+function hr9OnViewport() {
+  rightToLeft('hr9');
+}
+
 onMounted(() => {
+  window.addEventListener('scroll', hrOnViewport);
+  window.addEventListener('scroll', hr2OnViewport);
+  window.addEventListener('scroll', hr3OnViewport);
+  window.addEventListener('scroll', hr4OnViewport);
+  window.addEventListener('scroll', hr5OnViewport);
+  window.addEventListener('scroll', hr6OnViewport);
+  window.addEventListener('scroll', hr7OnViewport);
+  window.addEventListener('scroll', hr8OnViewport);
+  window.addEventListener('scroll', hr9OnViewport);
+
   gsap.to("#img_2", {
     opacity: 0,
     scrollTrigger: {
@@ -24,6 +99,18 @@ onMounted(() => {
     },
   })
 })
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', hrOnViewport);
+  window.removeEventListener('scroll', hr2OnViewport);
+  window.removeEventListener('scroll', hr3OnViewport);
+  window.removeEventListener('scroll', hr4OnViewport);
+  window.removeEventListener('scroll', hr5OnViewport);
+  window.removeEventListener('scroll', hr6OnViewport);
+  window.removeEventListener('scroll', hr7OnViewport);
+  window.removeEventListener('scroll', hr8OnViewport);
+  window.removeEventListener('scroll', hr9OnViewport);
+})
 </script>
 
 <template>
@@ -39,7 +126,8 @@ onMounted(() => {
     <div class="col-1 d-none d-xxxl-block"></div>
 
     <div class="col-12 col-lg-6 col-xxl ps-3">
-      <div class="_hr"></div>
+      <hr id="hr" class='_hr-right my-0'>
+
       <h3 class="mid-title">1. Настоящий трёхполосный стерео-звук</h3>
       <p class="__info text-md">
         RT Bass Expert используются специально разработанные динамики, каждый для своего диапазона. За высокие
@@ -66,7 +154,7 @@ onMounted(() => {
     <div class="col-1 d-none d-xxxl-block"></div>
 
     <div class="col-12 col-lg-6 col-xxl ps-3 mt-lg-5 m-left-auto">
-      <div class="_hr"></div>
+      <hr id="hr2" class='_hr-left my-0'>
       <h3 class="mid-title">2. Обширная звуковая сцена и настройка звука.</h3>
       <p class="__info text-md">
         Большинство колонок в монокорпусе размывают инструменты и заставляют все звучать так, как будто они были взяты
@@ -99,7 +187,7 @@ onMounted(() => {
     <div class="col-1 d-none d-xxxl-block"></div>
 
     <div class="col-12 col-lg-6 col-xxl ps-3 mt-lg-5">
-      <div class="_hr"></div>
+      <hr id="hr3" class='_hr-right my-0'>
       <h3 class="mid-title">3. Частотная характеристика и детализированный отклик.</h3>
       <p class="__info text-md">
         Благодаря широкому диапазону частот Система способна воспроизводить звуки точно, до мельчайших деталей.
@@ -113,7 +201,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 d-flex p-0 pe-lg-4 pe-xxl-5 mt-3 mt-lg-5">
-      <video src="../../assets/videos/rainbo.mp4" muted autoplay class="mb-auto __img"></video>
+      <video src="../../assets/videos/rainbo.mp4" class="mb-auto __img" autoplay loop muted></video>
     </div>
   </div>
 
@@ -121,7 +209,7 @@ onMounted(() => {
     <div class="col-1 d-none d-xxxl-block"></div>
 
     <div class="col-12 col-lg-6 col-xxl ps-3 m-left-auto mt-lg-5">
-      <div class="_hr"></div>
+      <hr id="hr4" class='_hr-left my-0'>
       <h3 class="mid-title">4. Взрывной бас</h3>
       <p class="__info text-md">
         Независимо от того, слушаете ли вы хард-рок или классическую музыку, правильно сбалансированные басы необходимы
@@ -146,7 +234,7 @@ onMounted(() => {
 
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
-      <div class="_hr mt-5"></div>
+      <hr id="hr5" class='_hr my-0'>
       <h3 class="mid-title pb-0 mb-0">5. Универсальное подключение</h3>
     </div>
   </div>
@@ -156,16 +244,22 @@ onMounted(() => {
       <div class="row mt-lg-3">
         <div class="col-12 col-md-6 col-lg-4">
           <div class="__box">
-            <img src="../../assets/images/HomePod/img_6.png" class="__logo" alt="#" data-aos="flip-right" data-aos-offset="100">
+            <img src="../../assets/images/HomePod/img_6.png" class="__logo" alt="#" data-aos="flip-right"
+                 data-aos-offset="100">
 
             <p class="text-md">
-              <b class="_bold">Чип Qualcomm Bluetooth 5.1 с кодеком AptX HD</b> – последнее слово в беспроводном подключении. Позволяет проигрывать музыку в максимально высоком качестве, что недоступно подавляющему большинству колонок с блютуз («по воздуху, как по проводу»). Теперь вы можете воспроизводить свои подкасты, любимые джемы или новый альбом из любых других музыкальных онлайн-сервисов, не беспокоясь о проводах или низком качестве воспроизведения звука.
+              <b class="_bold">Чип Qualcomm Bluetooth 5.1 с кодеком AptX HD</b> – последнее слово в беспроводном
+              подключении. Позволяет проигрывать музыку в максимально высоком качестве, что недоступно подавляющему
+              большинству колонок с блютуз («по воздуху, как по проводу»). Теперь вы можете воспроизводить свои
+              подкасты, любимые джемы или новый альбом из любых других музыкальных онлайн-сервисов, не беспокоясь о
+              проводах или низком качестве воспроизведения звука.
             </p>
           </div>
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-start justify-content-md-center">
           <div class="__box">
-            <img src="../../assets/images/HomePod/img_7.png" class="__logo" alt="#" data-aos="flip-right" data-aos-offset="100" data-aos-delay="100">
+            <img src="../../assets/images/HomePod/img_7.png" class="__logo" alt="#" data-aos="flip-right"
+                 data-aos-offset="100" data-aos-delay="100">
             <p class="text-md">
               <b class="_bold">RT Bass Expert</b>
               - это универсальная и мощная акустическая система. Он может обеспечить потрясающее качество звука в любой
@@ -177,7 +271,8 @@ onMounted(() => {
         </div>
         <div class="col-12 col-md-6 col-lg-4 d-flex justify-content-lg-end">
           <div class="__box">
-            <img src="../../assets/images/HomePod/img_8.png" class="__logo" alt="#" data-aos="flip-right" data-aos-offset="100" data-aos-delay="200">
+            <img src="../../assets/images/HomePod/img_8.png" class="__logo" alt="#" data-aos="flip-right"
+                 data-aos-offset="100" data-aos-delay="200">
             <p class="text-md">
               <b class="_bold">Дополнительные оптический и вспомогательный порт 3,5 мм (AUX)</b>
               для стационарного проводного подключения.
@@ -187,12 +282,13 @@ onMounted(() => {
       </div>
       <div class="row mt-lg-5">
         <div class="col-12 col-lg-6">
-          <div class="_hr mt-5"></div>
+          <hr id="hr6" class='_hr my-0 mt-5'>
           <h3 class="mid-title">6. Звук от профессионалов Hi-End индустрии</h3>
           <p class="__info text-md limitation">
             В разработке акустической системы и электроники RAINBO TECHNICS принимал самое непосредственное участие Олег
             Миронов – сооснователь ACC Lab, многократный участник выставок «Российский Hi-End». Настройка системы
-            производилась в два этапа: замеры и расчеты, объективная оценка приборами, затем живое прослушивание и подстройка.
+            производилась в два этапа: замеры и расчеты, объективная оценка приборами, затем живое прослушивание и
+            подстройка.
           </p>
         </div>
 
@@ -201,10 +297,11 @@ onMounted(() => {
         </div>
 
         <div class="col-12 col-lg-6 mt-md-5">
-          <div class="_hr"></div>
+          <hr id="hr7" class='_hr my-0'>
           <h3 class="mid-title">7. Звуки анимации</h3>
           <p class="__info text-md limitation">
-            «Озвучил» колонку молодой московский диджей Никита Авдошин ака «НЕКИЙ ТЫ». Было написано и переработано более
+            «Озвучил» колонку молодой московский диджей Никита Авдошин ака «НЕКИЙ ТЫ». Было написано и переработано
+            более
             двадцати различных саундпаков для озвучания колонки, прежде чем попасть на боевую сборку.
           </p>
         </div>
@@ -229,27 +326,33 @@ onMounted(() => {
     <div class="col-12 col-xxl-11 col-xxxl-10">
       <div class="row">
         <div class="col-12 col-lg-6">
-          <div class="_hr mt-5"></div>
+          <hr id="hr8" class='_hr my-0 mt-5'>
           <h3 class="mid-title">8. Деревянный корпус</h3>
           <p class="__info text-md limitation">
-            Корпус акустических систем RAINBO TECHNICS изготовлен из МДФ и фанеры. Это обеспечивает достаточную жёсткость, отсутствие лишних вибраций и прекрасные акустические свойства системы.
+            Корпус акустических систем RAINBO TECHNICS изготовлен из МДФ и фанеры. Это обеспечивает достаточную
+            жёсткость, отсутствие лишних вибраций и прекрасные акустические свойства системы.
           </p>
           <p class="__info text-md limitation mb-5">
-            Каждая колонка проходит 12 этапов промежуточного контроля в процессе производства. На выходе каждая колонка играет безостановочно трое суток, после чего проходит ещё 4 финальных общих теста и только после этого упаковывается и отправляется в продажу.
+            Каждая колонка проходит 12 этапов промежуточного контроля в процессе производства. На выходе каждая колонка
+            играет безостановочно трое суток, после чего проходит ещё 4 финальных общих теста и только после этого
+            упаковывается и отправляется в продажу.
           </p>
         </div>
 
         <div class="col-12 col-lg-6 mt-lg-5">
-          <div class="_hr"></div>
+          <hr id="hr9" class='_hr my-0'>
           <h3 class="mid-title">9. Наше производство</h3>
           <p class="__info text-md limitation">
             Наше производство находится в г. Москве.
           </p>
           <p class="__info text-md limitation">
-            Перед запуском серийного производства кофемашин мы более 5 лет проводили лабораторные испытания всех систем, чтобы предоставить Вам многофункциональное, высокопроизводительное, надёжное, долговечное оборудование.
+            Перед запуском серийного производства кофемашин мы более 5 лет проводили лабораторные испытания всех систем,
+            чтобы предоставить Вам многофункциональное, высокопроизводительное, надёжное, долговечное оборудование.
           </p>
           <p class="__info text-md limitation">
-            Все детали изготовлены из высококачественных сертифицированных материалов.Наше производство отличается тем, что все наши кофемашины – ручной сборки. Это позволяет добиться максимального контроля качества в производственном процессе.Мы не перепродаём, мы производим!
+            Все детали изготовлены из высококачественных сертифицированных материалов.Наше производство отличается тем,
+            что все наши кофемашины – ручной сборки. Это позволяет добиться максимального контроля качества в
+            производственном процессе.Мы не перепродаём, мы производим!
           </p>
         </div>
       </div>
@@ -306,6 +409,27 @@ onMounted(() => {
 
 .limitation {
   max-width: 700px;
+}
+
+._hr-right, ._hr-left, ._hr {
+  height: 1px;
+  border: 0;
+  -webkit-transition: all 1s ease-in-out;
+  transition: all 1s ease-in-out;
+  background: #A5A5A5;
+  width: 0;
+}
+
+._hr-right {
+  margin-right: 0;
+}
+
+._hr-left {
+  margin-left: 0;
+}
+
+.grow {
+  width: 100%;
 }
 
 @media screen and (max-width: 1199px) {
