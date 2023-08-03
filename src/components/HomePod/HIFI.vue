@@ -227,14 +227,14 @@ onUnmounted(() => {
       </p>
     </div>
 
-    <div class="col-12 col-lg-6 d-flex p-0 ps-lg-4 ps-xxl-5 mt-3 mt-lg-5">
+    <div class="col-12 col-lg-6 d-flex p-0 ps-lg-4 ps-xxl-5 mt-3 mt-lg-5 mb-5">
       <img class="__img d-flex mb-auto" src="../../assets/images/HomePod/player-4.png" alt="#" width="802">
     </div>
   </div>
 
   <div class="row d-flex justify-content-center hifi">
     <div class="col-12 col-xxl-11 col-xxxl-10">
-      <hr id="hr5" class='_hr my-0'>
+      <hr id="hr5" class='_hr mt-5'>
       <h3 class="mid-title pb-0 mb-0">5. Универсальное подключение</h3>
     </div>
   </div>
