@@ -1,5 +1,21 @@
 <script setup>
+import {onMounted, ref} from "vue";
 
+const show = ref(false)
+const show2 = ref(false)
+const show3 = ref(false)
+
+onMounted(() => {
+  setTimeout(() => {
+    show.value = true
+  }, 1000)
+  setTimeout(() => {
+    show2.value = true
+  }, 1500)
+  setTimeout(() => {
+    show3.value = true
+  }, 2000)
+})
 </script>
 
 <template>
@@ -16,9 +32,13 @@
           <a href="https://rainboskin.me/sony/" target="_blank" class="__button text-md">Купить</a>
         </div>
       </div>
-      <div class="col-12 col-lg-6 content-right align-self-center align-self-xl-end">
+      <div class="col-12 col-lg-6 justify-content-end content-right align-self-center align-self-xl-end">
         <div class="content-right__box ps-lg-5">
-          <img class="content-right__img" src="../../assets/images/Playstation/main.png" alt="#" width="1458">
+          <div class="d-flex content-right__img">
+            <img src="../../assets/images/Playstation/img.png" data-aos="fade-left" v-if="show" alt="#">
+            <img src="../../assets/images/Playstation/img_1.png" data-aos="fade-left" v-if="show2" alt="#">
+            <img src="../../assets/images/Playstation/img_2.png" data-aos="fade-left" v-if="show3" alt="#">
+          </div>
         </div>
       </div>
     </div>
@@ -74,6 +94,10 @@
   background-color: rgba(255, 104, 145, 0.8);
 }
 
+.content-right__img img{
+  width: 33%;
+}
+
 .content-right__img {
   width: 100%;
   max-width: 760px;
@@ -112,6 +136,7 @@
     background-color: black;
     border-radius: 0 150px 0 0;
     height: 500px;
+    width: 100%;
   }
 
   .playstation-main {
