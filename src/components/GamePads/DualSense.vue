@@ -1,10 +1,12 @@
 <script setup>
-import first from "../../assets/images/GamePads/img.png"
-import second from "../../assets/images/HomePod/slide-3.png"
-import third from "../../assets/images/HomePod/slide-2.png"
 import {onMounted, ref} from "vue";
+import first from "../../assets/images/GamePads/customize-1.png"
+import second from "../../assets/images/GamePads/customize-2.png"
+import third from "../../assets/images/GamePads/customize-3.png"
+import fourth from "../../assets/images/GamePads/customize-4.png"
+
 const images = [
-  first, second, third
+  first, second, third, fourth
 ]
 const currentIndex = ref(0)
 const currentImageSrc = ref(images[currentIndex.value])
@@ -74,8 +76,8 @@ onMounted(() => {
 }
 
 .dualSense .__img {
-  width: 100%;
-  max-width: 821px;
+  width: 125%;
+  margin-right: -25%;
 }
 
 .dualSense ._bold {

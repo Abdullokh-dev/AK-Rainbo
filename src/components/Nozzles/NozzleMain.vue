@@ -14,8 +14,8 @@
 
           <div class="__box">
             <h1 class="flex-title title-lg text-black">Насадки на стики геймпада</h1>
-            <div class="mt-5">
-              <a href="https://rainboskin.me/aksessuary/" class="__btn pinked-btn text-md" target="_blank">Купить</a>
+            <div class="mt-4">
+              <a href="https://rainboskin.me/aksessuary/" class="__btn pinked-btn shining text-md" target="_blank">Купить</a>
             </div>
           </div>
         </div>

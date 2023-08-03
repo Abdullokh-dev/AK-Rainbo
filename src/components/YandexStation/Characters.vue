@@ -160,8 +160,8 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
       </div>
 
       <div class="row">
-        <div class="col-12 text-center my-3 mt-lg-5">
-          <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__button text-md">Выбрать свой характер</a>
+        <div class="col-12 text-center my-3 mt-lg-4 pt-lg-2">
+          <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__button text-md shining">Выбрать свой характер</a>
         </div>
       </div>
     </div>

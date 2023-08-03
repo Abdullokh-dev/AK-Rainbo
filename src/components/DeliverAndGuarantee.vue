@@ -70,8 +70,8 @@ const toggleSecond = () => {
                 или e-mail:
                 <a class="_underline" href="mailto:hello@rainboskin.me" :style="{color: color}">hello@rainboskin.me</a>
               </p>
-              <div class="py-2 py-sm-3 py-md-4 mt-4 pt-lg-4 pb-lg-4">
-                <a class="__btn text-md" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/" target="_blank">
+              <div class="py-2 py-sm-3 py-md-4 mt-3 pt-lg-4 pb-lg-4">
+                <a class="__btn text-md shining" href="https://rainboskin.me/faq/garantiynoe-obsluzhivanie/" target="_blank">
                   Сервисный центр
                 </a>
               </div>

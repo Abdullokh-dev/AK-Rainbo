@@ -25,27 +25,27 @@ onMounted(() => {
         Кастомизированные <br /> PLAYSTATION:
       </h2>
 
-      <p class="_top text-md pb-sm-2 pb-lg-4">
+      <p class="_top text-md pb-sm-2 pb-lg-4" data-aos="fade-right" data-aos-offset="40">
         <span class="_bold">Высочайшее качество кастомизации не оставит равнодушным никого.</span> <br>
         Кастомизированная PlayStation станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении.
         Незамеченной остаться не получится, она будет привлекать к себе внимание всех ваших гостей.
       </p>
 
       <ul class="list-unstyled text-md">
-        <li class="__info">
+        <li class="__info" data-aos="fade-right" data-aos-offset="40">
           <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#6337FF"/>
           </svg>
           Мы кастомизируем <span class="_bold">только оригинальные геймпады</span> PlayStation (прямые поставки)
         </li>
-        <li class="__info">
+        <li class="__info" data-aos="fade-right" data-aos-offset="40">
           <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#F4414E"/>
           </svg>
           <span class="_bold">Наша кастомизация – это не наклейки.</span>
           Используются несколько технологий нанесения рисунков, включая покраску
         </li>
-        <li class="__info">
+        <li class="__info" data-aos="fade-right" data-aos-offset="40">
           <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
             <circle cx="5" cy="5" r="5" fill="#FBD301"/>
           </svg>

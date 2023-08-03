@@ -14,8 +14,8 @@
 
           <div class="__box">
             <h1 class="title-lg text-black">Умные колонки <br /> RAINBO с Алисой</h1>
-            <div class="mt-5">
-              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md purple-btn">Купить</a>
+            <div class="mt-4">
+              <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md purple-btn shining">Купить</a>
             </div>
           </div>
         </div>

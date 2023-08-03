@@ -112,7 +112,7 @@ const hoverElement = (item) => {
           </p>
         </div>
         <div class="mt-4 pt-3 d-flex justify-content-center justify-content-lg-start">
-          <a href="https://rainboskin.me/aksessuary/" class="__btn text-md" target="_blank">
+          <a href="https://rainboskin.me/aksessuary/" class="__btn text-md shining" target="_blank">
             Выберите свой дизайн
           </a>
         </div>

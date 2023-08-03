@@ -28,8 +28,8 @@ onMounted(() => {
         <h1 class="title-lg mt-5 mt-lg-0">
           Кастомизированные <br /> коллекции PLAYSTATION
         </h1>
-        <div class="pb-5 mt-4 pt-3">
-          <a href="https://rainboskin.me/sony/" target="_blank" class="__button text-md">Купить</a>
+        <div class="pb-5 mt-4 pt-1">
+          <a href="https://rainboskin.me/sony/" target="_blank" class="__button text-md shining">Купить</a>
         </div>
       </div>
       <div class="col-12 col-lg-6 justify-content-end content-right align-self-center align-self-xl-end">

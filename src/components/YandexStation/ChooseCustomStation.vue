@@ -113,8 +113,8 @@ const hoverElement = (element) => {
               <div class="flicking-pagination default-dots"></div>
             </template>
           </Flicking>
-          <div class="text-center mt-2 pt-2">
-            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
+          <div class="text-center mt-2">
+            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md shining"> Купить </a>
           </div>
         </div>
       </div>
@@ -135,7 +135,7 @@ const hoverElement = (element) => {
             <b class="_bold _street" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
           <div class="mt-5 pt-3" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-offset="10">
-            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md"> Купить </a>
+            <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md shining"> Купить </a>
           </div>
         </div>
 

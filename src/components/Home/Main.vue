@@ -16,7 +16,7 @@
           Слышать звук так, как он звучит.
         </p>
         <div class="pb-5 mt-4 pt-3">
-          <a href="#/home-pod" class="__button text-md">
+          <a href="#/home-pod" class="__button shining text-md">
             Узнать больше
             <span>
             <svg class="main-section__svg" width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -36,6 +36,14 @@
 </template>
 
 <style scoped>
+.main-section .__button {
+  color: white;
+  background-color: #757D62;
+  padding: 13px 71px 13px 53px;
+  border-radius: 50rem;
+  text-decoration: none;
+}
+
 .main-section {
   height: 730px;
   display: flex;
@@ -77,15 +85,6 @@
   font-weight: 700;
   line-height: normal;
   width: 600px;
-}
-
-.main-section .__button {
-  position: relative;
-  color: white;
-  background-color: #757D62;
-  padding: 13px 71px 13px 53px;
-  border-radius: 50rem;
-  text-decoration: none;
 }
 
 .main-section__svg {
