@@ -4,7 +4,7 @@
 
 <template>
   <!-- Main Title -->
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center bg-in">
     <div class="col-12 col-xxl-11 col-xxxl-10 mb-3 mb-lg-5 mt-lg-3 mt-xl-5">
       <div class="yandex__title-box mt-lg-5">
         <h2 class="yandex__title m-0 p-0">Кастомизированные Яндекс.Станции и Sony Playstation</h2>
@@ -152,7 +152,7 @@
 
 .yandex__title-box {
   max-width: 950px;
-  margin-top: 50px;
+  margin-top: 120px;
 }
 
 .customize-box {
