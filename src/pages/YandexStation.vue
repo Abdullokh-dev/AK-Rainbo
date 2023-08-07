@@ -21,16 +21,16 @@ import DeliverAndGuarantee from "../components/DeliverAndGuarantee.vue";
     <div class="col-12 col-xxl-11 col-xxxl-10 p-0 d-none d-xl-block">
       <ul class="list-unstyled bottom-list p-0 d-flex justify-content-around">
         <li class="_list">
-          <a href="#" class="_dark">Стереосистема RAINBO TECHNICS</a>
+          <a href="#/home-pod" class="_dark">Стереосистема RAINBO TECHNICS</a>
         </li>
         <li class="_list">
           <a href="#/playstation" class="_dark">Sony Playstation</a>
         </li>
         <li class="_list">
-          <a href="#/nozzles" class="_dark">Насадки</a>
+          <a href="#/gamepads" class="_dark">Геймпады</a>
         </li>
         <li class="_list">
-          <a href="#/gamepads" class="_dark">Геймпады</a>
+          <a href="#/nozzles" class="_dark">Насадки</a>
         </li>
       </ul>
     </div>

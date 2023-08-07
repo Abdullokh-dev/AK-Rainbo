@@ -9,12 +9,6 @@ import PlayStation from "../pages/PlayStation.vue"
 const router = createRouter({
   history: createWebHashHistory(),
   mode: 'history',
-  scrollBehavior() {
-    return {
-      top: 0,
-      behavior: 'smooth',
-    }
-  },
   routes: [
     {
       path: '/',

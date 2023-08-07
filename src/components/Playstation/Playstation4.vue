@@ -24,7 +24,7 @@
         </div>
 
         <div class="col-12 col-lg-6">
-          <img class="__img d-flex mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-first.png" width="1312" alt="#">
+          <img class="__img d-flex mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-first.png" width="1454" alt="#">
         </div>
       </div>
 

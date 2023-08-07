@@ -104,6 +104,7 @@
   display: flex;
   margin: auto;
   filter: drop-shadow( 1rem -1rem 2.75rem #788166);
+  -webkit-filter: drop-shadow(1rem -1rem 2.75rem #788166);
 }
 
 @media screen and (max-width: 1400px) {

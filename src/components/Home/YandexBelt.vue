@@ -23,7 +23,7 @@
               Яркая и компактная умная колонка, которая управляется голосом и сенсорными кнопками. Она здорово украсит любой интерьер и сможет развлечь ребенка.
             </p>
             <div class="mb-4 mt-3 pt-xl-1 mt-xxl-5">
-              <a href="#" class="yandex-station__button">
+              <a href="#/yandex-station" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
@@ -59,7 +59,7 @@
               Мы рады предложить Вам услугу индивидуальной кастомизации игровых консолей и геймпадов. Если у вас есть концепция подарков, корпоративного мерча, подарков для розыгрышей или другие идеи – мы будем рады их обсудить.
             </p>
             <div class="mb-4 mt-4 pt-xl-1 mt-xxl-5">
-              <a href="#/home-pod" class="yandex-station__button">
+              <a href="#/playstation" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
@@ -89,14 +89,14 @@
         <div class="col d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
             <h3 class="__title mb-3 mb-lg-4 mb-xl-5">Геймпад Sony Playstation</h3>
-            <div class="mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
-              <a href="#/home-pod" class="yandex-station__button">
+            <div class="mb-lg-5 pb-lg-3 pb-xl-5 text-lg-center">
+              <a href="#/gamepads" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
                 </svg>
               </a>
-              <a href="https://rainboskin.me/sony" class="yandex-station__button ps-3 ps-lg-0" target="_blank">
+              <a href="https://rainboskin.me/sony" class="yandex-station__button ps-3 position-relative ps-lg-0" target="_blank">
                 Купить
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0.28125 0.785086L1.06634 0L7.56634 6.5L1.06634 13L0.28125 12.2149L5.99561 6.5L0.28125 0.785086Z" fill="#2997FF"/>
@@ -117,8 +117,8 @@
         <div class="col-12 d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
             <h3 class="__title mb-3 mb-lg-4 mb-xl-5 text-black">Насадки на стики</h3>
-            <div class="mt-lg-3 mb-lg-5 pb-lg-3 pb-xl-5 d-lg-flex justify-content-lg-center">
-              <a href="#/home-pod" class="yandex-station__button">
+            <div class="mt-lg-3 mb-lg-5 pb-lg-3 pb-xl-5 text-lg-center">
+              <a href="#/nozzles" class="yandex-station__button">
                 Узнать больше
                 <svg width="8" height="13" viewBox="0 0 8 13" fill="none" xmlns="http://www.w3.org/2000/svg">
                   <path d="M0 0.785086L0.785086 0L7.28509 6.5L0.785086 13L0 12.2149L5.71436 6.5L0 0.785086Z" fill="#2997FF"/>
@@ -181,7 +181,6 @@
   font-size: 20px;
   font-weight: 400;
   line-height: 24px;
-  text-align: left;
   color: #2997FF;
   margin-right: 46px;
 }
@@ -349,6 +348,11 @@
   }
 }
 
+@media screen and (min-width: 991px) {
+  .text-lg-center {
+    text-align: center;
+  }
+}
 @media screen and (min-width:822px) {
   .yandex__title-box {
     margin-top: 0;

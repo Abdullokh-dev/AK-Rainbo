@@ -19,16 +19,16 @@ import DualShock4 from "../components/GamePads/DualShock4.vue";
     <div class="col-12 col-xxl-11 col-xxxl-10 p-0 d-none d-xl-block">
       <ul class="list-unstyled bottom-list p-0 d-flex justify-content-around">
         <li class="_list">
-          <a href="#" class="_light">Стереосистема RAINBO TECHNICS</a>
-        </li>
-        <li class="_list">
-          <a href="#/playstation" class="_light">Sony Playstation</a>
+          <a href="#/home-pod" class="_light">Стереосистема RAINBO TECHNICS</a>
         </li>
         <li class="_list">
           <a href="#/yandex-station" class="_light">Яндекс.Станции</a>
         </li>
         <li class="_list">
-          <a href="#/gamepads" class="_light">Насадки</a>
+          <a href="#/playstation" class="_light">Sony Playstation</a>
+        </li>
+        <li class="_list">
+          <a href="#/nozzles" class="_light">Насадки</a>
         </li>
       </ul>
     </div>

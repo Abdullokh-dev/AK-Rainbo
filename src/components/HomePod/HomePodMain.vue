@@ -28,8 +28,8 @@
   -moz-background-size: cover;
   -o-background-size: cover;
   background-size: cover;
-  -webkit-animation: zoomin 1s linear;
-  animation: zoomin 1s linear;
+  -webkit-animation: zoomin 5s linear;
+  animation: zoomin 5s linear;
   animation-fill-mode: forwards;
 }
 

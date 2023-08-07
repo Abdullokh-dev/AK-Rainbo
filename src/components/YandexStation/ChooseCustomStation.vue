@@ -122,19 +122,19 @@ const hoverElement = (element) => {
       <!-- Desktop Show -->
       <div class="row d-none d-lg-block">
         <div class="col-6 text-black title-xs">
-          <p class="__info" data-aos="fade-down" data-aos-offset="0">
-            <b class="_bold _kids" @mouseenter="hoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
+          <p class="__info">
+            <b class="_bold _kids" data-aos="yellow-light" data-aos-anchor=".main-trigger" data-aos-offset="0" @mouseenter="hoverElement(items.first)">Kids Collection</b> – для самых маленьких. Алиса станет подругой для вашего ребенка
           </p>
-          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="50">
-            <b class="_bold _romantic" @mouseenter="hoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
+          <p class="__info">
+            <b class="_bold _romantic" data-aos="brown-light" data-aos-anchor=".main-trigger" data-aos-offset="0" @mouseenter="hoverElement(items.second)">Romantic Collection</b> – для неё и для него. Отличный подарок любимому человеку
           </p>
-          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="100">
-            <b class="_bold _sport" @mouseenter="hoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
+          <p class="__info">
+            <b class="_bold _sport" data-aos="blue-light" data-aos-anchor=".main-trigger" data-aos-offset="0" @mouseenter="hoverElement(items.third)">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
           </p>
-          <p class="__info" data-aos="fade-down" data-aos-offset="0" data-aos-delay="150">
-            <b class="_bold _street" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
+          <p class="__info">
+            <b class="_bold _street" data-aos="red-light" data-aos-anchor=".main-trigger" data-aos-offset="0" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
-          <div class="mt-5 pt-3" data-aos="fade-zoom-in" data-aos-delay="200" data-aos-offset="10">
+          <div class="mt-5 pt-3 main-trigger" data-aos="fade-zoom-in" data-aos-offset="0">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md shining"> Купить </a>
           </div>
         </div>
@@ -194,21 +194,25 @@ const hoverElement = (element) => {
 .chooseCustomStation .__info ._kids:hover,
 .slider-custom ._kids {
   color: #FBD301;
+  transition: color 0s;
 }
 
 .chooseCustomStation .__info ._romantic:hover,
 .slider-custom ._romantic {
   color: #D0AB75;
+  transition: color 0s;
 }
 
 .chooseCustomStation .__info ._sport:hover,
 .slider-custom ._sport {
   color: #10D8D9;
+  transition: color 0s;
 }
 
 .chooseCustomStation .__info ._street:hover,
 .slider-custom ._street {
   color: #F4414E;
+  transition: color 0s;
 }
 
 .chooseCustomStation .__info ._bold {
@@ -232,6 +236,61 @@ const hoverElement = (element) => {
   min-width: 458px;
   max-width: 700px;
   margin: auto;
+}
+
+[data-aos="yellow-light"].aos-animate {
+  animation: yellowing 1.5s ease-in-out;
+}
+
+[data-aos="brown-light"].aos-animate {
+  animation: browning 1.5s ease-in-out;
+  animation-delay: .7s;
+}
+
+[data-aos="blue-light"].aos-animate {
+  animation: bluing 1.5s ease-in-out;
+  animation-delay: 1.4s;
+}
+
+[data-aos="red-light"].aos-animate {
+  animation: redding 1.5s ease-in-out;
+  animation-delay: 2.1s;
+}
+
+@keyframes yellowing {
+  0%, 100% {
+    color: black;
+  }
+  50% {
+    color: #FBD301;
+  }
+}
+
+@keyframes browning {
+  0%, 100% {
+    color: black;
+  }
+  50% {
+    color: #D0AB75;
+  }
+}
+
+@keyframes bluing {
+  0%, 100% {
+    color: black;
+  }
+  50% {
+    color: #10D8D9;
+  }
+}
+
+@keyframes redding {
+  0%, 100% {
+    color: black;
+  }
+  50% {
+    color: #F4414E;
+  }
 }
 
 @media screen and (max-width:1299px) {

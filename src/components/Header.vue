@@ -9,12 +9,9 @@ defineProps({
 window.onscroll = function() {
   let navbar = document.getElementById("navbar")
   if(window.pageYOffset > 50) {
-    navbar.style.background = 'rgba(0,0,0,0.2)';
-    navbar.style.backdropFilter = 'saturate(180%) blur(20px)';
-    navbar.style.transition = 'all .3s';
+    navbar.style.cssText += 'background: rgba(0,0,0,0.2); backdrop-filter: saturate(180%) blur(20px); transition: all .3s; -webkit-backdrop-filter: blur(20px);';
   } else {
-    navbar.style.background = "none";
-    navbar.style.backdropFilter = 'none';
+    navbar.style.cssText += "background: none; backdrop-filter: none; -webkit-backdrop-filter: none";
   }
 }
 
