@@ -82,20 +82,20 @@ onMounted(() => {
     opacity: 0,
     scrollTrigger: {
       trigger: '#img_1',
-      start: 'top 60%',
-      end: 'top 5%',
+      start: 'top 42%',
+      end: 'top 0%',
       toggleActions: "restart none none none",
-      scrub: true,
+      scrub: 4,
     },
   })
   gsap.to("#img_1", {
     opacity: 1,
     scrollTrigger: {
       trigger: '#img_2',
-      start: 'top 60%',
-      end: 'top 5%',
+      start: 'top 42%',
+      end: 'top 0%',
       toggleActions: "restart none none none",
-      scrub: true,
+      scrub: 4,
     },
   })
 })
