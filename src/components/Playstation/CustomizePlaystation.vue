@@ -1,18 +1,26 @@
 <script setup>
-import first from "../../assets/images/Playstation/both-ps.png"
-import second from "../../assets/images/HomePod/slide-3.png"
-import third from "../../assets/images/HomePod/slide-2.png"
-import {onMounted, ref} from "vue";
+import first from "../../assets/images/Playstation/img.png"
+import second from "../../assets/images/Playstation/img_1.png"
+import third from "../../assets/images/Playstation/img_2.png"
+import {onMounted, ref, watch} from "vue";
 const images = [
   first, second, third
 ]
+const imageOpacity = ref(1)
 const currentIndex = ref(0)
 const currentImageSrc = ref(images[currentIndex.value])
 
+watch(currentIndex, (newSrc, oldSrc) => {
+  imageOpacity.value = 0;
+  setTimeout(() => {
+    imageOpacity.value = 1;
+  }, 100);
+});
+
 onMounted(() => {
   setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % images.length;
     currentImageSrc.value = images[currentIndex.value]
+    currentIndex.value = (currentIndex.value + 1) % images.length;
   },5000)
 })
 </script>
@@ -57,9 +65,7 @@ onMounted(() => {
 
     <div class="col-12 col-lg-7 col-xxl-7 align-self-end text-start flex-col">
       <div class="d-flex justify-content-end pe-lg-4">
-        <transition name="fade">
-          <img :key="currentImageSrc" :src=currentImageSrc class="__img" alt="#">
-        </transition>
+          <img :key="currentImageSrc" :src=currentImageSrc :style="{ opacity: imageOpacity}" class="__img" alt="#">
       </div>
     </div>
   </div>
@@ -73,6 +79,7 @@ onMounted(() => {
 .customize-playstation .__img {
   width: 100%;
   max-width: 920px;
+  transition: ease 1s
 }
 
 .customize-playstation ._top {
@@ -96,13 +103,6 @@ onMounted(() => {
 .customize-playstation ul li {
   position: relative;
   margin-bottom: 30px;
-}
-
-.fade-enter-active {
-  transition: opacity 1s ease;
-}
-.fade-enter-from {
-  opacity: 0;
 }
 
 @media screen and (max-width: 1199px) {

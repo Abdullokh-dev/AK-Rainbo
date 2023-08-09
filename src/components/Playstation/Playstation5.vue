@@ -46,34 +46,22 @@ defineProps({
     <div class="col-12 col-lg-6 pe-0 pe-lg-1 pe-xl-3 pe-xxl-5 ps-0 align-self-center">
       <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}" class="images-plyr">
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-1.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-1.png" alt="#" width="1900" class="__img" draggable="false">
         </div>
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-2.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-2.png" alt="#" width="1898" class="mx-auto __img" draggable="false">
         </div>
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-3.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-3.png" alt="#" width="1900" class="mx-auto __img" draggable="false">
         </div>
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-4.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-4.png" alt="#" width="1900" class="mx-auto __img" draggable="false">
         </div>
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-5.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-5.png" alt="#" width="1900" class="mx-auto __img" draggable="false">
         </div>
         <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-6.png" alt="#" class="mx-auto __img" draggable="false">
-        </div>
-        <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-7.png" alt="#" class="mx-auto __img" draggable="false">
-        </div>
-        <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-8.png" alt="#" class="mx-auto __img" draggable="false">
-        </div>
-        <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-9.png" alt="#" class="mx-auto __img" draggable="false">
-        </div>
-        <div class="text-center img-block">
-          <img src="../../assets/images/Playstation/slide-10.png" alt="#" class="mx-auto __img" draggable="false">
+          <img src="../../assets/images/Playstation/slide-6.png" alt="#" width="1900" class="mx-auto __img" draggable="false">
         </div>
         <template #viewport>
           <div class="flicking-pagination _blue-dots"></div>
@@ -86,10 +74,10 @@ defineProps({
 
 <style scoped>
 .presentation-section .__btn ._yellow {
-  background-color: #F2C402;
+  background-color: #F7B227;
 }
 
 .presentation-section .__btn ._yellow:hover {
-  background-color: rgba(242, 196, 2, 0.8);
+  background-color: rgba(247, 178, 39, 0.8);
 }
 </style>

@@ -35,9 +35,9 @@ onMounted(() => {
       <div class="col-12 col-lg-6 justify-content-end content-right align-self-center align-self-xl-end">
         <div class="content-right__box ps-lg-5">
           <div class="d-flex content-right__img">
-            <img src="../../assets/images/Playstation/img.png" data-aos="fade-left" v-if="show" alt="#">
-            <img src="../../assets/images/Playstation/img_1.png" data-aos="fade-left" v-if="show2" alt="#">
-            <img src="../../assets/images/Playstation/img_2.png" data-aos="fade-left" v-if="show3" alt="#">
+            <img src="../../assets/images/Playstation/ps1.png" data-aos="fade-left" v-if="show" alt="#">
+            <img src="../../assets/images/Playstation/ps2.png" data-aos="fade-left" v-if="show2" alt="#">
+            <img src="../../assets/images/Playstation/ps3.png" data-aos="fade-left" v-if="show3" alt="#">
           </div>
         </div>
       </div>

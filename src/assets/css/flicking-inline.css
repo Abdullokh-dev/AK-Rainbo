@@ -3,20 +3,26 @@
   overflow: hidden;
 }
 
-.flicking-viewport.vertical {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
+.flicking-viewport:not(.vertical) {
+  width: 99%;
+  height: 99%;
 }
 
+.flicking-viewport.vertical,
 .flicking-viewport.vertical > .flicking-camera {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: column;
-  flex-direction: column;
+  display: inline-block;
+}
+
+.flicking-viewport.vertical.middle > .flicking-camera > * {
+  vertical-align: middle;
+}
+
+.flicking-viewport.vertical.bottom > .flicking-camera > * {
+  vertical-align: bottom;
+}
+
+.flicking-viewport.vertical > .flicking-camera > * {
+  display: block;
 }
 
 .flicking-viewport.flicking-hidden > .flicking-camera > * {
@@ -26,19 +32,14 @@
 .flicking-camera {
   width: 100%;
   height: 100%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   position: relative;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-  -ms-flex-direction: row;
-  flex-direction: row;
   z-index: 1;
+  white-space: nowrap;
   will-change: transform;
 }
 
 .flicking-camera > * {
-  -ms-flex-negative: 0;
-  flex-shrink: 0;
+  display: inline-block;
+  white-space: normal;
+  vertical-align: top;
 }

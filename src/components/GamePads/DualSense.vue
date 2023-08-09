@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, ref} from "vue";
+import {onMounted, ref, watch} from "vue";
 import first from "../../assets/images/GamePads/customize-1.png"
 import second from "../../assets/images/GamePads/customize-2.png"
 import third from "../../assets/images/GamePads/customize-3.png"
@@ -8,13 +8,21 @@ import fourth from "../../assets/images/GamePads/customize-4.png"
 const images = [
   first, second, third, fourth
 ]
+const imageOpacity = ref(1)
 const currentIndex = ref(0)
 const currentImageSrc = ref(images[currentIndex.value])
 
+watch(currentIndex, (newSrc, oldSrc) => {
+  imageOpacity.value = 0;
+  setTimeout(() => {
+    imageOpacity.value = 1;
+  }, 100);
+});
+
 onMounted(() => {
   setInterval(() => {
-    currentIndex.value = (currentIndex.value + 1) % images.length;
     currentImageSrc.value = images[currentIndex.value]
+    currentIndex.value = (currentIndex.value + 1) % images.length;
   },5000)
 })
 </script>
@@ -62,9 +70,7 @@ onMounted(() => {
 
     <div class="col-12 col-lg-5 col-xxl-5 d-flex flex-col justify-content-end p-0">
       <div class="my-auto">
-        <transition name="fade">
-          <img :key="currentImageSrc" :src=currentImageSrc alt="#" class="__img">
-        </transition>
+        <img :key="currentImageSrc" :src=currentImageSrc :style="{ opacity: imageOpacity}" class="__img" alt="#">
       </div>
     </div>
   </div>
@@ -78,6 +84,7 @@ onMounted(() => {
 .dualSense .__img {
   width: 125%;
   margin-right: -25%;
+  transition: ease 1s
 }
 
 .dualSense ._bold {
@@ -98,12 +105,6 @@ onMounted(() => {
   margin-bottom: 30px;
 }
 
-.fade-enter-active {
-  transition: opacity 1s ease;
-}
-.fade-enter-from {
-  opacity: 0;
-}
 @media screen and (max-width: 1199px) {
   .dualScene__title {
     margin: 100px 0 50px 0;

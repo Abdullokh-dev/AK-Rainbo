@@ -83,7 +83,7 @@ const hoverElement = (item) => {
     </div>
     <div class="col-12 col-lg-6 col-xxl-5 p-0 overflow-none d-flex justify-content-start justify-content-md-end">
       <img id="football" src="../../assets/images/Nozzles/img.png" class="__img-1" alt="#">
-      <img id="texture" src="../../assets/images/GamePads/slide-3.png" class="__img-1" alt="#" style="display: none">
+      <img id="texture" src="../../assets/images/Nozzles/img_3.png" class="__img-1" alt="#" style="display: none">
     </div>
   </div>
 
@@ -121,7 +121,7 @@ const hoverElement = (item) => {
 
     <div class="col-12 col-lg-6 p-0 d-flex justify-content-end justify-content-sm-start">
       <img id="gamer" class="__img-2" src="../../assets/images/Nozzles/img_1.png" alt="#">
-      <img id="warn" class="__img-2" src="../../assets/images/GamePads/slide-2.png" alt="#" style="display: none">
+      <img id="warn" class="__img-2" src="../../assets/images/Nozzles/img_4.png" alt="#" style="display: none">
     </div>
   </div>
 </template>

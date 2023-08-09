@@ -95,7 +95,7 @@ const hoverElement = (element) => {
                   <b class="_bold _sport">Sport Collection</b> – для поклонников спорта. С любимым клубом по жизни
                 </p>
 
-                <img src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040" draggable="false">
+                <img src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2038" draggable="false">
               </div>
             </div>
 
@@ -143,7 +143,7 @@ const hoverElement = (element) => {
           <div class="choose-custom-img">
             <img class="__img-1" id="kids" src="../../assets/images/YandexStation/choose-1.png" alt="#" width="2040">
             <img class="__img-2" id="romantic" src="../../assets/images/YandexStation/choose-2.png" alt="#" width="2041">
-            <img class="__img-3" id="sport" src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2040">
+            <img class="__img-3" id="sport" src="../../assets/images/YandexStation/choose-3.png" alt="#" width="2038">
             <img class="__img-4" id="street" src="../../assets/images/YandexStation/choose-4.png" alt="#" width="2040">
             <img src="../../assets/images/YandexStation/choose-1.png" alt="#">
           </div>
