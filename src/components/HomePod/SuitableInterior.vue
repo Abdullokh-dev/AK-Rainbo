@@ -21,37 +21,36 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
       <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
         <!-- First Slide -->
         <div class="interior d-flex">
-          <div class="col-8 p-0 bg-warning">
-            <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-1.png" width="2620" alt="#" draggable="false">
+          <div class="col-8">
+            <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-1.png" width="1310" alt="#" draggable="false">
           </div>
 
-          <div class="col-4 d-flex bg-info">
+          <div class="col-4 d-flex">
             <div class="row d-flex">
-              <div class="col-12 p-0 d-flex">
-                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-2.png" width="1220" alt="#" draggable="false">
+              <div class="col-12 d-flex">
+                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-2.png" width="610" alt="#" draggable="false">
               </div>
 
-              <div class="col-12 p-0 d-flex">
-                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-3.png" width="1220" alt="#" draggable="false">
+              <div class="col-12 d-flex">
+                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-3.png" width="610" alt="#" draggable="false">
               </div>
             </div>
           </div>
         </div>
 
         <div class="interior d-flex">
-          <div class="col-8 p-0 bg-warning">
-
-            <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-1.png" width="2618" alt="#" draggable="false">
+          <div class="col-8">
+            <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-1.png" width="1965" alt="#" draggable="false">
           </div>
 
-          <div class="col-4 d-flex bg-info">
+          <div class="col-4 d-flex">
             <div class="row d-flex">
-              <div class="col-12 p-0 d-flex">
-                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-2.png" width="1222" alt="#" draggable="false">
+              <div class="col-12 d-flex">
+                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-2.png" width="1220" alt="#" draggable="false">
               </div>
 
-              <div class="col-12 p-0 d-flex">
-                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-3.png" width="1221" alt="#" draggable="false">
+              <div class="col-12 d-flex">
+                <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-1-3.png" width="915" alt="#" draggable="false">
               </div>
             </div>
           </div>
