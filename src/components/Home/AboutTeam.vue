@@ -7,10 +7,11 @@ const player = ref(null)
 onMounted(() => {
   player.value = new Plyr('#player', {
     controls: [],
-    autoplay: false
   })
+  // player.value.muted = true
 })
 
+import '../../assets/videos/plyr.css'
 </script>
 
 <template>
@@ -83,12 +84,10 @@ onMounted(() => {
     </div>
   </div>
 
-  <div class="col-12 col-xl-6 p-0 ps-lg-3 d-flex justify-content-end">
-    <div class="d-flex my-auto">
-      <video id="player">
-        <source src="../../assets/videos/video.mp4" type="video/mp4">
-      </video>
-    </div>
+  <div class="col-12 col-xl-6 p-0 ps-lg-3 d-flex justify-content-end pb-lg-5">
+    <video autoplay="1" loop id="player" playsinline>
+      <source src="../../assets/videos/video.mp4" type="video/mp4">
+    </video>
   </div>
 </div>
 </template>
@@ -123,8 +122,8 @@ onMounted(() => {
 }
 
 #player {
+  object-fit: cover !important;
   border-radius: 100px 0 0 100px;
-  max-width: 957px;
 }
 
 @media screen and (max-width:1350px) {
@@ -134,9 +133,7 @@ onMounted(() => {
 }
 @media screen and (max-width:1199px) {
   #player {
-    width: 100%;
     border-radius: 75px 0 0 75px;
-    max-width: 1200px;
   }
 }
 

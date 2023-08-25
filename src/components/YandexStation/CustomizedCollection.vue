@@ -1,9 +1,17 @@
 <script setup>
+import router from "../../plugins/router.js";
+const scrollElement = (id) => {
+  try {
+    document.getElementById(id).scrollIntoView({behavior: "smooth",'top':'top'})
+  } catch (e) {
+    router.push('/' + id)
+  }
+}
 
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center bg-white">
+  <div class="row d-flex justify-content-center" id="yandex-customize">
     <div class="col-12 col-xxl-11 col-xxxl-10 customized-collection">
           <h2 class="__title text-black title-lg">
             Кастомизированная коллекция <br> Яндекс.Станции Лайт

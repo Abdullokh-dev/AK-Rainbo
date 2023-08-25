@@ -3,7 +3,7 @@
 </script>
 
 <template>
-  <div class="row bg-white specification">
+  <div class="row specification">
     <div class="col">
 
       <div class="row">

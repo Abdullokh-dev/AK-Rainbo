@@ -6,7 +6,7 @@
   <div class="dual-shock row d-flex justify-content-center">
     <div class="col col-12 col-xxl-11 col-xxxl-10">
       <h2 class="title-lg __title">
-        <span class="uppercase">Кастомизированные Геймпады</span> DUALSHOCK 4
+        <span class="uppercase">Кастомизированные Геймпады</span> <span class="nowrap">DUALSHOCK 4</span>
       </h2>
 
       <div class="__info text-md mb-3 mb-lg-5">

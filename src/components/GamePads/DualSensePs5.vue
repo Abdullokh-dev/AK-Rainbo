@@ -79,4 +79,59 @@ defineProps({
 .presentation-section .__btn ._pink:hover {
   background-color: rgba(234, 79, 134, 0.8);
 }
+
+.shining {
+  position: relative;
+}
+
+.shining::before, .shining::after {
+  content: "";
+  display: block;
+  position: absolute;
+  height: 70%;
+  top: 0;
+  border-radius: inherit;
+}
+
+.shining:before {
+  background: rgba(255, 255, 255, 0.5);
+  width: 60px;
+  left: 0;
+  filter: blur(30px);
+  animation: shine-alt1 5s ease-in-out infinite;
+}
+
+.shining:after {
+  background: rgba(255, 255, 255, 0.2);
+  width: 30px;
+  left: 30px;
+  filter: blur(5px);
+  animation: shine-alt2 5s ease-in-out infinite;
+}
+
+@keyframes shine-alt1 {
+  0% {
+    opacity: 0.5;
+    transform: translateX(-100px) skewX(-15deg);
+    transition-property: opacity, transform;
+  }
+  20%, 100% {
+    opacity: 0.6;
+    transform: translateX(300px) skewX(-15deg);
+    transition-property: opacity, transform;
+  }
+}
+
+@keyframes shine-alt2 {
+  0% {
+    opacity: 0;
+    transform: translateX(-100px) skewX(-15deg);
+    transition-property: opacity, transform;
+  }
+  20%, 100% {
+    opacity: 1;
+    transform: translateX(300px) skewX(-15deg);
+    transition-property: opacity, transform;
+  }
+}
 </style>

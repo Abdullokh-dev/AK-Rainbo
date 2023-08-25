@@ -17,22 +17,22 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
   </div>
 
   <div class="row home-specification">
-    <div class="col-12 col-lg-6 d-flex px-4 px-xxl-5 m-auto">
+    <div class="col-12 col-lg-6 d-flex px-xxl-5 m-auto">
       <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}">
         <div class="d-flex w-100">
-          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="996" alt="#" draggable="false">
         </div>
 
         <div class="d-flex w-100">
-          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree_2.png" width="996" alt="#" draggable="false">
         </div>
 
         <div class="d-flex w-100">
-          <img class="__img my-auto" src="../../assets/images/HomePod/360degree.png" width="1620" alt="#" draggable="false">
+          <img class="__img my-auto" src="../../assets/images/HomePod/360degree_3.png" width="996" alt="#" draggable="false">
         </div>
 
         <template #viewport>
-          <div class="flicking-pagination"></div>
+          <div class="flicking-pagination pagination-light"></div>
         </template>
       </Flicking>
     </div>
@@ -134,8 +134,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 
 .home-specification .__img {
   width: 100%;
-  max-width: 800px;
-  padding-bottom: 70px;
+  padding-bottom: 50px;
 }
 
 .home-specification .__info-block {
@@ -154,6 +153,10 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
   }
 }
 @media screen and (max-width:575px) {
+  .home-specification .__img {
+    padding-bottom: 30px;
+  }
+
   .home-specification-title {
     margin: 50px 0 30px 0;
   }

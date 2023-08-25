@@ -16,25 +16,24 @@ defineProps({
 </script>
 
 <template>
-  <div class="row flex-lg-row-reverse presentation-section">
+  <div class="row flex-lg-row-reverse presentation-section section-top">
     <div class="col-12 col-lg-6 d-flex">
       <div class="my-auto flex-width">
         <h2 class="title-lg"> Кастомизированные <br /> <span class="uppercase"> Playstation 5</span> </h2>
 
         <p class="__info text-md mt-4 mt-lg-2 mt-xl-3 mt-xxl-5 mb-4 pe-5 pe-lg-0">
           <b class="_bold">У Вас есть возможность купить</b>
-          уникальные кастомизированные геймпады DualSenseдля PS5 с уникальным готовым дизайном.
+          уникальные кастомизированные игровые приставки PlayStation 5 с уникальным готовым дизайном.
         </p>
 
         <div class="__btn text-center">
           <a href="https://rainboskin.me/sony/sony-playstation-5/" target="_blank" class="_buy text-md shining"> Купить </a>
         </div>
-
         <b class="_bold __info text-md">Или создать свой собственный уникальный дизайн!</b>
 
         <p class="__info text-md mt-2 mt-lg-3">
-          Выберите DualSenseдля PS5 , который Вы хотите приобрести, раскрасьте его в понравившиеся цвета, и мы произведём
-          её в течение 5-7 дней и отправим Вам.
+          Выберите приставку PlayStation 5, которую Вы хотите приобрести, раскрасьте её в понравившиеся цвета, и мы
+          произведём её в течение 5-7 дней и отправим Вам.
         </p>
 
         <div class="__btn text-center">
@@ -44,7 +43,7 @@ defineProps({
     </div>
 
     <div class="col-12 col-lg-6 pe-0 pe-lg-1 pe-xl-3 pe-xxl-5 ps-0 align-self-center">
-      <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}" class="images-plyr">
+      <Flicking :plugins="plugins" :options="{changeOnHold: true, circular: true, moveType: 'strict'}" class="images-plyr">
         <div class="text-center img-block">
           <img src="../../assets/images/Playstation/slide-1.png" alt="#" width="1900" class="__img" draggable="false">
         </div>

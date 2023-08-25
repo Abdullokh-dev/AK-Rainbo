@@ -1,7 +1,44 @@
-<script setup>
-import {onMounted, reactive} from "vue";
+<script setup xmlns="http://www.w3.org/1999/html">
+import {onMounted, onUnmounted, reactive} from "vue";
 import { useWindowSize } from '@vueuse/core'
 const { width } = useWindowSize()
+
+const rightToLeft = (item) => {
+  const top =  document.querySelector('#' + item).getBoundingClientRect().y;
+  if (top + 100 <= window.innerHeight && top + 100 >= 0) {
+    document.getElementById(item).classList.add('filled');
+    switch (item) {
+      case 'hr-football':
+        window.removeEventListener('scroll', hrOnViewport);
+        break;
+      case 'hr-text':
+        window.removeEventListener('scroll', hrOnViewport);
+        break;
+      case 'hr-gamer':
+        window.removeEventListener('scroll', hrOnViewport);
+        break;
+      case 'hr-war':
+        window.removeEventListener('scroll', hrOnViewport);
+        break;
+    }
+  }
+}
+
+function hrOnViewport() {
+  rightToLeft('hr-football');
+}
+
+function hr2OnViewport() {
+  rightToLeft('hr-text');
+}
+
+function hr3OnViewport() {
+  rightToLeft('hr-gamer');
+}
+
+function hr4OnViewport() {
+  rightToLeft('hr-war');
+}
 
 const items = reactive({
   first: '',
@@ -11,10 +48,21 @@ const items = reactive({
 })
 
 onMounted(() => {
+  window.addEventListener('scroll', hrOnViewport);
+  window.addEventListener('scroll', hr2OnViewport);
+  window.addEventListener('scroll', hr3OnViewport);
+  window.addEventListener('scroll', hr4OnViewport);
   items.first = document.getElementById('football')
   items.second = document.getElementById('texture')
   items.third = document.getElementById('gamer')
   items.fourth = document.getElementById('warn')
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', hrOnViewport);
+  window.removeEventListener('scroll', hr2OnViewport);
+  window.removeEventListener('scroll', hr3OnViewport);
+  window.removeEventListener('scroll', hr4OnViewport);
 })
 
 const hoverElement = (item) => {
@@ -40,7 +88,6 @@ const hoverElement = (item) => {
       break
   }
 }
-
 </script>
 
 <template>
@@ -62,7 +109,7 @@ const hoverElement = (item) => {
             <img src="../../assets/images/Nozzles/icon-1.png" alt="#" height="126" class="__icon">
           </div>
           <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.first)">
-            <b class="_bold title-xs">Коллекция футбол</b>
+            <b class="_bold title-xs" id="hr-football">Коллекция футбол</b>
             – Мы единственная  компания, производящая лицензионные накладки стики в дизайне клубов: Спартак, ЦСКА,
             Динамо, Зенит, Локомотив и т.д.
           </p>
@@ -75,7 +122,7 @@ const hoverElement = (item) => {
             <img src="../../assets/images/Nozzles/icon-2.png" alt="#" height="126" class="__icon">
           </div>
           <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.second)">
-            <b class="_bold title-xs">Коллекция текстура</b>
+            <b class="_bold title-xs" id="hr-text">Коллекция текстура</b>
             – Одноцветные накладки с необычной формой обеспечат нужную эргономику
           </p>
         </div>
@@ -83,7 +130,7 @@ const hoverElement = (item) => {
     </div>
     <div class="col-12 col-lg-6 col-xxl-5 p-0 overflow-none d-flex justify-content-start justify-content-md-end">
       <img id="football" src="../../assets/images/Nozzles/img.png" class="__img-1" alt="#">
-      <img id="texture" src="../../assets/images/Nozzles/img_3.png" class="__img-1" alt="#" style="display: none">
+      <img id="texture" src="../../assets/images/Nozzles/img_2.png" class="__img-1" alt="#" style="display: none">
     </div>
   </div>
 
@@ -95,7 +142,7 @@ const hoverElement = (item) => {
           <div class="pointer" @mouseenter="hoverElement(items.third)">
             <img src="../../assets/images/Nozzles/icon-3.png" alt="#" height="126" class="__icon">
           </div>
-          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.third)"><b class="_bold title-xs">Коллекция геймер</b>
+          <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.third)"><b class="_bold title-xs" id="hr-gamer">Коллекция геймер</b>
             – Накладки на стики с узнаваемыми символами: клеверов, подковой, звездами, пиктограммами и цветами
           </p>
         </div>
@@ -107,7 +154,7 @@ const hoverElement = (item) => {
             <img src="../../assets/images/Nozzles/icon-4.png" alt="#" height="126" class="__icon">
           </div>
           <p class="text-black text-md __text pointer" @mouseenter="hoverElement(items.fourth)">
-            <b class="_bold title-xs d-none d-lg-block">Коллекция воин</b>
+            <b class="_bold title-xs" id="hr-war">Коллекция воин</b>
             – Для любителей файтинга и шутеров с черепами, оружием прицелами и т.д.
           </p>
         </div>
@@ -143,7 +190,7 @@ const hoverElement = (item) => {
   min-width: 433px;
   max-width: 866px;
   margin-top: 75px;
-  animation: slideaway .3s;
+  /*animation: slideaway .3s;*/
 }
 
 .can-buy-section .__text {
@@ -153,6 +200,28 @@ const hoverElement = (item) => {
 
 .can-buy-section ._bold {
   font-weight: 700;
+  position: relative;
+}
+
+.can-buy-section .filled:after {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 3px;
+  bottom: -3px;
+  left: 0;
+  background-color: black;
+  animation: fill-hr 1s;
+  transform-origin: bottom left;
+}
+
+@keyframes fill-hr {
+  0% {
+    transform: scaleX(0);
+  }
+  100% {
+    transform: scaleX(1);
+  }
 }
 
 .can-buy-section .__icon {

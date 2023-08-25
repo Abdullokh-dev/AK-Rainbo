@@ -22,6 +22,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
         <!-- First Slide -->
         <div class="interior d-flex">
           <div class="col-8">
+
             <img class="__img flex-shrink-0" src="../../assets/images/HomePod/suit-2-1.png" width="1310" alt="#" draggable="false">
           </div>
 

@@ -24,7 +24,7 @@
         </div>
 
         <div class="col-12 col-lg-6">
-          <img class="__img d-flex mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-first.png" width="1454" alt="#">
+          <img class="__img d-flex mx-auto mx-lg-0 px-4 mt-2 mt-lg-5" src="../../assets/images/Playstation/ps-first.png" width="1158" alt="#">
         </div>
       </div>
 
@@ -43,7 +43,7 @@
         </div>
 
         <div class="col-12 col-lg-6 d-flex justify-content-end">
-          <img class="__img-2 mx-auto mx-lg-0" src="../../assets/images/Playstation/ps-second.png" width="1140" alt="#">
+          <img class="__img mx-auto mx-lg-0 px-4" src="../../assets/images/Playstation/ps-second.png" width="1158" alt="#">
         </div>
       </div>
     </div>
@@ -96,11 +96,6 @@
 }
 
 .ps4 .__img {
-  width: 100%;
-  max-width: 636px;
-}
-
-.__img-2 {
   width: 100%;
   max-width: 570px;
 }

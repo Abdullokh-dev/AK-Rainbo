@@ -1,5 +1,5 @@
 <script setup>
-import {onMounted, reactive, ref} from "vue";
+import {onMounted, onUnmounted, reactive, ref} from "vue";
 import { Pagination, Fade } from "@egjs/flicking-plugins";
 import Flicking from "@egjs/vue3-flicking";
 import '../../assets/css/flicking-inline.css';
@@ -13,11 +13,34 @@ const items = reactive({
   fourth: '',
 })
 
+const viewIn = () => {
+  const top =  document.querySelector('#animate-trigger').getBoundingClientRect().y;
+  if(top <= 962) {
+    hoverElement(items.first)
+    setTimeout(() => {
+      hoverElement(items.second)
+      setTimeout(() => {
+        hoverElement(items.third)
+        setTimeout(() => {
+          hoverElement(items.fourth)
+        }, 700)
+      }, 700)
+    }, 700)
+    window.removeEventListener('scroll', viewIn);
+  }
+}
+
 onMounted(() => {
   items.first = document.getElementById('kids')
   items.second = document.getElementById('romantic')
   items.third = document.getElementById('sport')
   items.fourth = document.getElementById('street')
+
+  window.addEventListener('scroll', viewIn);
+})
+
+onUnmounted(() => {
+  window.removeEventListener('scroll', viewIn);
 })
 
 const hoverElement = (element) => {
@@ -54,7 +77,7 @@ const hoverElement = (element) => {
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center position-relative bg-white chooseCustomStation">
+  <div class="row d-flex justify-content-center position-relative chooseCustomStation">
     <div class="col-12 col-xxl-11 col-xxxl-10">
 
       <div class="row">
@@ -134,7 +157,7 @@ const hoverElement = (element) => {
           <p class="__info">
             <b class="_bold _street" data-aos="red-light" data-aos-anchor=".main-trigger" data-aos-offset="0" @mouseenter="hoverElement(items.fourth)">Street Art Collection</b> – дизайны от уличных художников-граффитистов.
           </p>
-          <div class="mt-5 pt-3 main-trigger" data-aos="fade-zoom-in" data-aos-offset="0">
+          <div class="mt-5 pt-3 main-trigger" data-aos="fade-zoom-in" data-aos-offset="0" id="animate-trigger">
             <a href="https://rainboskin.me/umnaya_kolonka_rainbo" target="_blank" class="__btn text-md shining"> Купить </a>
           </div>
         </div>
@@ -178,7 +201,7 @@ const hoverElement = (element) => {
 .choose-custom-img .__img-3,
 .choose-custom-img .__img-4 {
   opacity: 0;
-  transition: opacity .3s;
+  transition: opacity .5s;
   position: absolute;
   top: 0;
   right: 0;
@@ -233,7 +256,6 @@ const hoverElement = (element) => {
 }
 
 .slider-custom img {
-  min-width: 458px;
   max-width: 700px;
   margin: auto;
 }

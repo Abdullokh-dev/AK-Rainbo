@@ -8,13 +8,13 @@ const show3 = ref(false)
 onMounted(() => {
   setTimeout(() => {
     show.value = true
-  }, 1000)
+  }, 800)
   setTimeout(() => {
     show2.value = true
-  }, 1500)
+  }, 1300)
   setTimeout(() => {
     show3.value = true
-  }, 2000)
+  }, 1800)
 })
 </script>
 

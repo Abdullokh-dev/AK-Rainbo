@@ -8,19 +8,22 @@ const images = [
 ]
 const imageOpacity = ref(1)
 const currentIndex = ref(0)
-const currentImageSrc = ref(images[currentIndex.value])
+const currentImageSrc = ref(images)
 
-watch(currentIndex, (newSrc, oldSrc) => {
-  imageOpacity.value = 0;
+const animate = () => {
   setTimeout(() => {
-    imageOpacity.value = 1;
-  }, 100);
-});
-
+    imageOpacity.value = 0;
+    setTimeout(() => {
+      currentIndex.value = (currentIndex.value + 1) % images.length;
+      setTimeout(() => {
+        imageOpacity.value = 1;
+      }, 300)
+    }, 300)
+  },300)
+}
 onMounted(() => {
   setInterval(() => {
-    currentImageSrc.value = images[currentIndex.value]
-    currentIndex.value = (currentIndex.value + 1) % images.length;
+    animate()
   },5000)
 })
 </script>
@@ -33,39 +36,41 @@ onMounted(() => {
         Кастомизированные <br /> PLAYSTATION:
       </h2>
 
-      <p class="_top text-md pb-sm-2 pb-lg-4" data-aos="fade-right" data-aos-offset="40">
-        <span class="_bold">Высочайшее качество кастомизации не оставит равнодушным никого.</span> <br>
-        Кастомизированная PlayStation станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении.
-        Незамеченной остаться не получится, она будет привлекать к себе внимание всех ваших гостей.
-      </p>
+      <div class="trigger" data-aos="fade-right" data-aos-offset="40">
+        <p class="_top text-md pb-sm-2 pb-lg-4">
+          <span class="_bold">Высочайшее качество кастомизации не оставит равнодушным никого.</span> <br>
+          Кастомизированная PlayStation станет прекрасным дизайнерским объектом в вашей квартире, офисе или заведении.
+          Незамеченной остаться не получится, она будет привлекать к себе внимание всех ваших гостей.
+        </p>
 
-      <ul class="list-unstyled text-md">
-        <li class="__info" data-aos="fade-right" data-aos-offset="40">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="5" cy="5" r="5" fill="#6337FF"/>
-          </svg>
-          Мы кастомизируем <span class="_bold">только оригинальные геймпады</span> PlayStation (прямые поставки)
-        </li>
-        <li class="__info" data-aos="fade-right" data-aos-offset="40">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="5" cy="5" r="5" fill="#F4414E"/>
-          </svg>
-          <span class="_bold">Наша кастомизация – это не наклейки.</span>
-          Используются несколько технологий нанесения рисунков, включая покраску
-        </li>
-        <li class="__info" data-aos="fade-right" data-aos-offset="40">
-          <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-            <circle cx="5" cy="5" r="5" fill="#FBD301"/>
-          </svg>
-          <span class="_bold">Все дизайны консолей и геймпадов футбольных клубов являются лицензированными</span>
-          и ободренными самими клубами
-        </li>
-      </ul>
+        <ul class="list-unstyled text-md">
+          <li class="__info">
+            <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="5" cy="5" r="5" fill="#6337FF"/>
+            </svg>
+            Мы кастомизируем <span class="_bold">только оригинальные геймпады</span> PlayStation (прямые поставки)
+          </li>
+          <li class="__info">
+            <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="5" cy="5" r="5" fill="#F4414E"/>
+            </svg>
+            <span class="_bold">Наша кастомизация – это не наклейки.</span>
+            Используются несколько технологий нанесения рисунков, включая покраску
+          </li>
+          <li class="__info">
+            <svg class="position-absolute" width="10" height="10" viewBox="0 0 10 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="5" cy="5" r="5" fill="#FBD301"/>
+            </svg>
+            <span class="_bold">Все дизайны консолей и геймпадов футбольных клубов являются лицензированными</span>
+            и ободренными самими клубами
+          </li>
+        </ul>
+      </div>
     </div>
 
     <div class="col-12 col-lg-7 col-xxl-7 align-self-end text-start flex-col">
-      <div class="d-flex justify-content-end pe-lg-4">
-          <img :key="currentImageSrc" :src=currentImageSrc :style="{ opacity: imageOpacity}" class="__img" alt="#">
+      <div class="d-flex justify-content-end pe-lg-4" data-aos-anchor=".trigger" data-aos="fade-left" data-aos-delay="150">
+        <img :key="currentImageSrc" :src=currentImageSrc[currentIndex] :style="{ opacity: imageOpacity}" class="__img" alt="#">
       </div>
     </div>
   </div>
@@ -79,7 +84,7 @@ onMounted(() => {
 .customize-playstation .__img {
   width: 100%;
   max-width: 920px;
-  transition: ease 1s
+  transition: opacity .3s
 }
 
 .customize-playstation ._top {

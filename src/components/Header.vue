@@ -1,4 +1,6 @@
 <script setup>
+import { useRoute } from 'vue-router';
+const route = useRoute();
 defineProps({
   showLists: {
     type: String,
@@ -8,16 +10,20 @@ defineProps({
 
 window.onscroll = function() {
   let navbar = document.getElementById("navbar")
-  if(window.pageYOffset > 50) {
-    navbar.style.cssText += 'background: rgba(0,0,0,0.2); backdrop-filter: saturate(180%) blur(20px); transition: all .3s; -webkit-backdrop-filter: blur(20px);';
-  } else {
-    navbar.style.cssText += "background: none; backdrop-filter: none; -webkit-backdrop-filter: none";
+  if(route.path !== '/yandex-station') {
+    if(window.pageYOffset > 20) {
+      navbar.style.cssText += 'background: rgba(0,0,0,0.2); backdrop-filter: saturate(180%) blur(20px); transition: all .3s; -webkit-backdrop-filter: blur(20px);';
+    } else {
+      navbar.style.cssText += "background: none; backdrop-filter: none; -webkit-backdrop-filter: none";
+    }
   }
 }
 
-const scrollElement = (id) => {
-  document.getElementById(id).scrollIntoView({behavior: "smooth",'block':'center','inline':'center'})
-}
+$(document).click(function(e) {
+  if ($(e.target).is('a')) {
+    $('.collapse').collapse('hide');
+  }
+});
 </script>
 <template>
   <header class="row d-flex justify-content-center fixed-top" id="navbar">
@@ -25,7 +31,7 @@ const scrollElement = (id) => {
       <nav class="navbar navbar-expand-xl row py-4">
         <div class="container-fluid">
           <!-- Logo -->
-          <div @click="$router.push('/')"
+          <router-link to="/"
             class="col-12 col-xl-auto d-flex justify-content-center justify-content-xl-end justify-content-xxl-start">
             <div class="d-flex">
               <svg class="header__svg" width="112" height="24" viewBox="0 0 112 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -48,7 +54,7 @@ const scrollElement = (id) => {
                Shop
               </span>
             </div>
-          </div>
+          </router-link>
 
           <!-- Mobile menu toggle -->
           <div class="col-12 d-xl-none text-center mt-3">
@@ -67,20 +73,20 @@ const scrollElement = (id) => {
             <div class="collapse d-xl-flex justify-content-center navbar-collapse" id="navbarMobile">
               <ul class="navbar-nav mb-2 mb-xl-0">
                 <li class="nav-item mt-2 mt-xl-0">
-                  <a href="#/home-pod" class="navbar__list pointer d-none d-xl-block">Стереосистема</a>
-                  <a href="#/home-pod" class="list header__item pointer d-xl-none">Стереосистема RAINBO TECHNICS </a>
+                  <router-link to="/home-pod" target="_blank" class="navbar__list pointer d-none d-xl-block">Стереосистема</router-link>
+                  <router-link to="/home-pod" target="_blank" class="list header__item pointer d-xl-none">Стереосистема RAINBO TECHNICS</router-link>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a @click="scrollElement('yandex-station')" class="list header__item pointer">Яндекс.Станции</a>
+                  <router-link to="/yandex-station" target="_blank" class="list header__item pointer">Яндекс.Станции</router-link>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a @click="scrollElement('sony-playstation')" class="list header__item pointer">Sony Playstation</a>
+                  <router-link to="/playstation" target="_blank" class="list header__item pointer">Sony Playstation</router-link>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0 px-4">
-                  <a @click="scrollElement('gamepad')" class="list header__item pointer">Геймпады</a>
+                  <router-link to="/gamepads" target="_blank" class="list header__item pointer">Геймпады</router-link>
                 </li>
                 <li class="nav-item mt-4 mt-xl-0">
-                  <a @click="scrollElement('nozzles')" class="list header__item pointer">Накладки на стики</a>
+                  <router-link to="/nozzles" target="_blank" class="list header__item pointer">Накладки на стики</router-link>
                 </li>
               </ul>
             </div>
@@ -91,19 +97,19 @@ const scrollElement = (id) => {
             <div class="collapse d-flex justify-content-center navbar-collapse">
               <ul class="navbar-nav">
                 <li class="nav-item">
-                  <a href="#/home-pod" class="list header__item pointer">Стереосистема</a>
+                  <router-link to="/home-pod" target="_blank" class="list header__item pointer">Стереосистема</router-link>
                 </li>
                 <li class="nav-item px-4">
-                  <a @click="scrollElement('yandex-station')" class="list header__item pointer">Яндекс.Станции</a>
+                  <router-link to="/yandex-station" target="_blank" class="list header__item pointer">Яндекс.Станции</router-link>
                 </li>
                 <li class="nav-item">
-                  <a @click="scrollElement('sony-playstation')" class="list header__item pointer">Sony Playstation</a>
+                  <router-link to="/playstation" target="_blank" class="list header__item pointer">Sony Playstation</router-link>
                 </li>
                 <li class="nav-item px-4">
-                  <a @click="scrollElement('gamepad')" class="list header__item pointer">Геймпады</a>
+                  <router-link to="/gamepads" target="_blank" class="list header__item pointer">Геймпады</router-link>
                 </li>
                 <li class="nav-item">
-                  <a @click="scrollElement('nozzles')" class="list header__item pointer">Накладки на стики</a>
+                  <router-link to="/nozzles" target="_blank" class="list header__item pointer">Накладки на стики</router-link>
                 </li>
               </ul>
             </div>

@@ -4,7 +4,7 @@
 
 <template>
   <!-- Main Title -->
-  <div class="row d-flex justify-content-center bg-in">
+  <div class="row d-flex justify-content-center" id="yandex">
     <div class="col-12 col-xxl-11 col-xxxl-10 mb-3 mb-lg-5 mt-lg-3 mt-xl-5">
       <div class="yandex__title-box mt-lg-5">
         <h2 class="yandex__title m-0 p-0">Кастомизированные Яндекс.Станции и Sony Playstation</h2>
@@ -15,10 +15,10 @@
   <div class="row d-flex justify-content-center customize-box radius-border position-relative mt-2">
     <div class="col-12 pt-2 col-xl-11 col-xxxl-10">
 
-      <div class="row pb-lg-0">
+      <div class="row pb-lg-0" id="yandex-station">
         <div class="col-12 col-lg-6 col-xl-5 d-flex justify-content-center justify-content-xxl-start">
           <div class="mt-sm-2 my-lg-auto px-3 px-sm-4 px-lg-0 ms-xl-4 ms-xxl-2">
-            <h3 class="customize-title" id="yandex-station">Яндекс.Станции Лайт</h3>
+            <h3 class="customize-title">Яндекс.Станции Лайт</h3>
             <p class="customize-description mt-2 mt-lg-3">
               Яркая и компактная умная колонка, которая управляется голосом и сенсорными кнопками. Она здорово украсит любой интерьер и сможет развлечь ребенка.
             </p>
@@ -41,14 +41,14 @@
 
         <div class="col-12 ps-lg-0 col-lg-6 col-xl-7 d-flex justify-content-start justify-content-xl-end overflow-none">
           <div class="customize-img-box">
-            <img src="../../assets/images/Home/colored-players.png" width="2159" alt="#" class="__img-1">
+            <img src="../../assets/images/Home/colored-players.png" width="2190" alt="#" class="__img-1">
           </div>
         </div>
       </div>
     </div>
   </div>
   <!-- Yandex Console Belt -->
-  <div class="row d-flex justify-content-center radius-border customize-box_dark my-4" id="sony-playstation">
+  <div class="row d-flex justify-content-center radius-border customize-box_dark my-4">
     <div class="col-12 pt-2 col-xxl-11 col-xxxl-10">
 
       <div class="row pb-lg-0">
@@ -84,7 +84,7 @@
 
   <!-- Nozzles -->
   <div class="row">
-    <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4" id="gamepad">
+    <div class="col-12 col-lg-6 pb-4 pb-lg-0 pe-lg-4">
       <div class="row radius-border playstation-card__left flex-lg-column-reverse">
         <div class="col d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
@@ -107,12 +107,12 @@
         </div>
 
         <div class="col-12 mb-3 mb-lg-4 mb-xxl-5">
-          <img class="__image" src="../../assets/images/Home/img.png" width="1606" alt="#">
+          <img class="__image" src="../../assets/images/Home/img.png" width="983" alt="#">
         </div>
       </div>
     </div>
 
-    <div class="col-12 col-lg-6 ps-lg-4" id="nozzles">
+    <div class="col-12 col-lg-6 ps-lg-4">
       <div class="row radius-border playstation-card__right flex-lg-column-reverse">
         <div class="col-12 d-lg-flex justify-content-lg-center">
           <div class="mt-2 mt-sm-3 mt-lg-0">
@@ -152,7 +152,7 @@
 
 .yandex__title-box {
   max-width: 950px;
-  margin-top: 120px;
+  margin-top: 30px;
 }
 
 .customize-box {
@@ -351,11 +351,6 @@
 @media screen and (min-width: 991px) {
   .text-lg-center {
     text-align: center;
-  }
-}
-@media screen and (min-width:822px) {
-  .yandex__title-box {
-    margin-top: 0;
   }
 }
 </style>

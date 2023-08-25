@@ -24,7 +24,7 @@ const toggleSecond = () => {
           <h2 class="__title title-lg">Доставка и гарантия</h2>
         </div>
 
-        <div class="col-12 col-lg-6">
+        <div class="col-12 col-lg-6 panel">
           <div class="d-flex justify-content-between pointer" @click="toggle" data-bs-toggle="collapse" data-bs-target="#deliver" aria-expanded="false" aria-controls="collapseExample">
             <h3 class="title-xs mt-1">Доставка</h3>
             <button class="p-0 me-lg-4" type="button">
@@ -45,8 +45,8 @@ const toggleSecond = () => {
           <div class="my_hr my-3" :style="{borderBottomColor: color}"></div>
         </div>
 
-        <div class="col-12 col-lg-6">
-          <div class="d-flex justify-content-between pointer" @click="toggleSecond" data-bs-toggle="collapse" data-bs-target="#guarantee" aria-expanded="false" aria-controls="collapseExample">
+        <div class="col-12 col-lg-6 panel">
+          <div class="d-flex justify-content-between pointer panel-body" @click="toggleSecond" data-bs-toggle="collapse" data-bs-target="#guarantee" aria-expanded="false" aria-controls="collapseExample">
             <h3 class="title-xs mt-1">Гарантия</h3>
             <button class="p-0 me-lg-4" type="button">
               <svg id="toggle-btn-second" width="34" height="34" viewBox="0 0 34 34" fill="none" xmlns="http://www.w3.org/2000/svg">

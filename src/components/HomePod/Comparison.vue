@@ -16,7 +16,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
       </h2>
     </div>
   </div>
-  <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}" class="comparison d-lg-none">
+  <Flicking :plugins="plugins" :options="{changeOnHold: true,circular: true,moveType: 'strict'}" class="comparison text-grey d-lg-none">
     <!-- Slide 1-->
     <div class="d-flex duality-slider w-100">
       <div class="col-12">
@@ -39,126 +39,126 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
           </div>
           <!-- Header -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__header">Класс</div>
+            <div class="__header text-light">Класс</div>
           </div>
           <div class="col-6 text-center">
             <div class="__header">Класс</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">Беспроводная Hi-Fi</div>
+            <div class="__info text-md text-light">Беспроводная Hi-Fi</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">Беспроводная Hi-Fi</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Подключения</div>
+            <div class="__theme text-light">Подключения</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Подключения</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">Аналоговый, SP-DIF, Bluetooth 5.1 aptX HD</div>
+            <div class="__info text-md text-light">Аналоговый, SP-DIF, Bluetooth 5.1 aptX HD</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">Аналоговый, Bluetooth 4.2</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Мощность</div>
+            <div class="__theme text-light">Мощность</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Мощность</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">130 Вт</div>
+            <div class="__info text-md text-light">130 Вт</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">120 Вт</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Частотный диапазон</div>
+            <div class="__theme text-light">Частотный диапазон</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Частотный диапазон</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">35 – 22 000 Hz</div>
+            <div class="__info text-md text-light">35 – 22 000 Hz</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">45 – 20 000 Hz</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Акустическое оформление</div>
+            <div class="__theme text-light">Акустическое оформление</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Акустическое оформление</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">Бандпасс</div>
+            <div class="__info text-md text-light">Бандпасс</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">Пассивные излучатели</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Конфигурация</div>
+            <div class="__theme text-light">Конфигурация</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Конфигурация</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">Трёхполосная</div>
+            <div class="__info text-md text-light">Трёхполосная</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">Двухполосная</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Регуляторы тембра</div>
+            <div class="__theme text-light">Регуляторы тембра</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Регуляторы тембра</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">НЧ, СЧ, ВЧ</div>
+            <div class="__info text-md text-light">НЧ, СЧ, ВЧ</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">НЧ</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Материал кормпуса</div>
+            <div class="__theme text-light">Материал кормпуса</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Материал кормпуса</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">МДФ /металл/акрил</div>
+            <div class="__info text-md text-light">МДФ /металл/акрил</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">МДФ/АВС</div>
           </div>
           <!-- Theme -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__theme">Вес</div>
+            <div class="__theme text-light">Вес</div>
           </div>
           <div class="col-6 text-center">
             <div class="__theme">Вес</div>
           </div>
           <!-- Info -->
           <div class="col-6 text-center vertical-hr">
-            <div class="__info text-md">7,2 кг</div>
+            <div class="__info text-md text-light">7,2 кг</div>
           </div>
           <div class="col-6 text-center">
             <div class="__info text-md">4,4 кг</div>
@@ -325,7 +325,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
   </Flicking>
 
   <div class="d-none d-lg-inline-block row d-flex justify-content-center comparison">
-    <div class="col-12 col-xxl-11 col-xxxl-10 mx-auto">
+    <div class="col-12 col-xxl-11 col-xxxl-10 mx-auto text-grey">
       <div class="row">
         <div class="col-12 col-lg-6">
           <div class="row">
@@ -347,126 +347,126 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
             </div>
             <!-- Header -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__header">Класс</div>
+              <div class="__header text-light">Класс</div>
             </div>
             <div class="col-6 text-center">
               <div class="__header">Класс</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">Беспроводная Hi-Fi</div>
+              <div class="__info text-md text-light">Беспроводная Hi-Fi</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">Беспроводная Hi-Fi</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Подключения</div>
+              <div class="__theme text-light">Подключения</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Подключения</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">Аналоговый, SP-DIF, Bluetooth 5.1 aptX HD</div>
+              <div class="__info text-md text-light">Аналоговый, SP-DIF, Bluetooth 5.1 aptX HD</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">Аналоговый, Bluetooth 4.2</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Мощность</div>
+              <div class="__theme text-light">Мощность</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Мощность</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">130 Вт</div>
+              <div class="__info text-md text-light">130 Вт</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">120 Вт</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Частотный диапазон</div>
+              <div class="__theme text-light">Частотный диапазон</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Частотный диапазон</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">35 – 22 000 Hz</div>
+              <div class="__info text-md text-light">35 – 22 000 Hz</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">45 – 20 000 Hz</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Акустическое оформление</div>
+              <div class="__theme text-light">Акустическое оформление</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Акустическое оформление</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">Бандпасс</div>
+              <div class="__info text-md text-light">Бандпасс</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">Пассивные излучатели</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Конфигурация</div>
+              <div class="__theme text-light">Конфигурация</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Конфигурация</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">Трёхполосная</div>
+              <div class="__info text-md text-light">Трёхполосная</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">Двухполосная</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Регуляторы тембра</div>
+              <div class="__theme text-light">Регуляторы тембра</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Регуляторы тембра</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">НЧ, СЧ, ВЧ</div>
+              <div class="__info text-md text-light">НЧ, СЧ, ВЧ</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">НЧ</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Материал кормпуса</div>
+              <div class="__theme text-light">Материал кормпуса</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Материал кормпуса</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">МДФ /металл/акрил</div>
+              <div class="__info text-md text-light">МДФ /металл/акрил</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">МДФ/АВС</div>
             </div>
             <!-- Theme -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__theme">Вес</div>
+              <div class="__theme text-light">Вес</div>
             </div>
             <div class="col-6 text-center">
               <div class="__theme">Вес</div>
             </div>
             <!-- Info -->
             <div class="col-6 text-center vertical-hr">
-              <div class="__info text-md">7,2 кг</div>
+              <div class="__info text-md text-light">7,2 кг</div>
             </div>
             <div class="col-6 text-center">
               <div class="__info text-md">4,4 кг</div>
@@ -643,6 +643,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
 
 .comparison .__name {
   margin-top: 29px;
+  color: white;
 }
 
 .comparison ._hr {
@@ -666,6 +667,14 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Arrow(), new Fade()
 
 .vertical-hr {
   border-right: 1px solid #A5A5A5;
+}
+
+.text-grey {
+  color: #727272;
+}
+
+.text-light {
+  color: white;
 }
 
 @media screen and (max-width:1199px) {

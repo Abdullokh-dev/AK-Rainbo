@@ -153,10 +153,20 @@ b {
 .bg-warning {
   background-color: orange;
 }
+
+.mouse {
+  position: absolute;
+  left: calc(50% - 23px);
+  z-index: 2;
+  bottom: 50px;
+  margin: 0 auto;
+}
+
 .shining {
   display: inline-flex;
   overflow: hidden;
   position: relative;
+  will-change: transform;
 }
 
 .shining::before, .shining::after {
@@ -183,6 +193,15 @@ b {
   filter: blur(5px);
   -webkit-animation: shine-alt2 5s ease-in-out infinite;
   animation: shine-alt2 5s ease-in-out infinite;
+}
+
+@keyframes wave-animation {
+  0%, 100% {
+    transform: scaleY(1);
+  }
+  50% {
+    transform: scaleY(0.6);
+  }
 }
 
 @-webkit-keyframes shine-alt1 {
@@ -267,6 +286,15 @@ b {
 
   .video-content .__box .__btn {
     padding: 8px 58px;
+  }
+
+  .mouse svg {
+    width: 15px;
+  }
+
+  .mouse {
+    left: calc(50% - 15px);
+    bottom: 30px;
   }
 }
 

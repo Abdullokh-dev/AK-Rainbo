@@ -4,7 +4,7 @@
 <template>
   <div class="where-buy row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10">
-      <div class="row">
+      <div class="row bg-row">
         <div class="col-12 col-lg-5">
           <h2 class="__title title-xl">
             Где купить?
@@ -21,26 +21,24 @@
             </a>
           </div>
         </div>
-
-        <div class="col-12 col-lg-7 d-flex justify-content-start">
-          <img src="../../assets/images/HomePod/img_2.png" alt="#" width="1746" class="__img align-self-end">
-        </div>
       </div>
     </div>
   </div>
 </template>
 
 <style scoped>
-.where-buy .__img {
-  width: 100%;
-  max-width: 830px;
+.where-buy {
+  background: url("../../assets/images/HomePod/img_1.png") center top;
+  background-size: cover;
 }
 
 .where-buy .__title {
-  margin-top: 100px;
+  margin-top: 35px;
+  font-weight: 600;
 }
 
 .where-buy .__title-md {
+  font-weight: 600;
   margin: 109px 0 30px;
 }
 
@@ -50,7 +48,7 @@
 }
 
 .where-buy .__btn  {
-  margin: 65px 0 89px 0;
+  margin: 50px 0 89px 0;
 }
 
 .where-buy .__btn a {
@@ -74,7 +72,12 @@
 
 @media screen and (max-width:1199px) {
   .where-buy .__title {
-    margin-top: 75px;
+    margin-top: 25px;
+  }
+
+  .where-buy .__title-md,
+  .where-buy .__btn {
+    margin-top: 30px;
   }
 
   .where-buy .__btn a {
@@ -92,42 +95,45 @@
 }
 
 @media screen and (max-width:991px) {
+  .where-buy {
+    background: url("../../assets/images/HomePod/mobile-bottom.png") bottom no-repeat;
+    background-size: cover !important;
+  }
+
   .where-buy .__title-md {
-    margin: 70px 0 20px;
+    margin: 35px 0 25px;
   }
 
   .where-buy .__btn  {
-    margin: 45px 0 20px 0;
-  }
-
-  .where-buy .__img {
-    width: 100%;
-    max-width: 700px;
-    margin: 0 auto;
+    margin: 35px 0 264px 0;
   }
 }
 
 @media screen and (max-width:575px) {
   .where-buy .__title {
-    margin-top: 12px;
+    margin-top: 20px;
   }
 
   .where-buy .__title-md {
-    margin: 30px 0 20px;
+    margin: 10px 0;
+  }
+
+  .where-buy .__btn  {
+    margin: 32px 0 164px 0;
   }
 
   .where-buy .__btn a {
-    padding: 12px 65px 12px 52px;
+    padding: 3px 35px 3px 23px;
   }
 
   .where-buy .__btn svg {
-    height: 11px;
-    right: 50px;
-    top: 18px
+    height: 10px;
+    right: 22px;
+    top: 9px
   }
 
   .where-buy .__btn a:hover svg {
-    right: 45px;
+    right: 18px;
   }
 }
 </style>

@@ -8,7 +8,7 @@ const plugins = ref([new Pagination({ type: 'bullet' }), new Fade()])
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center bg-white">
+  <div class="row d-flex justify-content-center">
     <div class="col-12 col-xxl-11 col-xxxl-10 characters">
       <h2 class="__title title-lg text-black">
         6 разных характеров – 6 цветов!

@@ -12,7 +12,9 @@
     "@egjs/flicking-plugins": "^4.7.0",
     "@egjs/vue3-flicking": "^4.10.7",
     "@vueuse/core": "^10.2.1",
+    "aos": "^3.0.0-beta.6",
     "bootstrap": "^5.3.0",
+    "gsap": "^3.12.2",
     "plyr": "^3.7.8",
     "vue": "^3.2.47",
     "vue-router": "^4.2.2"

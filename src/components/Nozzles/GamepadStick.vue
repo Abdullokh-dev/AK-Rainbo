@@ -1,21 +1,22 @@
 <script setup>
 import Plyr from 'plyr';
 import {onMounted, ref} from "vue";
-import '../../assets/videos/plyr.css';
 
 const player = ref(null)
 
 onMounted(() => {
   player.value = new Plyr('#player-2', {
     controls: [],
-    // autoplay: true
   })
+
+  player.value.muted = true
 })
 
+import '../../assets/videos/plyr.css'
 </script>
 
 <template>
-  <div class="row d-flex justify-content-center">
+  <div class="row d-flex justify-content-center" id="nozzles">
     <div class="col-12 ps-3 col-xxl-11 col-xxxl-10">
       <h2 class="gamePodStick__title title-lg text-black">
         Насадки на стики геймпада Rainbo
@@ -42,7 +43,7 @@ onMounted(() => {
     </div>
 
     <div class="col-12 col-lg-6 col-xxl-6 flex-col p-0 my-auto">
-      <video id="player-2" muted>
+      <video autoplay="1" loop id="player-2" data-poster="./thumbnail.png" playsinline>
         <source src="../../assets/videos/nozzles-info.mp4" type="video/mp4">
       </video>
     </div>
@@ -58,10 +59,6 @@ onMounted(() => {
 .gamePodStick .__info {
   font-weight: 500;
   margin: 10px 0 40px 0;
-}
-
-#player-2 {
-  max-width: 950px;
 }
 
 @media screen and (max-width:1199px) {

@@ -138,6 +138,10 @@
   text-align: right;
 }
 
+#footer .__bottom {
+  font-size: 15px;
+}
+
 #footer .__bottom ._crew {
   text-align: end;
 }
@@ -223,6 +227,10 @@ stop {
     text-align: center;
   }
 
+  #footer .__bottom {
+    font-size: 14px;
+  }
+
   #footer .__address svg {
     width: 73px;
   }
@@ -268,9 +276,13 @@ stop {
 }
 
 @media screen and (max-width:575px) {
-  footer {
+  #footer {
     font-size: 15px;
     border-radius: 50px 50px 0 0;
+  }
+
+  #footer .__bottom {
+    font-size: 13px;
   }
 }
 </style>
