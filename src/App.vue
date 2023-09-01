@@ -1,14 +1,16 @@
 <script setup>
 import { onMounted, watch, ref } from 'vue';
+import AOS from 'aos';
+AOS.init({duration: 500, once: true, mirror: false})
+
 import { useRoute } from 'vue-router';
 import Footer from "./components/Footer.vue";
 
 const route = useRoute();
 const container = ref('');
-const header = ref('')
+const header = ref('');
 const footer = ref('');
 
-// todo
 const fixColor = () => {
   switch(route.path) {
     case '/yandex-station':
@@ -41,7 +43,8 @@ const fixColor = () => {
 onMounted(() => {
   container.value = document.getElementById('main-container');
   footer.value = document.getElementById('footer');
-  header.value = document.getElementById("navbar")
+  header.value = document.getElementById("navbar");
+
   fixColor()
 });
 
@@ -51,6 +54,8 @@ watch(
     fixColor()
   }
 );
+
+AOS.init({duration: 500, once: true, mirror: false})
 </script>
 
 <template>
@@ -61,5 +66,4 @@ watch(
 </template>
 
 <style scoped>
-
 </style>
